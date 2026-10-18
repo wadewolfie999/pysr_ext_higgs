@@ -1,32 +1,44 @@
-# Local PySR environment
+# PySR in Extended Higgs Sector Models
 
-Document version: 0.0.4
+## How to run this in your machine
 
-Assumes the project Python virtual environment is active.
-Open this folder in VS Code and use the corresponding notebook kernel.
+1. Clone the project:
+   ```bash
+   cd "$HOME/path/to/destination"
+   git clone https://github.com/wadewolfie999/pysr-ext-higgs
+   cd pysr-ext-higgs
+   ```
 
-## Configuration
+2. Check Python; the expected version is `3.13.7`:
+   ```bash
+   python --version
+   ```
 
-`.env` defines the Julia executable, Julia project, and thread count.
-The default is `PYTHON_JULIACALL_THREADS=4`.
-VS Code loads it through `python.envFile` and `python.terminal.useEnvFile`.
+3. If needed, install pyenv:
+   ```bash
+   curl -fsSL https://pyenv.run | bash
+   ```
+   Follow its shell setup instructions, then restart your terminal.
 
-To change threads, edit `.env`, save, and create a new integrated terminal
-or restart an idle notebook kernel. Existing processes retain their settings.
-External terminals do not automatically load this file.
+4. From the project directory, install and select Python 3.13.7:
+   ```bash
+   pyenv install 3.13.7
+   pyenv local 3.13.7
+   python --version
+   ```
+5. Download the Julia 1.11.9 on Ubuntu via snap:
+   ```bash
+   snap info julia   # Double Check the v1.11.9 is indeed the channel below
+   sudo snap install julia --classic --channel=lts/stable
+   ```
+6. From the project directory, Run `python sr.py` for the first time so Julia initializes and configures its packages and environment
+     - The first run might take a little longer
+7. Change the `model = PySRRegressor(...)` at will and then run
+   ```python
+   python sr.py
+   ```
+   again.
+8. All pysr outputs are in `output/<run_id>`
+     - plots are in `output/<run_id>/plots`
 
-## Import check
-
-```sh
-python verify-julia-env.py
-```
-
-For notebooks, run the single cell in `verify-julia-env.ipynb`.
-Both VS Code paths were verified with four, six, then four Julia threads.
-The checks import PySR and inspect the runtime without training a model.
-
-## Rollback
-
-Restore the previous Julia environment assignments before importing PySR,
-remove the two VS Code environment settings, and move `.env` aside.
-Then create new terminals or restart idle notebook kernels.
+README version 0.0.1 
