@@ -290,7 +290,7 @@ def main() -> None:
 
     run_id = run_id_ledger()
     value = next(run_id)
-    RUN_ID = f"RUN_{value}"
+    RUN_ID = f"LightUNI_OP-RUN_{value}"
     plot_dir = Path("output") / RUN_ID / "plots"
     plot_dir.mkdir(parents=True, exist_ok=True)
 
@@ -321,12 +321,13 @@ def main() -> None:
     sample_weights = compute_sample_weight(class_weight="balanced", y=y_train)
 
     model = PySRRegressor(
-        niterations=600,
-        parallelism="multithreading",
-        populations=36,         # Increase populations to 3*num_cores
-        maxsize=40,
+        niterations=6000,
+        parallelism="multiprocessing",
+        procs=5,
+        populations=15,         # Increase populations to 3*num_cores
+        maxsize=30,
         binary_operators=["+", "-", "*", "/"],
-        unary_operators=["square", "cube", "sqrt", "exp", "log", "sin", "cosh", "inv"],
+        unary_operators=["square", "sqrt", "exp", "sin", "cosh"],
         output_directory="output/",
         run_id=RUN_ID,
         #use_tracing=True,
@@ -424,7 +425,7 @@ def main() -> None:
         X_train, y_train,
         X_test, y_test,
         X_total, y_total,
-        zoom=(0.63, 0.83),
+        zoom=(0.35, 0.50),
         output_dir=plot_dir,
     )
 
@@ -452,10 +453,14 @@ if __name__ == "__main__":
 #   v3.3.0: fixed plot_roc() and  
 #   v3.4.0: plot_roc()  massively extended it to plot_roc_full()
 #   v3.4.1:
-#        - fixed model.fit(X_train, y_train) -> model.fit(X_train, y_train, weights=sample_weights)
-#        - fixed csv_train = "data/auc/test_ME1.csv" -> csv_train = "data/auc/train_ME1.csv"
-#        - fixed copy_path either existing or creating it
-#        - fixed duplication calling of Xs and ys
-#        - fixed plot_roc_full() maginification and made it better
+#       - fixed model.fit(X_train, y_train) -> model.fit(X_train, y_train, weights=sample_weights)
+#       - fixed csv_train = "data/auc/test_ME1.csv" -> csv_train = "data/auc/train_ME1.csv"
+#       - fixed copy_path either existing or creating it
+#       - fixed duplication calling of Xs and ys
+#       - fixed plot_roc_full() maginification and made it better
 #   v3.5.0:
-#        - Save all expression and ROC figures under output/<run_id>/.
+#       - Save all expression and ROC figures under output/<run_id>/.
+#   v3.6.0:
+#       - from parallelism(multithreading) -> parallelism(multiprocessing)
+#   v3.6.1:
+#       - since pysr seems to excel at finding easier equation which fits the training -> rerunning some expeditions to see what will happen
