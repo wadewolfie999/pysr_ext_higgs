@@ -1,6 +1,6 @@
 
 # <CAN-BE-CHANGED>
-# Version v5.2.0
+# Version v5.3.0-ATTEMPT1
 from pathlib import Path
 import matplotlib.pyplot as plt
 from sr import VERSION, plot_saved_run, plot_saved_expression_folds
@@ -9,7 +9,7 @@ PROJECT_DIR = Path(__file__).resolve().parent
 RUN_DIR = PROJECT_DIR / "output/TEMP_4"
 DATA_CSV = PROJECT_DIR / "data/masses_exclusions.csv"
 EQUATION_INDEX = 56
-PLOT_DIR = RUN_DIR / "plots" / f"v{VERSION}"
+PLOT_DIR = RUN_DIR / "plots" # ~~/ f"v{VERSION}"~~ 
 SLICE_SCAN_FEATURE = "mchi1"
 SLICE_FIXED_INPUTS = {"mchipm1": 2000.0}
 FOLD_DATASET, N_SPLITS, FOLD_SEED = "validation", 6, 42

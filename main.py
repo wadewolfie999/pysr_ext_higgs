@@ -1,21 +1,25 @@
-# Version v5.2.0
+# Version v5.3.0-ATTEMPT1
 import pandas as pd
 import numpy as np
 from pysr import PySRRegressor
 from pathlib import Path
 from sklearn.utils.class_weight import compute_sample_weight
-from sr import run_id_ledger, do_split, report_auc
+from sr import run_id_ledger, do_split
+from sr import expr_indexer, 
+
+run_id = run_id_ledger()
+value = next(run_id)
+# <CAN-BE-CHANGED>
+RUN_ID = f"TEMP_{value}"
+RUN_DIR = Path("output") / RUN_ID
+expr_dir = RUN_DIR / "expressions"
+plot_dir =  RUN_DIR / "plots"
+plot_dir.mkdir(parents=True, exist_ok=True)
+expr_dir.mkdir(parents=True, exist_ok=True)
+# </CAN-BE-CHANGED>
 
 
 def main() -> None:
-
-    run_id = run_id_ledger()
-    value = next(run_id)
-    RUN_ID = Path(".tmp") / f"TEMP_{value}"
-    expr_dir = RUN_ID / "expressions"
-    plot_dir =  RUN_ID / "plots"
-    plot_dir.mkdir(parents=True, exist_ok=True)
-    expr_dir.mkdir(parents=True, exist_ok=True)
 
     total_ME1 = "data/masses_exclusions.csv"
     df = pd.read_csv(total_ME1)
@@ -52,8 +56,8 @@ def main() -> None:
         # ^ Slightly larger populations, for greater diversity.
         #ncycles_per_iteration=500,
         # ^ Generations between migrations.   ???
-        output_directory="./",
-        run_id=str(RUN_ID),
+        output_directory="output",
+        run_id=RUN_ID,
         #niterations=100,  
         early_stop_condition=(
             "stop_if(loss, complexity) = loss < 1e-6 && complexity < 100"
@@ -123,15 +127,14 @@ def main() -> None:
 )
     model.fit(X_train, y_train, weights=sample_weights)
 
-
     # <CAN-BE-CHANGED>
-# Revision v5.1.0: select/report by validation AUC in one pass.
-
+    # Revision v5.1.0: select/report by validation AUC in one pass.
+    HOF = model.equations_
 
     datasets = {"train": (X_train, y_train), "validation": (X_val, y_val),
                 "test": (X_test, y_test), "total": (X_total, y_total)}
-    result = report_auc(model, datasets, directory=expr_dir, top_n=5)
-# </CAN-BE-CHANGED>
+    # result = report_auc(model, datasets, directory=expr_dir, top_n=5)
+    # </CAN-BE-CHANGED>
     
 
 if __name__ == "__main__":
