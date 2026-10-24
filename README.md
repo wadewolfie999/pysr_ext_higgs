@@ -41,4 +41,4 @@
 8. All pysr outputs are in `output/<run_id>`
      - plots are in `output/<run_id>/plots`
 
-README version 0.0.1 
+README version 0.1.0 
