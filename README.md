@@ -33,11 +33,11 @@
    ```
 6. From the project directory, Run `python sr.py` for the first time so Julia initializes and configures its packages and environment
      - The first run might take a little longer
-7. Change the `model = PySRRegressor(...)` at will and then run
+7. Change the `model = PySRRegressor(...)` at will and then enter
    ```python
    python sr.py
    ```
-   again.
+   to run again.
 8. All pysr outputs are in `output/<run_id>`
      - plots are in `output/<run_id>/plots`
 
