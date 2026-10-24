@@ -27,8 +27,7 @@ def main() -> None:
     
     X = df[features].astype(float)
     y = df[target].astype(int)
-    X_train, y_train, X_val, y_val, X_test, y_test = do_split(X,y)
-    X_total, y_total = X, y
+    X_train, y_train, X_val, y_val, X_test, y_test, X_total, y_total= do_split(X,y)
     # Save a copy for later use
     cp_path = Path("data/auc")
     cp_path.mkdir(parents=True, exist_ok=True)

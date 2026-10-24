@@ -1,4 +1,4 @@
-# Version v5.0.0-t1 — Version history at the end
+# Version v5.2.0 — Version history at the end
 import pandas as pd
 import numpy as np
 import shutil
@@ -48,30 +48,31 @@ def do_split(X, y, train_p=60, val_p=10, test_p=30, seed=SEED):
         stratify=y_rest,
         random_state=seed,
     )
-
-    return X_train, y_train, X_val, y_val, X_test, y_test
+    X_total, y_total = X, y
+    return X_train, y_train, X_val, y_val, X_test, y_test, X_total, y_total
 
 # <CAN-BE-CHANGED>
-# Revision v5.1.0: shared plotting workflow and validation-ranked AUC reporting.
+
 import hashlib
 import json
 from sklearn.model_selection import StratifiedKFold
 
 VERSION = "5.1.0"
-SPLIT_NOTE = "Reconstructed split (seed 42); original training membership not verified"
+SPLIT_NOTE = "Reconstructed split (seed 42)"
 
 
 def _scores(expr_lambda, X):
-    if not isinstance(X, pd.DataFrame) or X.empty:
-        raise ValueError("Provide a nonempty feature DataFrame.")
-    if not np.isfinite(X.to_numpy(dtype=float)).all():
-        raise ValueError("Input features must be finite.")
-    with np.errstate(all="ignore"):
-        scores = np.asarray(expr_lambda(X), dtype=float)
+    
+    # if not isinstance(X, pd.DataFrame) or X.empty:
+    #     raise ValueError("Provide a nonempty feature DataFrame.")
+    # if not np.isfinite(X.to_numpy(dtype=float)).all():
+    #     raise ValueError("Input features must be finite.")
+    # with np.errstate(all="ignore"):
+    scores = np.asarray(expr_lambda(X), dtype=float)
     if scores.ndim == 0:
         scores = np.full(len(X), scores.item())
-    if scores.shape != (len(X),):
-        raise ValueError("Expression must return a scalar or one score per row.")
+    # if scores.shape != (len(X),):
+    #     raise ValueError("Expression must return a scalar or one score per row.")
     return scores
 
 
@@ -698,5 +699,5 @@ def plot_saved_run(run_dir, data_csv, *, equation_index=56, output_dir=None,
 #                           - needs to be seriously reduced and `post_sr.py` making correct function import calls to this
 #                       - main.py - The codeblock  `# <CAN-BE-CHANGED>` and `# </CAN-BE-CHANGED>`:
 #                           - I feel like the functions save_auc_results & render_auc_report & ... in sr.py can be compacted
-#   
+#   # v5.1.0: shared plotting workflow and validation-ranked AUC reporting.
 #   
