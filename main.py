@@ -1,4 +1,4 @@
-# Version v5.0.0-t1
+# Version v5.2.0
 import pandas as pd
 import numpy as np
 from pysr import PySRRegressor
@@ -42,29 +42,6 @@ def main() -> None:
 
     
     sample_weights = compute_sample_weight(class_weight="balanced", y=y_train)
-    
-    
-    """     OLD Regressor:
-                model = PySRRegressor(
-                    niterations=6000,
-                    parallelism="multiprocessing",
-                    procs=5,
-                    populations=15,         # Increase populations to 3*num_cores
-                    maxsize=30,
-                    binary_operators=["+", "-", "*", "/"],
-                    unary_operators=["square", "sqrt", "exp", "sin", "cosh"],
-                    output_directory="output/",
-                    run_id=RUN_ID,
-                    #use_tracing=True,
-                    #tracing_file=f"{TEMP_DIR}/trace-03.jsonl",
-                    #parsimony=1e-4,
-                    #adaptive_parsimony_scaling=700,
-                    #logger_spec=logger_spec,
-                    #precision=64,
-                    #warm_start=True               # to continue where left off 
-                )
-    """
-    
     
     # NEW Regressor -> based on https://pysr.ai/v2.7.2/#detailed-example
     model = PySRRegressor(

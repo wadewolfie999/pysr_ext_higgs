@@ -1,6 +1,6 @@
 
 # <CAN-BE-CHANGED>
-# Version v5.1.0
+# Version v5.2.0
 from pathlib import Path
 import matplotlib.pyplot as plt
 from sr import VERSION, plot_saved_run, plot_saved_expression_folds

@@ -10,11 +10,14 @@ logs/
 temp/
 .temp/
 .ver*
+HP*
+.t*
 output/
 data/auc/*
 data/Ht.csv
 data/masses_exclusions2.csv
 notebooks/*
+docs/
 *.png
 *.pdf
 *.env
