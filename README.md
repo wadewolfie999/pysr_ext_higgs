@@ -46,4 +46,4 @@
 *You can read more in the [repo's Wiki](https://github.com/wadewolfie999/pysr_ext_higgs/wiki)*
 
 
-README version 0.1.0 
+README version 0.2.0 
