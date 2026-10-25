@@ -2,29 +2,29 @@
 
 ## HP batch: 17 recorded expressions
 
-[Batch guide](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/hp-run-num1-v0.1.0/README.md) · [Exact logger snapshot](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/hp-run-num1-v0.1.0/logger.csv) · [Batch manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/hp-run-num1-v0.1.0/manifest.json)
+[Batch guide](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/hp-run-num1-v0.1.0/README.md) · [Exact logger snapshot](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/hp-run-num1-v0.1.0/logger.csv) · [Batch manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/hp-run-num1-v0.1.0/manifest.json)
 
 `TEMP_4_0141` has the highest recorded test AUC in this batch. `TEMP_19_044` provides a simpler comparison (complexity 44 versus 141), with a recorded AUC difference of approximately 0.00004803. This numerical difference does not establish statistical equivalence or superiority.
 
 | Expression | Complexity | Loss | Recorded test AUC |
 |---|---:|---:|---:|
-| [TEMP_4_0141](#temp_4_0141) | 141 | 0.0781385913308636 | 0.9635796010086283 |
-| [TEMP_19_044](#temp_19_044) | 44 | 0.0825036511819801 | 0.9635315710928521 |
-| [TEMP_5_059](#temp_5_059) | 59 | 0.0786298387687911 | 0.9631669358138987 |
-| [TEMP_12_064](#temp_12_064) | 64 | 0.0857304931533565 | 0.962907672288944 |
-| [TEMP_2_070](#temp_2_070) | 70 | 0.0792349968744776 | 0.9618010238213678 |
-| [TEMP_17_052](#temp_17_052) | 52 | 0.0796802568232809 | 0.9613378782049553 |
-| [TEMP_3_065](#temp_3_065) | 65 | 0.0821458387191495 | 0.9608727721838173 |
-| [TEMP_11_071](#temp_11_071) | 71 | 0.0876339711619138 | 0.9604326613229301 |
-| [TEMP_15_068](#temp_15_068) | 68 | 0.0824209249713451 | 0.9598210150485568 |
-| [TEMP_16_079](#temp_16_079) | 79 | 0.0804398467206262 | 0.9596210537665502 |
-| [TEMP_13_068](#temp_13_068) | 68 | 0.0832458771554274 | 0.957847867692285 |
-| [TEMP_18_064](#temp_18_064) | 64 | 0.087507877929393 | 0.9555610555799245 |
-| [TEMP_7_082](#temp_7_082) | 82 | 0.0883229018843609 | 0.9531149605836124 |
-| [TEMP_1_0202](#temp_1_0202) | 202 | 0.0890910802704311 | 0.9526199583904097 |
-| [TEMP_14_044](#temp_14_044) | 44 | 0.0903690572943183 | 0.9516814146280499 |
-| [TEMP_10_0479](#temp_10_0479) | 479 | 0.1027698262892726 | 0.9354335802626452 |
-| [TEMP_6_0138](#temp_6_0138) | 138 | 0.1359070364827088 | 0.8768483553429607 |
+| [TEMP_4_0141](#user-content-temp_4_0141) | 141 | 0.0781385913308636 | 0.9635796010086283 |
+| [TEMP_19_044](#user-content-temp_19_044) | 44 | 0.0825036511819801 | 0.9635315710928521 |
+| [TEMP_5_059](#user-content-temp_5_059) | 59 | 0.0786298387687911 | 0.9631669358138987 |
+| [TEMP_12_064](#user-content-temp_12_064) | 64 | 0.0857304931533565 | 0.962907672288944 |
+| [TEMP_2_070](#user-content-temp_2_070) | 70 | 0.0792349968744776 | 0.9618010238213678 |
+| [TEMP_17_052](#user-content-temp_17_052) | 52 | 0.0796802568232809 | 0.9613378782049553 |
+| [TEMP_3_065](#user-content-temp_3_065) | 65 | 0.0821458387191495 | 0.9608727721838173 |
+| [TEMP_11_071](#user-content-temp_11_071) | 71 | 0.0876339711619138 | 0.9604326613229301 |
+| [TEMP_15_068](#user-content-temp_15_068) | 68 | 0.0824209249713451 | 0.9598210150485568 |
+| [TEMP_16_079](#user-content-temp_16_079) | 79 | 0.0804398467206262 | 0.9596210537665502 |
+| [TEMP_13_068](#user-content-temp_13_068) | 68 | 0.0832458771554274 | 0.957847867692285 |
+| [TEMP_18_064](#user-content-temp_18_064) | 64 | 0.087507877929393 | 0.9555610555799245 |
+| [TEMP_7_082](#user-content-temp_7_082) | 82 | 0.0883229018843609 | 0.9531149605836124 |
+| [TEMP_1_0202](#user-content-temp_1_0202) | 202 | 0.0890910802704311 | 0.9526199583904097 |
+| [TEMP_14_044](#user-content-temp_14_044) | 44 | 0.0903690572943183 | 0.9516814146280499 |
+| [TEMP_10_0479](#user-content-temp_10_0479) | 479 | 0.1027698262892726 | 0.9354335802626452 |
+| [TEMP_6_0138](#user-content-temp_6_0138) | 138 | 0.1359070364827088 | 0.8768483553429607 |
 
 The inspected v5.3.0 pipeline ranks candidate expressions by `test_auc`; that score is part of selection and is not an untouched final-test estimate. Total AUC is descriptive. Saved validation-subset figures reuse one fixed expression across six subsets, with no refitting. The SD band is not a confidence interval. Figure labels remain as recorded; other full-precision split AUCs are not supplied by this logger.
 
@@ -46,9 +46,9 @@ Recorded source: `HP_output/TEMP_4/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_4_0141.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_4_0141.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_4_0141/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -66,19 +66,19 @@ Split AUCs and row counts on this figure are preserved annotations, not newly ca
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_4_0141/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_4_0141/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_4_0141/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_4_0141/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_4_0141: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/plots/mass_plane.png)
+![TEMP_4_0141: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_4_0141/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -87,9 +87,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_4_0141: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/plots/mass_scan_1d.png)
+![TEMP_4_0141: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_4_0141/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -98,15 +98,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_4_0141: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/plots/subset_variability.png)
+![TEMP_4_0141: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_4_0141/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_4_0141/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_4_0141/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_4_0141/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -124,9 +124,9 @@ Recorded source: `HP_output/TEMP_19/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_19_044.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_19_044.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_19_044/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -144,19 +144,19 @@ Split AUCs and row counts on this figure are preserved annotations, not newly ca
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_19_044/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_19_044/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_19_044/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_19_044/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_19_044: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/plots/mass_plane.png)
+![TEMP_19_044: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_19_044/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -165,9 +165,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_19_044: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/plots/mass_scan_1d.png)
+![TEMP_19_044: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_19_044/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -176,15 +176,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_19_044: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/plots/subset_variability.png)
+![TEMP_19_044: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_19_044/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_19_044/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_19_044/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_19_044/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -202,9 +202,9 @@ Recorded source: `HP_output/TEMP_5/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_5_059.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_5_059.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_5_059/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -222,19 +222,19 @@ cos(2601701849.6049196/(4.6519505259157803*mchi1**2/(0.9668685139528674*mchipm1 
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_5_059/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_5_059/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_5_059/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_5_059/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_5_059: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/plots/mass_plane.png)
+![TEMP_5_059: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_5_059/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -243,9 +243,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_5_059: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/plots/mass_scan_1d.png)
+![TEMP_5_059: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_5_059/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -254,15 +254,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_5_059: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/plots/subset_variability.png)
+![TEMP_5_059: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_5_059/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_5_059/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_5_059/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_5_059/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -280,9 +280,9 @@ Recorded source: `HP_output/TEMP_12/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_12_064.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_12_064.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_12_064/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -300,19 +300,19 @@ cos((-mchi1 + mchipm1)*exp(mchi1 - mchipm1) + (cos(2.9071847628409433*(0.8698961
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_12_064/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_12_064/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_12_064/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_12_064/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_12_064: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/plots/mass_plane.png)
+![TEMP_12_064: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_12_064/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -321,9 +321,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_12_064: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/plots/mass_scan_1d.png)
+![TEMP_12_064: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_12_064/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -332,15 +332,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_12_064: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/plots/subset_variability.png)
+![TEMP_12_064: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_12_064/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_12_064/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_12_064/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_12_064/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -372,14 +372,14 @@ Recorded source: `HP_output/TEMP_2/`.
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_2_070/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_2_070/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_2_070/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_2_070/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_2_070/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_2_070/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_2_070/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_2_070/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_2_070/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_2_070/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_2_070/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_2_070/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_2_070/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_2_070/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_2_070/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_2_070/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_2_070/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_2_070/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_2_070/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_2_070/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -397,9 +397,9 @@ Recorded source: `HP_output/TEMP_17/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_17_052.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_17_052.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_17_052/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -417,19 +417,19 @@ cos((cos(0.006771653483997484*mchi1*cos(0.0010624337867578971*mchipm1)*cos(0.220
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_17_052/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_17_052/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_17_052/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_17_052/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_17_052: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/plots/mass_plane.png)
+![TEMP_17_052: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_17_052/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -438,9 +438,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_17_052: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/plots/mass_scan_1d.png)
+![TEMP_17_052: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_17_052/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -449,15 +449,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_17_052: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/plots/subset_variability.png)
+![TEMP_17_052: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_17_052/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_17_052/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_17_052/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_17_052/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -475,9 +475,9 @@ Recorded source: `HP_output/TEMP_3/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_3_065.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_3_065.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_3_065/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -495,19 +495,19 @@ Split AUCs and row counts on this figure are preserved annotations, not newly ca
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_3_065/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_3_065/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_3_065/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_3_065/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_3_065: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/plots/mass_plane.png)
+![TEMP_3_065: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_3_065/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -516,9 +516,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_3_065: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/plots/mass_scan_1d.png)
+![TEMP_3_065: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_3_065/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -527,15 +527,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_3_065: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/plots/subset_variability.png)
+![TEMP_3_065: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_3_065/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_3_065/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_3_065/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_3_065/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -553,9 +553,9 @@ Recorded source: `HP_output/TEMP_11/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_11_071.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_11_071.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_11_071/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -573,19 +573,19 @@ Split AUCs and row counts on this figure are preserved annotations, not newly ca
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_11_071/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_11_071/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_11_071/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_11_071/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_11_071: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/plots/mass_plane.png)
+![TEMP_11_071: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_11_071/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -594,9 +594,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_11_071: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/plots/mass_scan_1d.png)
+![TEMP_11_071: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_11_071/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -605,15 +605,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_11_071: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/plots/subset_variability.png)
+![TEMP_11_071: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_11_071/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_11_071/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_11_071/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_11_071/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -631,9 +631,9 @@ Recorded source: `HP_output/TEMP_15/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_15_068.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_15_068.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_15_068/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -651,19 +651,19 @@ cos((cos(0.0040287826938821689*mchi1 - 0.00049729729813319252*mchi1/(-mchi1 + mc
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_15_068/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_15_068/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_15_068/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_15_068/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_15_068: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/plots/mass_plane.png)
+![TEMP_15_068: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_15_068/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -672,9 +672,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_15_068: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/plots/mass_scan_1d.png)
+![TEMP_15_068: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_15_068/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -683,15 +683,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_15_068: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/plots/subset_variability.png)
+![TEMP_15_068: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_15_068/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_15_068/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_15_068/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_15_068/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -709,9 +709,9 @@ Recorded source: `HP_output/TEMP_16/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_16_079.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_16_079.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_16_079/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -729,19 +729,19 @@ cos((-0.0016464956341800338*mchi1*(exp(mchi1 - mchipm1) - 0.8712027804933787) - 
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_16_079/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_16_079/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_16_079/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_16_079/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_16_079: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/plots/mass_plane.png)
+![TEMP_16_079: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_16_079/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -750,9 +750,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_16_079: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/plots/mass_scan_1d.png)
+![TEMP_16_079: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_16_079/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -761,15 +761,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_16_079: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/plots/subset_variability.png)
+![TEMP_16_079: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_16_079/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_16_079/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_16_079/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_16_079/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -787,9 +787,9 @@ Recorded source: `HP_output/TEMP_13/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_13_068.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_13_068.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_13_068/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -807,19 +807,19 @@ cos((cos(0.004514648803959916*mchi1 - 0.0005057636527631049*mchipm1 + 0.00050576
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_13_068/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_13_068/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_13_068/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_13_068/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_13_068: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/plots/mass_plane.png)
+![TEMP_13_068: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_13_068/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -828,9 +828,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_13_068: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/plots/mass_scan_1d.png)
+![TEMP_13_068: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_13_068/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -839,15 +839,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_13_068: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/plots/subset_variability.png)
+![TEMP_13_068: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_13_068/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_13_068/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_13_068/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_13_068/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -865,9 +865,9 @@ Recorded source: `HP_output/TEMP_18/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_18_064.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_18_064.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_18_064/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -885,19 +885,19 @@ Split AUCs and row counts on this figure are preserved annotations, not newly ca
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_18_064/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_18_064/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_18_064/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_18_064/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_18_064: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/plots/mass_plane.png)
+![TEMP_18_064: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_18_064/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -906,9 +906,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_18_064: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/plots/mass_scan_1d.png)
+![TEMP_18_064: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_18_064/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -917,15 +917,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_18_064: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/plots/subset_variability.png)
+![TEMP_18_064: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_18_064/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_18_064/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_18_064/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_18_064/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -943,9 +943,9 @@ Recorded source: `HP_output/TEMP_7/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_7_082.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_7_082.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_7_082/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -963,19 +963,19 @@ Split AUCs and row counts on this figure are preserved annotations, not newly ca
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_7_082/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_7_082/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_7_082/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_7_082/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_7_082: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/plots/mass_plane.png)
+![TEMP_7_082: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_7_082/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -984,9 +984,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_7_082: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/plots/mass_scan_1d.png)
+![TEMP_7_082: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_7_082/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -995,15 +995,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_7_082: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/plots/subset_variability.png)
+![TEMP_7_082: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_7_082/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_7_082/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_7_082/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_7_082/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -1035,14 +1035,14 @@ Recorded source: `HP_output/TEMP_1/`.
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_1_0202/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_1_0202/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_1_0202/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_1_0202/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_1_0202/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_1_0202/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_1_0202/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_1_0202/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_1_0202/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_1_0202/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_1_0202/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_1_0202/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_1_0202/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_1_0202/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_1_0202/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_1_0202/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_1_0202/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_1_0202/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_1_0202/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_1_0202/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -1060,9 +1060,9 @@ Recorded source: `HP_output/TEMP_14/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_14_044.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_14_044.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_14_044/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -1080,19 +1080,19 @@ cos((cos(0.0011179575743389659*mchipm1) + cos(0.0036365157066324105*mchi1 - 0.54
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_14_044/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_14_044/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_14_044/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_14_044/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_14_044: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/plots/mass_plane.png)
+![TEMP_14_044: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_14_044/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -1101,9 +1101,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_14_044: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/plots/mass_scan_1d.png)
+![TEMP_14_044: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_14_044/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -1112,15 +1112,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_14_044: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/plots/subset_variability.png)
+![TEMP_14_044: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_14_044/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_14_044/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_14_044/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_14_044/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -1138,9 +1138,9 @@ Recorded source: `HP_output/TEMP_10/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_10_0479.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_10_0479.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_10_0479/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -1158,19 +1158,19 @@ cos(8.0625313659714127*cos(-0.00015060011547011*mchi1*cos(8.1632093777223689*cos
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_10_0479/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_10_0479/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_10_0479/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_10_0479/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_10_0479: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/plots/mass_plane.png)
+![TEMP_10_0479: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_10_0479/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -1179,9 +1179,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_10_0479: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/plots/mass_scan_1d.png)
+![TEMP_10_0479: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_10_0479/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -1190,15 +1190,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_10_0479: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/plots/subset_variability.png)
+![TEMP_10_0479: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_10_0479/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_10_0479/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_10_0479/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_10_0479/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -1216,9 +1216,9 @@ Recorded source: `HP_output/TEMP_6/`.
 
 ### Recorded ROC
 
-![Recorded full and magnified ROC curves for TEMP_6_0138.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/plots/roc_curve.png)
+![Recorded full and magnified ROC curves for TEMP_6_0138.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/plots/roc_curve.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_6_0138/plots/roc_curve.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/plots/roc_curve.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/plots/roc_curve.pdf)
 
 Split AUCs and row counts on this figure are preserved annotations, not newly calculated measurements.
 
@@ -1236,19 +1236,19 @@ cos(cos(0.0061297098632736863*mchi1**3*mchipm1*(cos(cos(cos(0.006741521818447457
 
 | Format | View | Raw file |
 |---|---|---|
-| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_6_0138/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/expression_sympy.txt) |
-| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_6_0138/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/expression_lambda.py) |
-| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_6_0138/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/expression.tex) |
-| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_6_0138/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/expression.pdf) |
+| SymPy text | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/expression_sympy.txt) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/expression_sympy.txt) |
+| Python / NumPy | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/expression_lambda.py) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/expression_lambda.py) |
+| TeX source | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/expression.tex) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/expression.tex) |
+| Expression PDF | [View](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/expression.pdf) | [Raw file](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/expression.pdf) |
 
 The Python module exposes `FEATURES` and `predict(X)`, accepting the named mass columns `mchi1` and `mchipm1`. Its structure was checked without executing predictions.
 
 <details>
 <summary>Mass plane: saved scores and reference labels</summary>
 
-![TEMP_6_0138: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/plots/mass_plane.png)
+![TEMP_6_0138: Mass plane: saved scores and reference labels.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/plots/mass_plane.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_6_0138/plots/mass_plane.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/plots/mass_plane.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/plots/mass_plane.pdf)
 
 Observed mass pairs and stored reference labels. Colours represent raw scores, not calibrated probabilities.
 
@@ -1257,9 +1257,9 @@ Observed mass pairs and stored reference labels. Colours represent raw scores, n
 <details>
 <summary>One-dimensional mass scan</summary>
 
-![TEMP_6_0138: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/plots/mass_scan_1d.png)
+![TEMP_6_0138: One-dimensional mass scan.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/plots/mass_scan_1d.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_6_0138/plots/mass_scan_1d.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/plots/mass_scan_1d.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/plots/mass_scan_1d.pdf)
 
 Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is not a labelled dataset or an AUC measurement.
 
@@ -1268,15 +1268,15 @@ Saved score scan with charged mass fixed at 2000 GeV. This constructed scan is n
 <details>
 <summary>Validation subset variability: fixed expression, no refitting</summary>
 
-![TEMP_6_0138: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/plots/subset_variability.png)
+![TEMP_6_0138: Validation subset variability: fixed expression, no refitting.](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/plots/subset_variability.png)
 
-[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_6_0138/plots/subset_variability.pdf)
+[Full-size PNG](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/plots/subset_variability.png) · [PDF](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/plots/subset_variability.pdf)
 
 Six subsets reuse a fixed expression. The SD band is not a confidence interval and does not establish original holdout membership.
 
 </details>
 
-[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/results/TEMP_6_0138/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/main/results/TEMP_6_0138/manifest.json)
+[Snapshot manifest](https://github.com/wadewolfie999/pysr_ext_higgs/blob/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/manifest.json) · [Raw manifest](https://raw.githubusercontent.com/wadewolfie999/pysr_ext_higgs/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results/TEMP_6_0138/manifest.json)
 
 The manifest maps the exact logger row and source paths to curated copies, records unavailable plots, and lists checksums. It identifies preparation state separately from unknown historical provenance.
 
@@ -1400,4 +1400,4 @@ This records the progression of the author's choices. It does not establish that
 
 [Back to Home](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/)
 
-<sub>Page version 0.2.0 · HP batch snapshot 0.1.0 · Historical snapshot 0.1.0 · Reviewed 2026-10-25.</sub>
+<sub>Page version 0.2.2 · HP batch snapshot 0.1.0 · Historical snapshot 0.1.0 · Reviewed 2026-10-25.</sub>

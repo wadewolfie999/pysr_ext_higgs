@@ -10,9 +10,9 @@ The catalogue distinguishes recorded measurements from missing historical proven
 
 ## Featured HP expressions
 
-- [TEMP_4_0141](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#temp_4_0141): highest recorded test AUC in this batch, **0.963580**, complexity **141**.
-- [TEMP_19_044](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#temp_19_044): simpler comparison, recorded test AUC **0.963532**, complexity **44**.
-- [Historical TEMP_6_038](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#temp_6_038): preserved separately from `output/TEMP_6/`.
+- [TEMP_4_0141](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#user-content-temp_4_0141): highest recorded test AUC in this batch, **0.963580**, complexity **141**.
+- [TEMP_19_044](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#user-content-temp_19_044): simpler comparison, recorded test AUC **0.963532**, complexity **44**.
+- [Historical TEMP_6_038](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#user-content-temp_6_038): preserved separately from `output/TEMP_6/`.
 
 The inspected v5.3.0 pipeline ranks candidate expressions by `test_auc`; that score is part of selection and is not an untouched final-test estimate. Total AUC is descriptive. Saved validation-subset figures reuse one fixed expression across six subsets, with no refitting. The SD band is not a confidence interval. Figure labels remain as recorded; other full-precision split AUCs are not supplied by this logger.
 
@@ -43,4 +43,4 @@ va.gorgin@mail.sbu.ac.ir
 wadewolfie999@gmail.com
 ```
 
-<sub>Page version 0.2.0 · Reviewed 2026-10-25 · Code reference v5.3.0.</sub>
+<sub>Page version 0.2.2 · Reviewed 2026-10-25 · Code reference v5.3.0.</sub>

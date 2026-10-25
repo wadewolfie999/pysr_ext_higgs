@@ -2,11 +2,14 @@
 
 Package version **0.1.0** · Curated **2026-10-25** · Export labels **v5.3.0**.
 
+Guide version **0.1.1**.
+
 This package captures the 17-row winner logger and indexes all available expression exports and saved plots from `HP_output`. It contains 188 copied artifacts (87,287,372 bytes), stored in the sibling expression directories. No checkpoint is required to read the exported expressions.
 
 - [Exact logger snapshot](logger.csv): unchanged eight-column CSV, including original source paths.
 - [Batch manifest](manifest.json): complete entry inventory, counts, ledger hash, and preparation reference.
-- [Validation record](verification.json): copy checks, structural checks, identity checks, and preservation results.
+- [Preparation validation record](verification.json): copy checks, structural checks, identity checks, and preservation results at preparation time.
+- [Publication record](publication-v0.1.0.json): published commits, live file hashes, wiki checks, and final documentation hashes.
 - [Repository overview](../../README.md).
 - [Wiki publication sources](../../wiki/Home.md) and [Project Registry](../../wiki/Project-Registry.md).
 
@@ -26,8 +29,16 @@ The preparation commit identifies the checkout used to curate these copies. It d
 
 README: **0.3.1 → 0.4.0**, for the substantial replacement of featured results and public links. Wiki Home and Project Registry: **0.1.0 → 0.2.0**, for the expanded catalogue. This batch and its new expression manifests start at **0.1.0**. The existing historical snapshot remains **0.1.0**; science code remains **v5.3.0**. Source files retain their original content and version labels.
 
-## Publication sequence
+Publication corrections advance README **0.4.0 → 0.4.1** for links to the rendered wiki anchors. Wiki sources advance **0.2.0 → 0.2.1** for commit-pinned artifact links, then **0.2.1 → 0.2.2** for rendered-anchor corrections. This guide advances **0.1.0 → 0.1.1** to record publication status and link the live checks. The artifact snapshot and its manifests remain **0.1.0**.
 
-This is a local prepared update. No commits, pushes, or live wiki edits are part of curation. The new wiki artifact links currently target `main` as draft publication locations and will resolve only after the repository update is published. Existing historical links remain pinned to their original commit.
+## Published catalogue
 
-After publication is explicitly requested, publish repository artifacts first, replace only the new wiki artifact `main` references with the resulting repository commit SHA, then publish `wiki/Home.md` and `wiki/Project-Registry.md` to the separate wiki repository. Verify live page anchors, image loads, and downloads afterwards. Do not replace the preparation reference with the publication commit or alter historical links.
+The repository artifacts are published at [commit dc77738](https://github.com/wadewolfie999/pysr_ext_higgs/commit/dc77738e4ac520701ca35ac218a2bb8dbbd63284). The wiki's published revision is `b17a1a5037c847c2af6aee63a8a1d5513f824b65`.
+
+[Wiki Home](https://github.com/wadewolfie999/pysr_ext_higgs/wiki) · [Project Registry](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry).
+
+The 353 new wiki artifact references are pinned to the repository artifact commit. Historical artifact links remain pinned to their original commit. The tracked `wiki/` sources match the published wiki pages.
+
+The original `verification.json` is preserved as preparation evidence, including its earlier documentation hashes and publication status. The separate publication record supplies the subsequent live checks and final documentation hashes. Curation manifests retain the preparation reference and are unchanged by publication.
+
+For future updates, publish repository artifacts first, pin new wiki artifact links to that commit, publish the wiki sources, and check the live pages and downloads. Keep preparation provenance separate from publication references.

@@ -63,7 +63,7 @@ These are preserved recorded outputs. No predictions, AUCs, or figures were reca
 
 ![Recorded full and magnified ROC curves for TEMP_4_0141.](results/TEMP_4_0141/plots/roc_curve.png)
 
-[ROC PDF](results/TEMP_4_0141/plots/roc_curve.pdf) · [All figures and record](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#temp_4_0141)
+[ROC PDF](results/TEMP_4_0141/plots/roc_curve.pdf) · [All figures and record](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#user-content-temp_4_0141)
 
 [SymPy](results/TEMP_4_0141/expression_sympy.txt) · [Python / NumPy](results/TEMP_4_0141/expression_lambda.py) · [TeX](results/TEMP_4_0141/expression.tex) · [Expression PDF](results/TEMP_4_0141/expression.pdf)
 
@@ -81,7 +81,7 @@ These are preserved recorded outputs. No predictions, AUCs, or figures were reca
 
 ![Recorded full and magnified ROC curves for TEMP_19_044.](results/TEMP_19_044/plots/roc_curve.png)
 
-[ROC PDF](results/TEMP_19_044/plots/roc_curve.pdf) · [All figures and record](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#temp_19_044)
+[ROC PDF](results/TEMP_19_044/plots/roc_curve.pdf) · [All figures and record](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#user-content-temp_19_044)
 
 [SymPy](results/TEMP_19_044/expression_sympy.txt) · [Python / NumPy](results/TEMP_19_044/expression_lambda.py) · [TeX](results/TEMP_19_044/expression.tex) · [Expression PDF](results/TEMP_19_044/expression.pdf)
 
@@ -105,10 +105,10 @@ The batch preserves 68 expression files and 120 plot files. Plots are unavailabl
 
 The previous README featured equation 43, complexity 58, from a separate historical collection of saved score tables. It was selected by total AUC (0.965162), with recorded test AUC 0.965642. That selection measure differs from this HP batch; no cross-batch improvement is claimed.
 
-The separately published [TEMP_6_038 snapshot](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#temp_6_038) remains available with its original artifacts and provenance manifest.
+The separately published [TEMP_6_038 snapshot](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#user-content-temp_6_038) remains available with its original artifacts and provenance manifest.
 
 ---
 
 [Wiki Home](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/) · [Local wiki publication sources](wiki/Home.md)
 
-<sub>README v0.4.0 · HP batch snapshot v0.1.0 · Code release v5.3.0.</sub>
+<sub>README v0.4.1 · HP batch snapshot v0.1.0 · Code release v5.3.0.</sub>
