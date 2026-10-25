@@ -1,0 +1,10 @@
+\documentclass{article}
+\usepackage[a4paper,landscape,margin=15mm]{geometry}
+\usepackage{amsmath,graphicx}
+\newcommand{\exprline}[1]{\par\noindent\begingroup\setbox0=\hbox{$\displaystyle #1$}\ifdim\wd0>\linewidth\resizebox{\linewidth}{!}{\box0}\else\box0\fi\endgroup\par\medskip}
+\begin{document}
+\noindent\texttt{TEMP\_6\_038}\\
+Version 5.3.0-ATTEMPT2\\
+\exprline{a_{0} = 0.53296538259513530 mchi_{1} \sqrt[16]{\sin^{2}{\left(\left(- mchi_{1} + mchipm_{1}\right)^{4} \right)}} \sin{\left(\sinh{\left(\frac{1.2624352887127586}{mchipm_{1}} \right)} \right)}}
+\exprline{s = a_{0} + 0.3618155531824624 \sqrt[4]{mchipm_{1}} - 1.505232312261181}
+\end{document}

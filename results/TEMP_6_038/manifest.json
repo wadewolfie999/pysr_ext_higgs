@@ -1,0 +1,108 @@
+{
+  "version": "0.1.0",
+  "expression_id": "TEMP_6_038",
+  "snapshot_kind": "preserved_recorded_outputs_without_reevaluation",
+  "source_export_version_label": "5.3.0-ATTEMPT2",
+  "features_from_export": [
+    "mchi1",
+    "mchipm1"
+  ],
+  "recorded_winner": {
+    "Expression_ID": "TEMP_6_038",
+    "Complexity": "38",
+    "Loss": "0.115475366577816",
+    "test_auc": "0.939721965599798",
+    "SymPy": "output/TEMP_6/TEMP_6_038/expression_sympy.txt",
+    "Lambda": "output/TEMP_6/TEMP_6_038/expression_lambda.py",
+    "TeX": "output/TEMP_6/TEMP_6_038/expression.tex",
+    "PDF": "output/TEMP_6/TEMP_6_038/expression.pdf"
+  },
+  "historical_provenance": {
+    "generating_commit": null,
+    "training_dataset_fingerprint": null,
+    "original_split_membership": null,
+    "selection_setting_at_run": null,
+    "run_date": null
+  },
+  "curation": {
+    "date": "2026-10-25",
+    "source_ledger": ".run_num1_logger.csv",
+    "source_ledger_sha256": "c1ca7caf30b427795c086af4c8b28a18bc9ee479e57c6621cd26e1fb483b44c5",
+    "preparation_code_reference": "79966f022aa2e73574f24435792f2c53a0131b3a",
+    "note": "Preparation reference identifies the checkout used for curation, not the generating commit. File checksums establish copy identity, not scientific validity."
+  },
+  "files": [
+    {
+      "source_path": "output/TEMP_6/TEMP_6_038/expression_sympy.txt",
+      "path": "expression_sympy.txt",
+      "sha256": "b2baca0d03d6a784944c1d854eb8a9a8b9759cefdadfd51fe39c83ce802a0994",
+      "bytes": 185
+    },
+    {
+      "source_path": "output/TEMP_6/TEMP_6_038/expression_lambda.py",
+      "path": "expression_lambda.py",
+      "sha256": "5cb12e3691abdf483504563f6941d1cdcc3c7a63069afc3e2c71bcdcd3a8f2d2",
+      "bytes": 449
+    },
+    {
+      "source_path": "output/TEMP_6/TEMP_6_038/expression.tex",
+      "path": "expression.tex",
+      "sha256": "433cdd7829a33911d38dbf7247c07526585e927ad6a4fd37b083c67934b90b03",
+      "bytes": 656
+    },
+    {
+      "source_path": "output/TEMP_6/TEMP_6_038/expression.pdf",
+      "path": "expression.pdf",
+      "sha256": "75d3a4bc7194f5f167dfe935a8d4fde6d71efc8e4248768086de6fbf2a3eb8d4",
+      "bytes": 69730
+    },
+    {
+      "source_path": "output/TEMP_6/plots/roc_curve.png",
+      "path": "plots/roc_curve.png",
+      "sha256": "7ab66cd01d37d42d8add4b039ba7a7efe7894886e6ca442ac3294d0a981b53c7",
+      "bytes": 588307
+    },
+    {
+      "source_path": "output/TEMP_6/plots/roc_curve.pdf",
+      "path": "plots/roc_curve.pdf",
+      "sha256": "016038c0b31f63a7439c68d42b68964784721db85c40b6f6c85ec284cc568843",
+      "bytes": 38601
+    },
+    {
+      "source_path": "output/TEMP_6/plots/mass_plane.png",
+      "path": "plots/mass_plane.png",
+      "sha256": "201f2c335bcbb6404f1ff38f3319e9525c0e687fcfdb26b137fb60a105607108",
+      "bytes": 3941539
+    },
+    {
+      "source_path": "output/TEMP_6/plots/mass_plane.pdf",
+      "path": "plots/mass_plane.pdf",
+      "sha256": "7fa7ad297cfe73423e5fad7b810fca429dc7bc61914fc4d9dae599f68b4a3496",
+      "bytes": 564082
+    },
+    {
+      "source_path": "output/TEMP_6/plots/mass_scan_1d.png",
+      "path": "plots/mass_scan_1d.png",
+      "sha256": "18c41c7433d6774b3518c45b449a22fbdb68eeb0f998ebf83714dc1ac5a727fe",
+      "bytes": 524824
+    },
+    {
+      "source_path": "output/TEMP_6/plots/mass_scan_1d.pdf",
+      "path": "plots/mass_scan_1d.pdf",
+      "sha256": "ea4480ab7cea2ad3c1a58145658342d9abe178d7d7b4a0b25a187454bfeaa87d",
+      "bytes": 44359
+    },
+    {
+      "source_path": "output/TEMP_6/plots/subset_variability.png",
+      "path": "plots/subset_variability.png",
+      "sha256": "0af38ef92249b8ceee6f2c1dedb6db241cd4a152b97ef828e150f7108cbd452a",
+      "bytes": 515722
+    },
+    {
+      "source_path": "output/TEMP_6/plots/subset_variability.pdf",
+      "path": "plots/subset_variability.pdf",
+      "sha256": "d70651e066473d25d6d57419087ab7ac0654095e13343553c4261e636e58fd00",
+      "bytes": 31758
+    }
+  ]
+}

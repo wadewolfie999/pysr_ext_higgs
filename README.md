@@ -20,7 +20,7 @@ Symbolic regression for a two-mass classification problem in an extended Higgs m
    pyenv local 3.13.7
    ```
 
-3. For the Ubuntu Julia setup, the previous environment used Julia `1.11.9`. Inspect the Snap channels and confirm the desired version before installing:
+3. Julia setup differs by platform. The project owner reports that their Linux environment required Julia `1.11.9`. On macOS, running Python code that uses `PySRRegressor` installed and initialized a working Julia environment through PySR; its exact version is not pinned here. For the Ubuntu Snap route, inspect the available channels and confirm the desired version before installing:
    ```bash
    snap info julia
    sudo snap install julia --classic --channel=lts/stable
@@ -42,7 +42,7 @@ Training outputs are in `output/<RUN_ID>/`, expression exports in `output/<RUN_I
 
 ## About the project
 
-Read more in the [repository Wiki](https://github.com/wadewolfie999/pysr_ext_higgs/wiki).
+Read more in the [repository Wiki](https://github.com/wadewolfie999/pysr_ext_higgs/wiki), or [browse recorded results](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry).
 
 ## Featured recorded result
 
@@ -112,4 +112,4 @@ The figure and source links below refer to local `docs/` artifacts. That directo
 
 [Setup and running](docs/wiki-src/Setup-and-running.md) · [Result details and limitations](docs/wiki-src/Featured-result-and-limitations.md) · [Source records](docs/showcase/README.md)
 
-<sub>README v0.3.0 · Code release v5.3.0.</sub>
+<sub>README v0.3.1 · Code release v5.3.0.</sub>

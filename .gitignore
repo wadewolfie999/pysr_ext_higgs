@@ -25,3 +25,7 @@ docs/
 *.log
 tests/
 test/
+
+# Curated public-result snapshots v0.1.0
+!results/**/*.png
+!results/**/*.pdf
