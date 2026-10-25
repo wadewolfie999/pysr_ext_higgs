@@ -11,7 +11,7 @@ temp/
 .temp/
 .ver*
 HP*
-.t*
+.tmp/
 output/
 data/auc/*
 data/Ht.csv
@@ -21,5 +21,7 @@ docs/
 *.png
 *.pdf
 *.env
-*.run*
+*.run_id_counter
 *.log
+tests/
+test/

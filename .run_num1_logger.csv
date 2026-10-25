@@ -1,0 +1,2 @@
+Expression_ID,Complexity,Loss,test_auc,SymPy,Lambda,TeX,PDF
+TEMP_6_038,38,0.115475366577816,0.939721965599798,output/TEMP_6/TEMP_6_038/expression_sympy.txt,output/TEMP_6/TEMP_6_038/expression_lambda.py,output/TEMP_6/TEMP_6_038/expression.tex,output/TEMP_6/TEMP_6_038/expression.pdf
