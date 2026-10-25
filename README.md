@@ -41,4 +41,9 @@
 8. All pysr outputs are in `output/<run_id>`
      - plots are in `output/<run_id>/plots`
 
+
+## About the Project
+*You can read more in the [repo's Wiki](https://github.com/wadewolfie999/pysr_ext_higgs/wiki)*
+
+
 README version 0.1.0 
