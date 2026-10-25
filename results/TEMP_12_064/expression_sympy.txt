@@ -1,0 +1,2 @@
+# Version v5.3.0
+cos((-mchi1 + mchipm1)*exp(mchi1 - mchipm1) + (cos(2.9071847628409433*(0.8698961291302949 - exp(mchi1 - mchipm1))/(mchi1 - mchipm1)) + cos((0.0023500341036272214*mchi1 + 0.8698961291302949)*cos(exp(mchi1 - mchipm1))))*cos(1.1842469812652451e-9*mchipm1**2/(mchi1 - mchipm1) - 0.0008099082877929833*mchipm1))

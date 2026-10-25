@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage[a4paper,landscape,margin=15mm]{geometry}
+\usepackage{amsmath,graphicx}
+\newcommand{\exprline}[1]{\par\noindent\begingroup\setbox0=\hbox{$\displaystyle #1$}\ifdim\wd0>\linewidth\resizebox{\linewidth}{!}{\box0}\else\box0\fi\endgroup\par\medskip}
+\begin{document}
+\noindent\texttt{TEMP\_2\_070}\\
+Version 5.3.0\\
+\exprline{a_{0} = - \frac{297.5807274153572}{- \frac{0.02802391250173666 mchi_{1}^{2}}{mchipm_{1}} - 0.01401195625086833 mchipm_{1}}}
+\exprline{a_{1} = \frac{5605807082.3072288}{\left(- mchi_{1}^{2} + mchipm_{1}^{2} - 0.29045780755911328 mchipm_{1}\right)^{6}}}
+\exprline{a_{2} = - \frac{9.541354176772265 \cdot 10^{-13} mchipm_{1}^{6}}{\left(mchi_{1} + \frac{35652.67774409823}{mchipm_{1}}\right)^{3}}}
+\exprline{a_{3} = - \frac{3.4126094646469687 \left(a_{0} + mchi_{1}\right) \left(a_{1} + 0.1027355249283932 mchi_{1} - \frac{2.5947665530701878}{a_{2} - 0.4132520379183373}\right)}{mchi_{1}}}
+\exprline{s = \frac{\left(- 0.3829787837384603 mchi_{1} - 3.0796562256598416\right)^{2}}{\left(a_{3} + 1.2800499244737693\right)^{2}}}
+\end{document}

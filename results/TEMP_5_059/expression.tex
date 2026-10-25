@@ -1,0 +1,13 @@
+\documentclass{article}
+\usepackage[a4paper,landscape,margin=15mm]{geometry}
+\usepackage{amsmath,graphicx}
+\newcommand{\exprline}[1]{\par\noindent\begingroup\setbox0=\hbox{$\displaystyle #1$}\ifdim\wd0>\linewidth\resizebox{\linewidth}{!}{\box0}\else\box0\fi\endgroup\par\medskip}
+\begin{document}
+\noindent\texttt{TEMP\_5\_059}\\
+Version 5.3.0\\
+\exprline{a_{0} = \frac{4.6519505259157803 mchi_{1}^{2}}{mchipm_{1} + 0.9668685139528674 + \frac{1891639.3970876367}{mchipm_{1}^{2}}}}
+\exprline{a_{1} = \frac{1}{\left(\left(mchi_{1} - mchipm_{1}\right)^{2} - 0.02200355064329114\right)^{2} \cos{\left(\frac{1124.9483020019968}{a_{0} + mchipm_{1} + 1124.9483020019968} \right)}}}
+\exprline{a_{2} = \frac{4.6519505259157803 mchi_{1}^{2}}{0.9668685139528674 mchipm_{1} + \frac{\left(a_{1} + mchi_{1}\right)^{2}}{mchipm_{1}^{2}}}}
+\exprline{a_{3} = \cos{\left(\frac{2601701849.6049196}{\left(a_{2} + mchipm_{1} + 1124.9483020019968\right)^{3}} \right)}}
+\exprline{s = a_{3}^{18}}
+\end{document}

@@ -1,0 +1,112 @@
+{
+  "version": "0.1.0",
+  "expression_id": "TEMP_18_064",
+  "source_collection": "HP_output",
+  "snapshot_kind": "preserved_recorded_outputs_without_reevaluation",
+  "source_export_version_label": "5.3.0",
+  "features_from_export": [
+    "mchi1",
+    "mchipm1"
+  ],
+  "recorded_winner": {
+    "Expression_ID": "TEMP_18_064",
+    "Complexity": "64",
+    "Loss": "0.087507877929393",
+    "test_auc": "0.9555610555799245",
+    "SymPy": "HP_output/TEMP_18/TEMP_18_064/expression_sympy.txt",
+    "Lambda": "HP_output/TEMP_18/TEMP_18_064/expression_lambda.py",
+    "TeX": "HP_output/TEMP_18/TEMP_18_064/expression.tex",
+    "PDF": "HP_output/TEMP_18/TEMP_18_064/expression.pdf"
+  },
+  "historical_provenance": {
+    "generating_commit": null,
+    "training_dataset_fingerprint": null,
+    "original_split_membership": null,
+    "selection_setting_at_run": null,
+    "run_date": null
+  },
+  "curation": {
+    "date": "2026-10-25",
+    "source_ledger": ".run_num1_logger.csv",
+    "source_ledger_sha256": "a4fc65f84d4a1566e181594866f982347b88bd05f71501382047af2ad14beabf",
+    "ledger_snapshot": "../hp-run-num1-v0.1.0/logger.csv",
+    "preparation_code_reference": "036ab03beca29d1d2cfe9e8466d49123b03dfa77",
+    "note": "Preparation reference identifies the checkout used for curation, not the generating commit. Checksums establish byte identity, not scientific validity."
+  },
+  "plots_status": "available",
+  "unavailable_files": [],
+  "files": [
+    {
+      "source_path": "HP_output/TEMP_18/TEMP_18_064/expression_sympy.txt",
+      "path": "expression_sympy.txt",
+      "sha256": "ad496f015118f5d3994037cea826d870722897867e06e0463df63c7f6cda6221",
+      "bytes": 376
+    },
+    {
+      "source_path": "HP_output/TEMP_18/TEMP_18_064/expression_lambda.py",
+      "path": "expression_lambda.py",
+      "sha256": "0e7a6cc16c2a95060907c563caa1c074acaeed37d307a17d28dbcba221e5a7a9",
+      "bytes": 640
+    },
+    {
+      "source_path": "HP_output/TEMP_18/TEMP_18_064/expression.tex",
+      "path": "expression.tex",
+      "sha256": "af668fd1a54845eba555aac77b1867583bdd090b92ca63b2f8ec6ce9e60c6b36",
+      "bytes": 909
+    },
+    {
+      "source_path": "HP_output/TEMP_18/TEMP_18_064/expression.pdf",
+      "path": "expression.pdf",
+      "sha256": "7f599900536c966fb9b4854870e1d08246feb72bd8fa7acad2e6601619612bf6",
+      "bytes": 78280
+    },
+    {
+      "source_path": "HP_output/TEMP_18/plots/roc_curve.png",
+      "path": "plots/roc_curve.png",
+      "sha256": "00b8f39ef9d6e01d36fec8279e1e152fcc7bd04331c483c66dcc3ccdfd754788",
+      "bytes": 596899
+    },
+    {
+      "source_path": "HP_output/TEMP_18/plots/roc_curve.pdf",
+      "path": "plots/roc_curve.pdf",
+      "sha256": "98c5551a73aa63f023e7db6035125b0ecd8dd2419314073555569841c7fcd9dd",
+      "bytes": 36213
+    },
+    {
+      "source_path": "HP_output/TEMP_18/plots/mass_plane.png",
+      "path": "plots/mass_plane.png",
+      "sha256": "44a56333a038d372408b2a4fc55478b85443c5c6e1362849a7170d02f5fcfc31",
+      "bytes": 3843094
+    },
+    {
+      "source_path": "HP_output/TEMP_18/plots/mass_plane.pdf",
+      "path": "plots/mass_plane.pdf",
+      "sha256": "39e8e3b5c2faa637fd03ca2f11ac60224d7d73d5bcf0768da80ce604908144fe",
+      "bytes": 556636
+    },
+    {
+      "source_path": "HP_output/TEMP_18/plots/mass_scan_1d.png",
+      "path": "plots/mass_scan_1d.png",
+      "sha256": "7ba2a52216db1bfb83cf1889caa9fb82af552e15471d31ec4963beef73360cd0",
+      "bytes": 292780
+    },
+    {
+      "source_path": "HP_output/TEMP_18/plots/mass_scan_1d.pdf",
+      "path": "plots/mass_scan_1d.pdf",
+      "sha256": "1e5dedd99f8f23d6e8bbe2556a5f3af9527ae61d371148a48b2f12b629555af7",
+      "bytes": 25943
+    },
+    {
+      "source_path": "HP_output/TEMP_18/plots/subset_variability.png",
+      "path": "plots/subset_variability.png",
+      "sha256": "833cf8bf3e9cc31801dfe5086d072221e92d1e52bbc10da4fe8b9541ded784f2",
+      "bytes": 509422
+    },
+    {
+      "source_path": "HP_output/TEMP_18/plots/subset_variability.pdf",
+      "path": "plots/subset_variability.pdf",
+      "sha256": "14849154e1bde3b880732527d5236077d1d7a27c839557bd6573dfc281abd1f7",
+      "bytes": 31459
+    }
+  ]
+}

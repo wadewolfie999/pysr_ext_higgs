@@ -1,0 +1,302 @@
+{
+  "version": "0.1.0",
+  "source_collection": "HP_output",
+  "curation_date": "2026-10-25",
+  "snapshot_kind": "preserved_recorded_outputs_without_reevaluation",
+  "preparation_code_reference": "036ab03beca29d1d2cfe9e8466d49123b03dfa77",
+  "source_ledger": ".run_num1_logger.csv",
+  "ledger_snapshot": "logger.csv",
+  "source_ledger_sha256": "a4fc65f84d4a1566e181594866f982347b88bd05f71501382047af2ad14beabf",
+  "expression_count": 17,
+  "copied_artifact_count": 188,
+  "copied_artifact_bytes": 87287372,
+  "featured_expression_ids": [
+    "TEMP_4_0141",
+    "TEMP_19_044"
+  ],
+  "ranking_metric": "recorded test_auc descending; not an independent final-test estimate",
+  "runs_without_finalized_logger_rows": [
+    "TEMP_8",
+    "TEMP_9"
+  ],
+  "historical_snapshot": {
+    "path": "results/TEMP_6_038",
+    "version": "0.1.0",
+    "source_collection": "output",
+    "modified": false
+  },
+  "entries": [
+    {
+      "expression_id": "TEMP_1_0202",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_1_0202",
+        "Complexity": "202",
+        "Loss": "0.0890910802704311",
+        "test_auc": "0.9526199583904097",
+        "SymPy": "HP_output/TEMP_1/TEMP_1_0202/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_1/TEMP_1_0202/expression_lambda.py",
+        "TeX": "HP_output/TEMP_1/TEMP_1_0202/expression.tex",
+        "PDF": "HP_output/TEMP_1/TEMP_1_0202/expression.pdf"
+      },
+      "manifest": "results/TEMP_1_0202/manifest.json",
+      "manifest_sha256": "808a8d7bbc2afb14dec1f9619cbeeab7beb2ae42132b681062b153c00f62287c",
+      "artifact_count": 4
+    },
+    {
+      "expression_id": "TEMP_2_070",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_2_070",
+        "Complexity": "70",
+        "Loss": "0.0792349968744776",
+        "test_auc": "0.9618010238213678",
+        "SymPy": "HP_output/TEMP_2/TEMP_2_070/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_2/TEMP_2_070/expression_lambda.py",
+        "TeX": "HP_output/TEMP_2/TEMP_2_070/expression.tex",
+        "PDF": "HP_output/TEMP_2/TEMP_2_070/expression.pdf"
+      },
+      "manifest": "results/TEMP_2_070/manifest.json",
+      "manifest_sha256": "ce900ef36bfd92190ad16d35bafb8ba8a72259d4adb4a29a1f91adb3a0f728ed",
+      "artifact_count": 4
+    },
+    {
+      "expression_id": "TEMP_3_065",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_3_065",
+        "Complexity": "65",
+        "Loss": "0.0821458387191495",
+        "test_auc": "0.9608727721838173",
+        "SymPy": "HP_output/TEMP_3/TEMP_3_065/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_3/TEMP_3_065/expression_lambda.py",
+        "TeX": "HP_output/TEMP_3/TEMP_3_065/expression.tex",
+        "PDF": "HP_output/TEMP_3/TEMP_3_065/expression.pdf"
+      },
+      "manifest": "results/TEMP_3_065/manifest.json",
+      "manifest_sha256": "05e380273e92465581bdb8f36e828d7bbafa394772bb57eeaa8c2c815826c9e8",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_4_0141",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_4_0141",
+        "Complexity": "141",
+        "Loss": "0.0781385913308636",
+        "test_auc": "0.9635796010086283",
+        "SymPy": "HP_output/TEMP_4/TEMP_4_0141/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_4/TEMP_4_0141/expression_lambda.py",
+        "TeX": "HP_output/TEMP_4/TEMP_4_0141/expression.tex",
+        "PDF": "HP_output/TEMP_4/TEMP_4_0141/expression.pdf"
+      },
+      "manifest": "results/TEMP_4_0141/manifest.json",
+      "manifest_sha256": "8e782c62627a8e9f5c5053475d4a23fff4ca4048871a88966158c6072ead13ac",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_5_059",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_5_059",
+        "Complexity": "59",
+        "Loss": "0.0786298387687911",
+        "test_auc": "0.9631669358138987",
+        "SymPy": "HP_output/TEMP_5/TEMP_5_059/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_5/TEMP_5_059/expression_lambda.py",
+        "TeX": "HP_output/TEMP_5/TEMP_5_059/expression.tex",
+        "PDF": "HP_output/TEMP_5/TEMP_5_059/expression.pdf"
+      },
+      "manifest": "results/TEMP_5_059/manifest.json",
+      "manifest_sha256": "150e29fedf3abbe3c0eb12bbc500f889258a1456b44d673722a63cee1fbff35d",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_6_0138",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_6_0138",
+        "Complexity": "138",
+        "Loss": "0.1359070364827088",
+        "test_auc": "0.8768483553429607",
+        "SymPy": "HP_output/TEMP_6/TEMP_6_0138/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_6/TEMP_6_0138/expression_lambda.py",
+        "TeX": "HP_output/TEMP_6/TEMP_6_0138/expression.tex",
+        "PDF": "HP_output/TEMP_6/TEMP_6_0138/expression.pdf"
+      },
+      "manifest": "results/TEMP_6_0138/manifest.json",
+      "manifest_sha256": "bfa67397e9229fa12f635a795537427816a3f9e2f7482e008162219e0475ad87",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_7_082",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_7_082",
+        "Complexity": "82",
+        "Loss": "0.0883229018843609",
+        "test_auc": "0.9531149605836124",
+        "SymPy": "HP_output/TEMP_7/TEMP_7_082/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_7/TEMP_7_082/expression_lambda.py",
+        "TeX": "HP_output/TEMP_7/TEMP_7_082/expression.tex",
+        "PDF": "HP_output/TEMP_7/TEMP_7_082/expression.pdf"
+      },
+      "manifest": "results/TEMP_7_082/manifest.json",
+      "manifest_sha256": "cc27ffbc9392f63a9481b063a53225aff32b6e13804aa8cff962d1086bee5023",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_10_0479",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_10_0479",
+        "Complexity": "479",
+        "Loss": "0.1027698262892726",
+        "test_auc": "0.9354335802626452",
+        "SymPy": "HP_output/TEMP_10/TEMP_10_0479/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_10/TEMP_10_0479/expression_lambda.py",
+        "TeX": "HP_output/TEMP_10/TEMP_10_0479/expression.tex",
+        "PDF": "HP_output/TEMP_10/TEMP_10_0479/expression.pdf"
+      },
+      "manifest": "results/TEMP_10_0479/manifest.json",
+      "manifest_sha256": "97c34c07af4d02a6597aefd53df232d5f629672ec562763b71d48250b0a3bb7c",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_11_071",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_11_071",
+        "Complexity": "71",
+        "Loss": "0.0876339711619138",
+        "test_auc": "0.9604326613229301",
+        "SymPy": "HP_output/TEMP_11/TEMP_11_071/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_11/TEMP_11_071/expression_lambda.py",
+        "TeX": "HP_output/TEMP_11/TEMP_11_071/expression.tex",
+        "PDF": "HP_output/TEMP_11/TEMP_11_071/expression.pdf"
+      },
+      "manifest": "results/TEMP_11_071/manifest.json",
+      "manifest_sha256": "c35e79643e16528f09ab7384df8fc2f60ae19909a59e485f04b970635e9381e6",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_12_064",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_12_064",
+        "Complexity": "64",
+        "Loss": "0.0857304931533565",
+        "test_auc": "0.962907672288944",
+        "SymPy": "HP_output/TEMP_12/TEMP_12_064/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_12/TEMP_12_064/expression_lambda.py",
+        "TeX": "HP_output/TEMP_12/TEMP_12_064/expression.tex",
+        "PDF": "HP_output/TEMP_12/TEMP_12_064/expression.pdf"
+      },
+      "manifest": "results/TEMP_12_064/manifest.json",
+      "manifest_sha256": "3b2b86142e720a650a6329cfa5ef73aeaaa20376e61b480a671ff57d55e942e2",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_13_068",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_13_068",
+        "Complexity": "68",
+        "Loss": "0.0832458771554274",
+        "test_auc": "0.957847867692285",
+        "SymPy": "HP_output/TEMP_13/TEMP_13_068/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_13/TEMP_13_068/expression_lambda.py",
+        "TeX": "HP_output/TEMP_13/TEMP_13_068/expression.tex",
+        "PDF": "HP_output/TEMP_13/TEMP_13_068/expression.pdf"
+      },
+      "manifest": "results/TEMP_13_068/manifest.json",
+      "manifest_sha256": "9712d98838ad1db1bf1ecabb3ac4254fadc749a8055828924153ce02510ce2bb",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_14_044",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_14_044",
+        "Complexity": "44",
+        "Loss": "0.0903690572943183",
+        "test_auc": "0.9516814146280499",
+        "SymPy": "HP_output/TEMP_14/TEMP_14_044/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_14/TEMP_14_044/expression_lambda.py",
+        "TeX": "HP_output/TEMP_14/TEMP_14_044/expression.tex",
+        "PDF": "HP_output/TEMP_14/TEMP_14_044/expression.pdf"
+      },
+      "manifest": "results/TEMP_14_044/manifest.json",
+      "manifest_sha256": "12dabeba7c26f6c4a0ebfccfc3c780de7dea4df2646a8a99a9d8c2a8f648b88f",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_15_068",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_15_068",
+        "Complexity": "68",
+        "Loss": "0.0824209249713451",
+        "test_auc": "0.9598210150485568",
+        "SymPy": "HP_output/TEMP_15/TEMP_15_068/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_15/TEMP_15_068/expression_lambda.py",
+        "TeX": "HP_output/TEMP_15/TEMP_15_068/expression.tex",
+        "PDF": "HP_output/TEMP_15/TEMP_15_068/expression.pdf"
+      },
+      "manifest": "results/TEMP_15_068/manifest.json",
+      "manifest_sha256": "fbcdf0e71073868b9357586cc4bd50dce4147473e098aba45fcbfd9ad6380534",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_16_079",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_16_079",
+        "Complexity": "79",
+        "Loss": "0.0804398467206262",
+        "test_auc": "0.9596210537665502",
+        "SymPy": "HP_output/TEMP_16/TEMP_16_079/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_16/TEMP_16_079/expression_lambda.py",
+        "TeX": "HP_output/TEMP_16/TEMP_16_079/expression.tex",
+        "PDF": "HP_output/TEMP_16/TEMP_16_079/expression.pdf"
+      },
+      "manifest": "results/TEMP_16_079/manifest.json",
+      "manifest_sha256": "1318c337f05301834844d3fef786aaa7ad8b6ee8ede307cbb20262ad21abedc4",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_17_052",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_17_052",
+        "Complexity": "52",
+        "Loss": "0.0796802568232809",
+        "test_auc": "0.9613378782049553",
+        "SymPy": "HP_output/TEMP_17/TEMP_17_052/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_17/TEMP_17_052/expression_lambda.py",
+        "TeX": "HP_output/TEMP_17/TEMP_17_052/expression.tex",
+        "PDF": "HP_output/TEMP_17/TEMP_17_052/expression.pdf"
+      },
+      "manifest": "results/TEMP_17_052/manifest.json",
+      "manifest_sha256": "4797ddc2b755a8782d88b2d1cd59015de5f67883c0f43afb55f7d587ec010789",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_18_064",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_18_064",
+        "Complexity": "64",
+        "Loss": "0.087507877929393",
+        "test_auc": "0.9555610555799245",
+        "SymPy": "HP_output/TEMP_18/TEMP_18_064/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_18/TEMP_18_064/expression_lambda.py",
+        "TeX": "HP_output/TEMP_18/TEMP_18_064/expression.tex",
+        "PDF": "HP_output/TEMP_18/TEMP_18_064/expression.pdf"
+      },
+      "manifest": "results/TEMP_18_064/manifest.json",
+      "manifest_sha256": "5e61bac23d237ae42839dfa74aba95eebd8c02abbf2d07ec01520de07101198c",
+      "artifact_count": 12
+    },
+    {
+      "expression_id": "TEMP_19_044",
+      "recorded_winner": {
+        "Expression_ID": "TEMP_19_044",
+        "Complexity": "44",
+        "Loss": "0.0825036511819801",
+        "test_auc": "0.9635315710928521",
+        "SymPy": "HP_output/TEMP_19/TEMP_19_044/expression_sympy.txt",
+        "Lambda": "HP_output/TEMP_19/TEMP_19_044/expression_lambda.py",
+        "TeX": "HP_output/TEMP_19/TEMP_19_044/expression.tex",
+        "PDF": "HP_output/TEMP_19/TEMP_19_044/expression.pdf"
+      },
+      "manifest": "results/TEMP_19_044/manifest.json",
+      "manifest_sha256": "52d9590d5e8895e053d88e4552e3a2d21851538cbdc1534d731fb5da29b00a8e",
+      "artifact_count": 12
+    }
+  ]
+}

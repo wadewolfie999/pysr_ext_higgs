@@ -38,78 +38,77 @@ Symbolic regression for a two-mass classification problem in an extended Higgs m
    ```
    Saved-run inspection requires the corresponding local output files. It displays plots with saving disabled by default.
 
-Training outputs are in `output/<RUN_ID>/`, expression exports in `output/<RUN_ID>/<Expression_ID>/`, and plots in `output/<RUN_ID>/plots/`. The repository-root `.run_num1_logger.csv` records the winning expression for each finalized run.
+Local source collections use `output/<RUN_ID>/` or `HP_output/<RUN_ID>/`, with expression exports under `<Expression_ID>/` and plots under `plots/`. Public curated copies live under `results/<Expression_ID>/`. The repository-root `.run_num1_logger.csv` records the winning expression for each finalized run.
 
 ## About the project
 
 Read more in the [repository Wiki](https://github.com/wadewolfie999/pysr_ext_higgs/wiki), or [browse recorded results](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry).
 
-## Featured recorded result
+## Featured recorded results
 
-**HP saved record · equation 43 · complexity 58**<br>
-Highest recorded **total ROC-AUC** among the 15 saved score tables inspected. The run note records approximately **11 hours** of running.
+The current HP batch contains **17 recorded expressions**. The table highlights its recorded AUC leader and a simpler comparison.
 
-| Training AUC | Recorded test AUC | **Total AUC · selection measure** |
-|:---:|:---:|:---:|
-| 0.962959 | 0.965642 | **0.965162** |
+| Expression | Complexity | Loss | Recorded test AUC |
+|---|---:|---:|---:|
+| [TEMP_4_0141](results/TEMP_4_0141/manifest.json) | 141 | 0.078139 | **0.963580** |
+| [TEMP_19_044](results/TEMP_19_044/manifest.json) | 44 | 0.082504 | **0.963532** |
 
-> Selection used total AUC; the recorded test score is not established as an independent performance estimate. Original split membership is unverified.
+`TEMP_4_0141` has the highest recorded test AUC in this batch. `TEMP_19_044` has complexity 44 rather than 141, with a recorded AUC difference of approximately **0.00004803**. This numerical difference does not establish statistical equivalence or superiority.
 
-## The expression
+The inspected v5.3.0 pipeline ranks candidate expressions by `test_auc`; that score is part of selection and is not an untouched final-test estimate. Total AUC is descriptive. Saved validation-subset figures reuse one fixed expression across six subsets, with no refitting. The SD band is not a confidence interval. Figure labels remain as recorded; other full-precision split AUCs are not supplied by this logger.
 
-The full saved expression is written below using intermediate quantities to keep it readable. Here $x$ and $z$ are the numerical values of $m_{\chi_1}$ and $m_{\chi_1^\pm}$ in GeV. The output is a **raw score**, not a probability.
+These are preserved recorded outputs. No predictions, AUCs, or figures were recalculated and no model was retrained for this catalogue. The original generating commit, training-data fingerprint, split membership, run date, and run-specific selection invocation are not established by the winner CSV. Exported expressions return raw, uncalibrated scores.
 
-```math
-\begin{aligned}
-s(x,z)&=\cos\!\left(AV^6W^3\right),\\
-A&=-\cos B\\
- &\quad-0.587758126965164.
-\end{aligned}
-```
+### TEMP_4_0141
+
+![Recorded full and magnified ROC curves for TEMP_4_0141.](results/TEMP_4_0141/plots/roc_curve.png)
+
+[ROC PDF](results/TEMP_4_0141/plots/roc_curve.pdf) · [All figures and record](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#temp_4_0141)
+
+[SymPy](results/TEMP_4_0141/expression_sympy.txt) · [Python / NumPy](results/TEMP_4_0141/expression_lambda.py) · [TeX](results/TEMP_4_0141/expression.tex) · [Expression PDF](results/TEMP_4_0141/expression.pdf)
 
 <details>
-<summary><strong>Expand the full expression · saved coefficients retained</strong></summary>
+<summary>Exact saved SymPy expression</summary>
 
-Long definitions can be scrolled horizontally on small screens.
-
-```math
-E=\exp\!\left(0.6395393569247805\,x\left[(x-z)^3+0.005627519890117061\right]\right),
+```text
+# Version v5.3.0
+0.9831143619017236 - exp(4*(-9473.746885051392*mchi1*(mchi1 + mchipm1)/mchipm1**2 - mchipm1**2/(mchi1 + 3.3277173633206085))/(3048.383200273093*mchipm1/((-0.03905646364146095*mchi1*(-381.32667087515931*mchi1**12/(-mchi1 + (1.4868466271092322 + (3.333641668254851 - 7015.862366316909/mchipm1)*(55.211646150405386*mchi1 - 55.257719520092348)*(mchipm1 - 18.787663910564365)/mchi1)**2)**3 + mchi1 - 2.3159940700174513*mchipm1 + cos(mchi1)**3 + 0.03905646364146095) + 5.7700305017944293e-8*mchipm1**2*(mchipm1 + 18.787663910564365)**2/(3.333641668254851 - 7015.862366316909/mchipm1)**2)*cos(3.8571244396442319*exp(6*mchi1 - 6*mchipm1))) + 7.2515758500794005)**2)
 ```
-
-```math
-C=\cos\!\left(4.4078088991239108\times10^{-26}\,z^9\right),
-```
-
-```math
-B=-0.00415914734118997\,x+\left(E-0.25362280030866624\right)C,
-```
-
-```math
-V=\cos\!\left(-3.656044798756617\times10^{-10}\,z^3\right),
-```
-
-```math
-W=\cos\!\left(\frac{1.2077042267298759\times10^{-17}\,x^6}{-1.6053572398241938}\right).
-```
-
-This factorization is checked against the full-precision saved expression by the [export helper](docs/showcase/build_showcase.py). The original export's rounded `tex_expr` is retained in the [source table](docs/showcase/recorded-auc-scores.csv); it is not used to calculate the figures.
 
 </details>
 
-## Results at a glance
+### TEMP_19_044
 
-The figure and source links below refer to local `docs/` artifacts. That directory is ignored by Git and is not included in a fresh clone.
+![Recorded full and magnified ROC curves for TEMP_19_044.](results/TEMP_19_044/plots/roc_curve.png)
 
-![ROC for HP equation 43 on all 12,280 current data rows, reproducing total AUC 0.965162.](docs/showcase/roc.svg)
+[ROC PDF](results/TEMP_19_044/plots/roc_curve.pdf) · [All figures and record](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#temp_19_044)
 
-*Full-data ROC, reproduced from the saved expression. This is descriptive evaluation on the full dataset, not a new held-out test.*
+[SymPy](results/TEMP_19_044/expression_sympy.txt) · [Python / NumPy](results/TEMP_19_044/expression_lambda.py) · [TeX](results/TEMP_19_044/expression.tex) · [Expression PDF](results/TEMP_19_044/expression.pdf)
 
-![Observed neutral and charged mass pairs: equation-43 scores beside the stored binary reference labels.](docs/showcase/mass-plane.svg)
+<details>
+<summary>Exact saved SymPy expression</summary>
 
-*The same 12,280 observed mass pairs in both panels. Colours show the full score range on the left and stored `exclusion` labels on the right; no interpolation or probability calibration is applied.* [Open full-size figure](docs/showcase/mass-plane.svg).
+```text
+# Version v5.3.0
+1.0471682425656008*cos(-0.5399005817691068*cos(0.06243687511774902/(-mchi1 + mchipm1)**2)*cos(cos(0.0038649110353923895*mchipm1)) + cos(0.0006160326007406046*mchi1 + mchi1/mchipm1 + 0.001246679746186349*mchipm1) + 1.223996039565275)
+```
+
+</details>
+
+## Full catalogue and provenance
+
+[Browse all recorded results](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry) · [Batch guide](results/hp-run-num1-v0.1.0/README.md) · [Exact logger snapshot](results/hp-run-num1-v0.1.0/logger.csv) · [Batch manifest](results/hp-run-num1-v0.1.0/manifest.json)
+
+The batch preserves 68 expression files and 120 plot files. Plots are unavailable for `TEMP_1_0202` and `TEMP_2_070`. `TEMP_8` and `TEMP_9` have no finalized logger rows and are excluded from the leaderboard.
+
+## Historical records
+
+The previous README featured equation 43, complexity 58, from a separate historical collection of saved score tables. It was selected by total AUC (0.965162), with recorded test AUC 0.965642. That selection measure differs from this HP batch; no cross-batch improvement is claimed.
+
+The separately published [TEMP_6_038 snapshot](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#temp_6_038) remains available with its original artifacts and provenance manifest.
 
 ---
 
-[Setup and running](docs/wiki-src/Setup-and-running.md) · [Result details and limitations](docs/wiki-src/Featured-result-and-limitations.md) · [Source records](docs/showcase/README.md)
+[Wiki Home](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/) · [Local wiki publication sources](wiki/Home.md)
 
-<sub>README v0.3.1 · Code release v5.3.0.</sub>
+<sub>README v0.4.0 · HP batch snapshot v0.1.0 · Code release v5.3.0.</sub>

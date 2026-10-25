@@ -10,7 +10,8 @@ logs/
 temp/
 .temp/
 .ver*
-HP*
+HP_output/
+hp-script.py
 .tmp/
 output/
 data/auc/*
@@ -18,14 +19,9 @@ data/Ht.csv
 data/masses_exclusions2.csv
 notebooks/*
 docs/
-*.png
-*.pdf
 *.env
 *.run_id_counter
 *.log
 tests/
 test/
 
-# Curated public-result snapshots v0.1.0
-!results/**/*.png
-!results/**/*.pdf

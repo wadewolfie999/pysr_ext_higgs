@@ -1,0 +1,15 @@
+\documentclass{article}
+\usepackage[a4paper,landscape,margin=15mm]{geometry}
+\usepackage{amsmath,graphicx}
+\newcommand{\exprline}[1]{\par\noindent\begingroup\setbox0=\hbox{$\displaystyle #1$}\ifdim\wd0>\linewidth\resizebox{\linewidth}{!}{\box0}\else\box0\fi\endgroup\par\medskip}
+\begin{document}
+\noindent\texttt{TEMP\_6\_0138}\\
+Version 5.3.0\\
+\exprline{a_{0} = 4.4499460275467418 \cdot 10^{-6} mchi_{1} \left(e^{\frac{0.016448221487657004 mchi_{1}}{mchipm_{1}^{3}}} + 1.3952997099950084\right)}
+\exprline{a_{1} = \cos{\left(\cos{\left(\frac{1.0864409736134717}{mchi_{1}} \right)} \right)} + \cos{\left(\cos{\left(a_{0} + mchipm_{1} - 0.22967492753516194 \right)} \right)}}
+\exprline{a_{2} = \cos{\left(\cos{\left(a_{1} \left(\cos{\left(mchi_{1}^{2} \right)} - 1.180370972830416\right) \right)} \right)}}
+\exprline{a_{3} = \frac{0.039411289288254768 mchipm_{1}^{2} \cos{\left(a_{2} - 1.0864409736134717 \right)} \cos{\left(mchipm_{1} - 1.0993553408313173 \right)}}{mchi_{1}^{3}}}
+\exprline{a_{4} = \frac{0.0067415218184474576 mchi_{1}^{4} \left(\cos{\left(\cos{\left(a_{3} \right)} \right)} - 0.2278992666066265\right)}{\left(mchi_{1} - 0.6946425812491337\right)^{3}}}
+\exprline{a_{5} = \frac{0.0061297098632736863 mchi_{1}^{3} mchipm_{1} \left(\cos{\left(\cos{\left(\cos{\left(a_{4} \right)} \right)} \right)} - 0.9950334412094952\right)}{\left(mchi_{1} + 0.789102217619601\right)^{3}}}
+\exprline{s = \cos{\left(\cos{\left(a_{5} \right)} + 0.4445403464765526 \right)} + 0.06227710785266158}
+\end{document}

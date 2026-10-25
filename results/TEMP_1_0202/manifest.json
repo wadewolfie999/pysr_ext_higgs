@@ -1,0 +1,97 @@
+{
+  "version": "0.1.0",
+  "expression_id": "TEMP_1_0202",
+  "source_collection": "HP_output",
+  "snapshot_kind": "preserved_recorded_outputs_without_reevaluation",
+  "source_export_version_label": "5.3.0",
+  "features_from_export": [
+    "mchi1",
+    "mchipm1"
+  ],
+  "recorded_winner": {
+    "Expression_ID": "TEMP_1_0202",
+    "Complexity": "202",
+    "Loss": "0.0890910802704311",
+    "test_auc": "0.9526199583904097",
+    "SymPy": "HP_output/TEMP_1/TEMP_1_0202/expression_sympy.txt",
+    "Lambda": "HP_output/TEMP_1/TEMP_1_0202/expression_lambda.py",
+    "TeX": "HP_output/TEMP_1/TEMP_1_0202/expression.tex",
+    "PDF": "HP_output/TEMP_1/TEMP_1_0202/expression.pdf"
+  },
+  "historical_provenance": {
+    "generating_commit": null,
+    "training_dataset_fingerprint": null,
+    "original_split_membership": null,
+    "selection_setting_at_run": null,
+    "run_date": null
+  },
+  "curation": {
+    "date": "2026-10-25",
+    "source_ledger": ".run_num1_logger.csv",
+    "source_ledger_sha256": "a4fc65f84d4a1566e181594866f982347b88bd05f71501382047af2ad14beabf",
+    "ledger_snapshot": "../hp-run-num1-v0.1.0/logger.csv",
+    "preparation_code_reference": "036ab03beca29d1d2cfe9e8466d49123b03dfa77",
+    "note": "Preparation reference identifies the checkout used for curation, not the generating commit. Checksums establish byte identity, not scientific validity."
+  },
+  "plots_status": "unavailable_in_source",
+  "unavailable_files": [
+    {
+      "source_path": "HP_output/TEMP_1/plots/roc_curve.png",
+      "reason": "not present at curation time"
+    },
+    {
+      "source_path": "HP_output/TEMP_1/plots/roc_curve.pdf",
+      "reason": "not present at curation time"
+    },
+    {
+      "source_path": "HP_output/TEMP_1/plots/mass_plane.png",
+      "reason": "not present at curation time"
+    },
+    {
+      "source_path": "HP_output/TEMP_1/plots/mass_plane.pdf",
+      "reason": "not present at curation time"
+    },
+    {
+      "source_path": "HP_output/TEMP_1/plots/mass_scan_1d.png",
+      "reason": "not present at curation time"
+    },
+    {
+      "source_path": "HP_output/TEMP_1/plots/mass_scan_1d.pdf",
+      "reason": "not present at curation time"
+    },
+    {
+      "source_path": "HP_output/TEMP_1/plots/subset_variability.png",
+      "reason": "not present at curation time"
+    },
+    {
+      "source_path": "HP_output/TEMP_1/plots/subset_variability.pdf",
+      "reason": "not present at curation time"
+    }
+  ],
+  "files": [
+    {
+      "source_path": "HP_output/TEMP_1/TEMP_1_0202/expression_sympy.txt",
+      "path": "expression_sympy.txt",
+      "sha256": "a25d5d56e626c72b30b891ac0bbaf518241683f9e0ce7e3af3f3e5b9770e9a2e",
+      "bytes": 1102
+    },
+    {
+      "source_path": "HP_output/TEMP_1/TEMP_1_0202/expression_lambda.py",
+      "path": "expression_lambda.py",
+      "sha256": "5c4a8118c7c9e0f4dade193d9bf07120b541e3a7ce57acbe3ee2e188a5149fcf",
+      "bytes": 1384
+    },
+    {
+      "source_path": "HP_output/TEMP_1/TEMP_1_0202/expression.tex",
+      "path": "expression.tex",
+      "sha256": "861c3c7173db419cc8c5552b488400f52a7f1202b64fe974232f2238935d4369",
+      "bytes": 2016
+    },
+    {
+      "source_path": "HP_output/TEMP_1/TEMP_1_0202/expression.pdf",
+      "path": "expression.pdf",
+      "sha256": "cc18200ac0879221795c3c2cac8a0e97717702ecc866a4e2518509a2fcd3702f",
+      "bytes": 99642
+    }
+  ]
+}

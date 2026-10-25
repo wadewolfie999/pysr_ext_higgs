@@ -1,0 +1,12 @@
+\documentclass{article}
+\usepackage[a4paper,landscape,margin=15mm]{geometry}
+\usepackage{amsmath,graphicx}
+\newcommand{\exprline}[1]{\par\noindent\begingroup\setbox0=\hbox{$\displaystyle #1$}\ifdim\wd0>\linewidth\resizebox{\linewidth}{!}{\box0}\else\box0\fi\endgroup\par\medskip}
+\begin{document}
+\noindent\texttt{TEMP\_13\_068}\\
+Version 5.3.0\\
+\exprline{a_{0} = 0.004514648803959916 mchi_{1} - 0.0005057636527631049 mchipm_{1} + \frac{0.0005057636527631049 mchipm_{1}}{mchi_{1} - mchipm_{1}} + 0.1584875312709165}
+\exprline{a_{1} = 0.003132615676865654 mchi_{1} - 0.0005279310693999557 mchipm_{1} + 0.1654339757578514 + \frac{0.0005279310693999557 \left(mchipm_{1} - 5.1087269571265446\right)}{mchi_{1} - mchipm_{1}}}
+\exprline{a_{2} = \left(\cos{\left(a_{0} \right)} + 0.640463100841876\right) \cos{\left(a_{1} \right)} \cos{\left(0.001231948657820141 mchipm_{1} - 0.32000430242982697 \right)}}
+\exprline{s = \cos{\left(a_{2} \right)}}
+\end{document}
