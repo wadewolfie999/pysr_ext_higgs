@@ -30,7 +30,7 @@ Symbolic regression for a two-mass classification problem in an extended Higgs m
    ```bash
    python main.py
    ```
-   The first run may take longer while Julia initializes its packages and environment. `sr.py` contains the shared functions; the training entry point is `main.py`.
+   The first run may take longer while Julia initializes its packages and environment. `sr.py` contains the shared functions; the training entry point is `main.py`. In v5.3.1, new run IDs use `exp_` and plot saving is disabled by default; review the search configuration and saving flags before starting a run.
 
 5. To inspect an existing saved run, set `RUN_DIR` and `EXPRESSION_ID` in `plot_sr.py`, then run:
    ```bash
@@ -111,4 +111,4 @@ The separately published [TEMP_6_038 snapshot](https://github.com/wadewolfie999/
 
 [Wiki Home](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/) · [Local wiki publication sources](wiki/Home.md)
 
-<sub>README v0.4.1 · HP batch snapshot v0.1.0 · Code release v5.3.0.</sub>
+<sub>README v0.4.2 · HP batch snapshot v0.1.0 · Code release v5.3.1.</sub>

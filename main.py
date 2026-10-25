@@ -1,22 +1,23 @@
-# Version v5.3.0
+# Version v5.3.1
 from pathlib import Path
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+from pysr import PySRRegressor
 from sklearn.utils.class_weight import compute_sample_weight
 from sr import (run_id_ledger, do_split, expr_indexer, auc_recorder, top_three_sort,
                 expr_expander, expr_pdf_compiler, run_finalizer, plot_roc_curve,
                 plot_1d_mass, plot_mass_plane, plot_expr_folds_variability, save_plot)
 
 PROJECT_DIR = Path(__file__).resolve().parent
-SAVE_PLOTS, SHOW_PLOTS = True, False
+SAVE_PLOTS, SHOW_PLOTS = False, False
 
 
 def main() -> None:
     # The unchanged run counter intentionally operates in the repository root.
     if Path.cwd().resolve() != PROJECT_DIR:
         raise RuntimeError(f"Run main.py from {PROJECT_DIR}")
-    RUN_ID = f"TEMP_{next(run_id_ledger())}"
+    RUN_ID = f"exp_{next(run_id_ledger())}"
     RUN_DIR = PROJECT_DIR / "output" / RUN_ID
     RUN_DIR.mkdir(parents=True, exist_ok=False)
 
@@ -46,85 +47,80 @@ def main() -> None:
     sample_weights = compute_sample_weight(class_weight="balanced", y=y_train)
     
     # NEW Regressor -> based on https://pysr.ai/v2.7.2/#detailed-example
-    from pysr import PySRRegressor
+
+    # NEW Regressor -> based on https://pysr.ai/v2.7.2/#detailed-example
     model = PySRRegressor(
-        # parallelism="multiprocessing",
-        # procs=6,
-        populations=16,
-        # ^ Assuming we have 4 cores, this means 2 populations per core, so one is always running.
-        population_size=50,
-        # ^ Slightly larger populations, for greater diversity.
-        #ncycles_per_iteration=500,
-        # ^ Generations between migrations.   ???
-        output_directory="output",
-        run_id=RUN_ID,
-        #niterations=100,  
-        early_stop_condition=(
-            "stop_if(loss, complexity) = loss < 1e-6 && complexity < 100"
-            # Stop early if we find a good and simple equation
-        ),
-        timeout_in_seconds=60 * 60 * 5,
-        # ^ Alternatively, stop after  hours have passed.
-        maxsize=300,
-        # ^ Allow greater complexity.
-        maxdepth=40,
-        # ^ But, avoid deep nesting.
-        
-        binary_operators=["*", "+", "-", "/"],
+    parallelism="multiprocessing",
+    procs=4,
+    populations=8,
+    # ^ Assuming we have 4 cores, this means 2 populations per core, so one is always running.
+    population_size=30,
+    # ^ Slightly larger populations, for greater diversity.
+    ncycles_per_iteration=100,
+    # ^ Generations between migrations.   ???
+    output_directory="output/",
+    run_id=RUN_ID,
+    #niterations=1000,
+    early_stop_condition=(
+        "stop_if(loss, complexity) = loss < 1e-6 && complexity < 500"
+        # Stop early if we find a good and simple equation
+    ),
+    timeout_in_seconds=60 * 60 * 4,
+    # ^ Alternatively, stop after (HP) 4 hours have passed.
     
-        unary_operators=["square", "sqrt", "sin", "sinh", "cosh", "exp", "cos"],
-        constraints={
-             "/": (-1, 6),
-             "square": 6,
-             "cos": 6,
-             "exp": 6,
-             "sin": 6,
-             "sinh": 6,
-             "cosh": 6
-        },
-        # ^ Limit the complexity within each argument.
-        # "inv": (-1, 9) states that the numerator has no constraint,
-        # but the denominator has a max complexity of 9.
-        # "exp": 9 simply states that `exp` can only have
-        # an expression of complexity 9 as input.
-        nested_constraints={
-            "square": {"square": 2, "cos": 4, "cosh": 4, "sin": 4,"sinh": 4, "exp": 2},
-            "cos" : {"square": 2, "cos": 1, "cosh": 2, "sin": 1,"sinh": 2, "exp": 2},
-            "exp": {"square": 2, "cos": 2, "cosh": 2, "sin": 2,"sinh": 2, "exp": 0},
-            "sin": {"square": 2, "cos": 1, "cosh": 2, "sin": 1,"sinh": 2, "exp": 2},
-            "cosh": {"square": 2, "cos": 2, "cosh": 0, "sin": 2,"sinh": 0, "exp": 2},
-            "sinh": {"square": 2, "cos": 2, "cosh": 0, "sin": 2,"sinh": 0, "exp": 2}
-        },
-
-
-        # ^ Nesting constraints on operators. For example,
-        # "square(exp(x))" is not allowed, since "square": {"exp": 0}.
-        complexity_of_operators={"/": 2, "exp": 3},
-        # ^ Custom complexity of particular operators.
-        complexity_of_constants=2,
-        # ^ Punish constants more than variables
-        select_k_features=2,
-        #^ Train on only the 4 most important features -> Here -> 2
-        progress=True,
-        # ^ Can set to false if printing to a file.
-        weight_randomize=0.1,
-        # ^ Randomize the tree much more frequently
-        # cluster_manager=None,
-        # ^ Can be set to, e.g., "slurm", to run a slurm
-        # cluster. Just launch one script from the head node.
-        precision=64,
-        # ^ Higher precision calculations.
-        warm_start=True,
-        # ^ Start from where left off.
-        # turbo=True,
-        # ^ Faster evaluation (experimental)
-        # extra_sympy_mappings={"cos2": lambda x: sp.cos(x)**2},
-        # extra_torch_mappings={sympy.cos: torch.cos},
-        # ^ Not needed as cos already defined, but this
-        # is how you define custom torch operators.
-        # extra_jax_mappings={sympy.cos: "jnp.cos"},
-        # ^ For JAX, one passes a string.
+    maxsize=80,
+    # ^ Allow greater complexity.
+    maxdepth=10,
+    # ^ But, avoid deep nesting.
+    binary_operators=["*", "+", "-", "/"],
+    unary_operators=["square", "cube", "exp", "cos"],
+     constraints={
+         "/": (-1, 4),
+         "square": 3,
+         "cube": 3,
+         "exp": 3,
+     },
+    # ^ Limit the complexity within each argument.
+    # "inv": (-1, 9) states that the numerator has no constraint,
+    # but the denominator has a max complexity of 9.
+    # "exp": 9 simply states that `exp` can only have
+    # an expression of complexity 9 as input.
+     nested_constraints={
+         "square": {"square": 1, "cube": 1, "exp": 0},
+         "cube": {"square": 1, "cube": 1, "exp": 0},
+         "exp": {"square": 1, "cube": 1, "exp": 0},
+     },
+    # ^ Nesting constraints on operators. For example,
+    # "square(exp(x))" is not allowed, since "square": {"exp": 0}.
+     complexity_of_operators={"/": 2, "exp": 3},
+    # ^ Custom complexity of particular operators.
+     complexity_of_constants=2,
+    # ^ Punish constants more than variables
+    # select_k_features=2,
+    # ^ Train on only the 4 most important features -> Here -> 2
+    progress=True,
+    # ^ Can set to false if printing to a file.
+    #weight_randomize=0.1,
+    # ^ Randomize the tree much more frequently
+    # cluster_manager=None,
+    # ^ Can be set to, e.g., "slurm", to run a slurm
+    # cluster. Just launch one script from the head node.
+    precision=64,
+    # ^ Higher precision calculations.
+    warm_start=True,
+    # ^ Start from where left off.
+    # turbo=True,
+    # ^ Faster evaluation (experimental)
+    # extra_sympy_mappings={"cos2": lambda x: sp.cos(x)**2},
+    # extra_torch_mappings={sympy.cos: torch.cos},
+    # ^ Not needed as cos already defined, but this
+    # is how you define custom torch operators.
+    # extra_jax_mappings={sympy.cos: "jnp.cos"},
+    # ^ For JAX, one passes a string
+    #parsimony=1e-3,
+    #adaptive_parsimony_scaling=100
 )
+
     model.fit(X_train, y_train, weights=sample_weights)
 
     HOF = model.equations_

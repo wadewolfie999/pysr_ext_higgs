@@ -1,4 +1,4 @@
-# Version v5.3.0
+# Version v5.3.1
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 import keyword
@@ -16,7 +16,7 @@ from sklearn.model_selection import train_test_split, StratifiedKFold
 from sklearn.metrics import roc_curve, auc
 
 SEED = 42
-VERSION = "5.3.0"
+VERSION = "5.3.1"
 SPLITS = {"train": "train_auc", "validation": "val_auc", "test": "test_auc", "total": "total_auc"}
 MASS_LABELS = {"mchi1": r"$m_{\chi_1}$ [GeV]", "mchipm1": r"$m_{\chi^\pm_1}$ [GeV]"}
 
@@ -83,7 +83,8 @@ def expr_indexer(HOF, RUN_ID, features):
     expressions, functions = [], []
     for _, row in HOF_01.iterrows():
         expr = sp.sympify(row.get("SymPy_Equation", row["Equation"]),
-                          locals={**symbols, "square": lambda value: value**2}, evaluate=False)
+                          locals={**symbols, "square": lambda value: value**2,
+                                  "cube": lambda value: value**3}, evaluate=False)
         if {str(symbol) for symbol in expr.free_symbols} - set(features):
             raise ValueError("Expression contains symbols outside the supplied features.")
         fn = row.get("Lambda_Equation")
