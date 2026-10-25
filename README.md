@@ -2,6 +2,48 @@
 
 Symbolic regression for a two-mass classification problem in an extended Higgs model. PySR learns an explicit score from the neutral mass $m_{\chi_1}$ and charged mass $m_{\chi_1^\pm}$, expressed in GeV, to distinguish the dataset's binary reference labels.
 
+## How to run this on your machine
+
+1. Clone the repository and enter its directory:
+   ```bash
+   git clone https://github.com/wadewolfie999/pysr_ext_higgs.git
+   cd pysr_ext_higgs
+   ```
+
+2. Check Python; the environment used for this project is Python `3.13.7`:
+   ```bash
+   python --version
+   ```
+   If needed, install pyenv with `curl -fsSL https://pyenv.run | bash`, follow its shell setup instructions, and restart your terminal. Then select Python:
+   ```bash
+   pyenv install 3.13.7
+   pyenv local 3.13.7
+   ```
+
+3. For the Ubuntu Julia setup, the previous environment used Julia `1.11.9`. Inspect the Snap channels and confirm the desired version before installing:
+   ```bash
+   snap info julia
+   sudo snap install julia --classic --channel=lts/stable
+   ```
+
+4. From the repository root with your Python environment active, review `PySRRegressor(...)` in `main.py`, then start training:
+   ```bash
+   python main.py
+   ```
+   The first run may take longer while Julia initializes its packages and environment. `sr.py` contains the shared functions; the training entry point is `main.py`.
+
+5. To inspect an existing saved run, set `RUN_DIR` and `EXPRESSION_ID` in `plot_sr.py`, then run:
+   ```bash
+   python plot_sr.py
+   ```
+   Saved-run inspection requires the corresponding local output files. It displays plots with saving disabled by default.
+
+Training outputs are in `output/<RUN_ID>/`, expression exports in `output/<RUN_ID>/<Expression_ID>/`, and plots in `output/<RUN_ID>/plots/`. The repository-root `.run_num1_logger.csv` records the winning expression for each finalized run.
+
+## About the project
+
+Read more in the [repository Wiki](https://github.com/wadewolfie999/pysr_ext_higgs/wiki).
+
 ## Featured recorded result
 
 **HP saved record · equation 43 · complexity 58**<br>
@@ -56,6 +98,8 @@ This factorization is checked against the full-precision saved expression by the
 
 ## Results at a glance
 
+The figure and source links below refer to local `docs/` artifacts. That directory is ignored by Git and is not included in a fresh clone.
+
 ![ROC for HP equation 43 on all 12,280 current data rows, reproducing total AUC 0.965162.](docs/showcase/roc.svg)
 
 *Full-data ROC, reproduced from the saved expression. This is descriptive evaluation on the full dataset, not a new held-out test.*
@@ -68,4 +112,4 @@ This factorization is checked against the full-precision saved expression by the
 
 [Setup and running](docs/wiki-src/Setup-and-running.md) · [Result details and limitations](docs/wiki-src/Featured-result-and-limitations.md) · [Source records](docs/showcase/README.md)
 
-<sub>README v0.1.0 · Wiki content prepared locally; live publication is pending.</sub>
+<sub>README v0.3.0 · Code release v5.3.0.</sub>
