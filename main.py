@@ -1,25 +1,24 @@
-# Version v5.3.0-ATTEMPT1
+# Version v5.3.0
+from pathlib import Path
+import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
-from pysr import PySRRegressor
-from pathlib import Path
 from sklearn.utils.class_weight import compute_sample_weight
-from sr import run_id_ledger, do_split
-from sr import expr_indexer, 
+from sr import (run_id_ledger, do_split, expr_indexer, auc_recorder, top_three_sort,
+                expr_expander, expr_pdf_compiler, run_finalizer, plot_roc_curve,
+                plot_1d_mass, plot_mass_plane, plot_expr_folds_variability, save_plot)
 
-run_id = run_id_ledger()
-value = next(run_id)
-# <CAN-BE-CHANGED>
-RUN_ID = f"TEMP_{value}"
-RUN_DIR = Path("output") / RUN_ID
-expr_dir = RUN_DIR / "expressions"
-plot_dir =  RUN_DIR / "plots"
-plot_dir.mkdir(parents=True, exist_ok=True)
-expr_dir.mkdir(parents=True, exist_ok=True)
-# </CAN-BE-CHANGED>
+PROJECT_DIR = Path(__file__).resolve().parent
+SAVE_PLOTS, SHOW_PLOTS = True, False
 
 
 def main() -> None:
+    # The unchanged run counter intentionally operates in the repository root.
+    if Path.cwd().resolve() != PROJECT_DIR:
+        raise RuntimeError(f"Run main.py from {PROJECT_DIR}")
+    RUN_ID = f"TEMP_{next(run_id_ledger())}"
+    RUN_DIR = PROJECT_DIR / "output" / RUN_ID
+    RUN_DIR.mkdir(parents=True, exist_ok=False)
 
     total_ME1 = "data/masses_exclusions.csv"
     df = pd.read_csv(total_ME1)
@@ -47,6 +46,7 @@ def main() -> None:
     sample_weights = compute_sample_weight(class_weight="balanced", y=y_train)
     
     # NEW Regressor -> based on https://pysr.ai/v2.7.2/#detailed-example
+    from pysr import PySRRegressor
     model = PySRRegressor(
         # parallelism="multiprocessing",
         # procs=6,
@@ -127,15 +127,34 @@ def main() -> None:
 )
     model.fit(X_train, y_train, weights=sample_weights)
 
-    # <CAN-BE-CHANGED>
-    # Revision v5.1.0: select/report by validation AUC in one pass.
     HOF = model.equations_
-
     datasets = {"train": (X_train, y_train), "validation": (X_val, y_val),
                 "test": (X_test, y_test), "total": (X_total, y_total)}
-    # result = report_auc(model, datasets, directory=expr_dir, top_n=5)
-    # </CAN-BE-CHANGED>
-    
+    HOF_01 = expr_indexer(HOF, RUN_ID, features)
+    HOF_02, evaluations = auc_recorder(HOF_01, datasets)
+    HOF_03, _rank_one_id = top_three_sort(HOF_02)
+    HOF_4_pt1 = expr_expander(HOF_03, RUN_DIR, features)
+    HOF_4_pt2 = expr_pdf_compiler(HOF_03, _rank_one_id, RUN_DIR)
+    HOF_FINAL = run_finalizer(HOF_4_pt1, HOF_4_pt2, RUN_ID, PROJECT_DIR / ".run_num1_logger.csv")
+    print(HOF_FINAL.to_string(index=False))
+
+    equation = HOF_03.set_index("Expression_ID").loc[_rank_one_id, "Lambda_Equation"]
+    X_slice = pd.DataFrame({"mchi1": np.linspace(1, 2001, 2000), "mchipm1": 2000.0})
+    fold_fig, fold_ax, fold_table, summary, _ = plot_expr_folds_variability(_rank_one_id, datasets, evaluations)
+    figures = {"roc_curve.pdf": plot_roc_curve(_rank_one_id, evaluations, magnified=True),
+               "mass_scan_1d.pdf": plot_1d_mass(equation, X_slice, Expression_ID=_rank_one_id),
+               "mass_plane.pdf": plot_mass_plane(_rank_one_id, datasets, evaluations),
+               "subset_variability.pdf": (fold_fig, fold_ax)}
+    print(fold_table.to_string(), summary, sep="\n")
+    for filename, (fig, _) in figures.items():
+        if SAVE_PLOTS:
+            save_plot(fig, filename, RUN_DIR / "plots")
+    if SHOW_PLOTS:
+        plt.show()
+    else:
+        for fig, _ in figures.values():
+            plt.close(fig)
+
 
 if __name__ == "__main__":
     main()
