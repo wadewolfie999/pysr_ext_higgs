@@ -1,92 +1,73 @@
 # PySR in Extended Higgs Sector Models
 
-Symbolic-regression classification using the two mass features `mchi1` and `mchipm1` (GeV), with `exclusion` as the binary reference target. Expressions return continuous, uncalibrated scores.
+Symbolic-regression classification using the mass features mchi1 and mchipm1 (GeV) and the binary reference target exclusion. The expression returns a continuous, uncalibrated score.
 
-**Earlier results withdrawn.** The owner has withdrawn every result outside the four retained expression IDs. Earlier published artifacts remain in Git history: [17-expression HP catalogue](https://github.com/wadewolfie999/pysr_ext_higgs/tree/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results) and [historical TEMP_6_038 snapshot](https://github.com/wadewolfie999/pysr_ext_higgs/tree/036ab03beca29d1d2cfe9e8466d49123b03dfa77/results/TEMP_6_038).
+## Current expression
 
-The owner reports that an omitted `elementwise_loss` left earlier work using PySR's default squared-error objective, rather than the intended margin-classification objective. This is the owner's reason for withdrawal; the cause has not been authenticated separately for every historical run. Negative raw scores alone do not falsify a classifier's ranking. `L2HingeLoss()` is the owner's preferred loss for current work, not a demonstrated statistically superior objective.
+The current user-facing result is L2HL_1_050.
 
-## Retained results
+| Record | Value |
+|---|---|
+| Objective | L2HingeLoss() |
+| Complexity | 50 |
+| Current validation ROC-AUC | 0.9726962005193153 |
+| Recorded test ROC-AUC | 0.9615986120334543; used as the original expression-selection score |
 
-| Retained expression | Saved loss | Complexity | Recorded test AUC (selection score) | Fitted curves |
-|---|---|---:|---:|---|
-| [EXP_6_072](results/EXP_6_072/manifest.json) | `LogitMarginLoss()` | 72 | 0.9637619186481049 | Unavailable |
-| [ELEM_7_0198](results/ELEM_7_0198/manifest.json) | `LogitMarginLoss()` | 198 | 0.9644941298130999 | Unavailable |
-| [L2HL_1_050](results/L2HL_1_050/manifest.json) | `L2HingeLoss()` | 50 | 0.9615986120334543 | Available |
-| [L2HL_2_0235](results/L2HL_2_0235/manifest.json) | `L2HingeLoss()` | 235 | 0.9442093320165948 | Available |
+The validation value is a current reproduction on the reconstructed split, not a recovered historical validation result. Original split membership is unknown. The recorded test AUC is a selection score, not an independent final-test estimate.
 
-The selected IDs and recorded decimal values are preserved. **Test AUC remains the selection metric by the owner's decision**, so it is not an untouched final-test estimate. Loss values from different objectives are not directly comparable.
+![Preserved ROC curve for L2HL_1_050.](https://logs.reshub.lol/pysr-ext-higgs/0.1.0/L2HL_1_050/plots/roc_curve.png)
 
-![Preserved ROC figure for L2HL_1_050, the default saved expression.](https://logs.reshub.lol/pysr-ext-higgs/0.1.0/L2HL_1_050/plots/roc_curve.png)
+[Project Registry](wiki/Project-Registry.md) · [Method and limitations](wiki/Method-and-Limitations.md) · [Expression files and manifest](results/L2HL_1_050/manifest.json)
 
-[Local results catalogue](wiki/Project-Registry.md) · [Method and limitations](wiki/Method-and-Limitations.md) · [Batch snapshot](results/current-runs-v0.1.0/README.md) · [Batch manifest](results/current-runs-v0.1.0/manifest.json)
+## Inspect the saved expression
 
-## Public artifacts and optional local cache
+From the repository root, in the existing environment:
 
-The curated artifact package is served at [logs.reshub.lol](https://logs.reshub.lol/pysr-ext-higgs/0.1.0/). Arvancloud manages public HTTPS and renewal; Caddy serves the public-file origin. Published version directories are immutable. PNG/PDF binaries live there and in ignored local cache; Git keeps code, candidate tables, expression source exports, and checksum manifests. Historical files already committed remain in Git history.
-
-To explicitly download and verify the default expression's binary artifacts:
-
-```bash
-.venv/bin/python fetch_artifacts.py --expression L2HL_1_050
-```
-
-The command checks each file's committed byte count and SHA-256 before atomically replacing a cached file. Valid cached files require no network. An interrupted or invalid download leaves prior local bytes intact. Raw logs, checkpoints, environment files and backups are not served.
-
-## Inspect saved results without training
-
-From the repository root in the existing environment:
-
-```bash
+~~~bash
 .venv/bin/python plot_sr.py
-```
+~~~
 
-The default is the tracked curated `L2HL_1_050` expression. This path uses no checkpoint, PySR import, Julia startup, or fitting. It evaluates the fixed expression, displays four diagnostics, and saves nothing by default. In `plot_sr.py`, `RUN_SOURCE` can also name a raw run directory; set its matching `EXPRESSION_ID` explicitly. For curated inputs, a changed dataset fingerprint stops inspection.
+This evaluates the fixed expression and displays its diagnostics. It does not load a checkpoint, start PySR or Julia, fit a model, or save plots by default. Curated inspection stops if the current dataset fingerprint differs from the one in the expression manifest.
 
-`plot.ipynb` uses the same reader and default expression. Ordinary Run All evaluates the fixed expression and displays checksum-verified cached L2HL curve images, or links to the hosted images when they are not cached. It never downloads automatically. Keep `RUN_CURVE_FITS = False` for saved-result inspection. Setting it to `True` explicitly starts **16 new diagnostic searches**, eight per parent, and requires the corresponding local parent checkpoints. New tables, figures, settings, and child lineage go to fresh ignored directories under `output/curve_diagnostics/`.
+The notebook also supports saved-result inspection. Keep its curve-fit switch disabled for that path. If enabled, its curve workflow fits fresh diagnostic models; these runs are separate from evaluating the fixed expression and write to ignored directories under output/curve_diagnostics/.
 
-Explicitly enabled offline plot saving uses `.temp/inspection/<Expression_ID>/`. Source evidence and curated results are protected from being used as the regeneration destination.
+## Expression artifacts
 
-## Environment and setup
+The expression’s binary plots are served from the immutable L2HL_1_050 directory at [logs.reshub.lol](https://logs.reshub.lol/pysr-ext-higgs/0.1.0/L2HL_1_050/). To download and verify those files into the local cache:
 
-The inspected working environment uses **Python 3.13.7** and **PySR 2.7.0**; dependencies are recorded in `requirements.txt`. A new-machine installation has not been tested in this revision. With Python 3.13 available, the setup commands are:
+~~~bash
+.venv/bin/python fetch_artifacts.py --expression L2HL_1_050
+~~~
 
-```bash
-git clone https://github.com/wadewolfie999/pysr_ext_higgs.git
-cd pysr_ext_higgs
+Each download is checked against the committed byte count and SHA-256 before it replaces a cached file. Downloads are explicit; ordinary inspection never fetches files automatically. Raw logs, checkpoints, environment files, and backups are not served.
+
+## Data and evaluation
+
+The current dataset has 12,280 rows and SHA-256 c8c8063c84a10143b6369f444a037ef5695ff13f5eef6f9bf00dc86880c3937a. The reconstructed split uses seed 42 and contains 7,368 training, 1,228 validation, and 3,684 test rows. Current reproduction of L2HL_1_050 matches its recorded test AUC and exported NumPy predictions. This does not authenticate the original split membership or establish independent performance.
+
+## Environment and new runs
+
+The inspected environment uses Python 3.13.7 and PySR 2.7.0. A new-machine installation has not been verified in this revision.
+
+~~~bash
 python3.13 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
-```
+~~~
 
-Saved-result inspection needs the Python plotting/evaluation libraries. Training and explicitly enabled curve fitting additionally initialize PySR's Julia environment. The owner's separate Linux setup used Julia 1.11.9; that is not a verified cross-platform requirement. Exporting a new winner PDF requires `pdflatex` on PATH.
+Review main.py before running a new training search:
 
-## Start a new training run
-
-Review the configuration in `main.py` before executing:
-
-```bash
+~~~bash
 .venv/bin/python main.py
-```
+~~~
 
-This command starts a new search. The current configuration uses `L2HingeLoss()`, signed training labels `2*y-1`, balanced training weights, and test-AUC expression selection. Evaluation retains labels 0 and 1. Each new run writes its actual split row IDs, labels, weights, model parameters, dataset hash, and source hashes to `output/<RUN_ID>/run_metadata.json` before fitting.
+Future runs record their actual split row IDs, labels, weights, model parameters, dataset hash, and source hashes before fitting. Training is separate from inspecting the saved expression.
 
-## Evidence and repository layout
+## Repository sources
 
-- `results/<Expression_ID>/`: committed candidate tables, expression source exports, and manifests; PNG/PDF files are optional ignored cache of the public artifact package.
-- `results/current-runs-v0.1.0/`: retained logger snapshot, batch manifest, and explicitly reconstructed current split record.
-- `output/` and `HP_output/`: ignored local runs and checkpoints. The root `.run_num1_logger.csv` is the mutable runtime ledger; the versioned batch is the durable catalogue record.
-- `wiki/`: canonical Wiki publication sources. Other ignored local documentation drafts are not maintained in parallel.
+- results/L2HL_1_050/: the current expression exports, candidate table, and manifest; binary plots are optional local cache.
+- output/ and HP_output/: ignored local runs and checkpoints.
+- wiki/: canonical editable sources for the GitHub Wiki.
 
-Current reproduction on 12,280 observations matches all four recorded test AUCs exactly; exported NumPy predictions match the selected saved equations. The reconstructed split has 7,368 training, 1,228 validation, and 3,684 test rows. This does not authenticate original training membership or establish independent performance. Original numerical arrays for the two saved fitted-curve images were not serialized.
+Previous catalogue revisions remain historical records in Git history. The current README and Wiki present L2HL_1_050 as the current expression.
 
-## Verification and publication status
-
-```bash
-PYTHONDONTWRITEBYTECODE=1 MPLBACKEND=Agg .venv/bin/python -m unittest discover -s tests -v
-```
-
-Tests use a stub for fitting orchestration; no real model fitting is part of this cleanup. [Accepted blueprint](docs/research-cleanup-blueprint-v0.1.0.md). [Verification record](docs/research-cleanup-verification-v0.1.0.json).
-
-The curated artifact endpoint is published and independently checksum-verified. This repository contains the v5.7.0 workflow and the canonical sources for the [public Wiki](https://github.com/wadewolfie999/pysr_ext_higgs/wiki). The catalogue uses immutable artifact URLs; earlier catalogue entries remain withdrawn and accessible through pinned historical commits. [Deployment and rollback procedure](deployment/logs-reshub/0.1.0/README.md) · [Acceptance record](deployment/logs-reshub/0.1.0/verification-v0.1.0.json).
-
-<sub>README v0.6.1 · Code release v5.7.0 · Notebook artifact v4.7.0 · Retained batch v0.1.0.</sub>
+<sub>README v0.7.0 · Expression record v0.1.0.</sub>
