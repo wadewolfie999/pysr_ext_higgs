@@ -1,0 +1,239 @@
+{
+  "version": "0.1.0",
+  "expression_id": "L2HL_1_050",
+  "run_id": "L2HL_1",
+  "snapshot_kind": "unchanged_saved_artifacts_with_separate_current_numerical_reproduction",
+  "features": [
+    "mchi1",
+    "mchipm1"
+  ],
+  "source_path_base": "repository root",
+  "asset_path_base": "directory containing this manifest",
+  "recorded_winner": {
+    "Expression_ID": "L2HL_1_050",
+    "Complexity": "50",
+    "Loss": "0.3425168330019069",
+    "test_auc": "0.9615986120334543",
+    "SymPy": "output/L2HL_1/L2HL_1_050/expression_sympy.txt",
+    "Lambda": "output/L2HL_1/L2HL_1_050/expression_lambda.py",
+    "TeX": "output/L2HL_1/L2HL_1_050/expression.tex",
+    "PDF": "output/L2HL_1/L2HL_1_050/expression.pdf",
+    "validation_learning_curve": "output/L2HL_1/valid-learn-curve.png"
+  },
+  "source_export_version_label": "5.3.1",
+  "saved_configuration": {
+    "model_selection": "best",
+    "niterations": 100,
+    "population_size": 100,
+    "maxsize": 280,
+    "timeout_in_seconds": 3600,
+    "elementwise_loss": "L2HingeLoss()",
+    "parsimony": 0.001,
+    "parallelism": "multithreading",
+    "random_state": null,
+    "deterministic": false
+  },
+  "configuration_evidence": "simple literals inspected in saved pickle opcodes; checkpoint not executed",
+  "source_checkpoint_sha256": "b73d9699c0b6f14a4a0b29b40c845a4aea463fd960e16ed3b0451db9b19cfa4f",
+  "historical_provenance": {
+    "generating_commit": null,
+    "original_dataset_fingerprint": null,
+    "original_split_membership": null,
+    "complete_selection_invocation": null
+  },
+  "current_reproduction": {
+    "dataset_repository_path": "data/masses_exclusions.csv",
+    "dataset_sha256": "c8c8063c84a10143b6369f444a037ef5695ff13f5eef6f9bf00dc86880c3937a",
+    "split_seed": 42,
+    "split_sizes": {
+      "train": 7368,
+      "validation": 1228,
+      "test": 3684,
+      "total": 12280
+    },
+    "metrics": {
+      "train_auc": 0.9573333839771221,
+      "val_auc": 0.9726962005193153,
+      "test_auc": 0.9615986120334543,
+      "total_auc": 0.9601292032444535
+    },
+    "split_record": "../current-runs-v0.1.0/current-reproduction-splits.json",
+    "note": "Current reconstruction matches the recorded test AUC; original membership is unverified."
+  },
+  "selection_metric": "test_auc",
+  "test_auc_role": "selection score, not independent final-test performance",
+  "diagnostics": {
+    "fixed_expression_subsets": {
+      "refitting": false,
+      "subsets": 6,
+      "dataset": "validation"
+    },
+    "refitted_curves": {
+      "available": true,
+      "path": "valid-learn-curve.png",
+      "historical_numeric_tables_available": false,
+      "child_model_selection": "PySR model_selection='best'; separate from parent test-AUC winner",
+      "split_subset_seed": 42,
+      "child_runs": [
+        {
+          "run_id": "20261026_015053_Lvtqsx",
+          "kind": "validation",
+          "maxsize": 10,
+          "training_fraction": 1.0,
+          "source_path": "output/20261026_015053_Lvtqsx",
+          "hall_of_fame_sha256": "074d8e249365e11876b88a5c3a883dabca1eb7f90d8f1c97d17c9c22651b1881",
+          "checkpoint_sha256": "4638f38edffc7144376f6b4eaad8da81e104ba111250ab7fd68c317b53e39723"
+        },
+        {
+          "run_id": "20261026_015107_LeqqAz",
+          "kind": "validation",
+          "maxsize": 15,
+          "training_fraction": 1.0,
+          "source_path": "output/20261026_015107_LeqqAz",
+          "hall_of_fame_sha256": "a1f7404e61e304a3d20a17a026bd5ff05711a491efff1c6654e5fa9dd44c98cf",
+          "checkpoint_sha256": "af789d5eafb4c9da870f2740c2b215c095f42eae787dd98a4f83e77644d6cb7b"
+        },
+        {
+          "run_id": "20261026_015109_WGYk5Q",
+          "kind": "validation",
+          "maxsize": 20,
+          "training_fraction": 1.0,
+          "source_path": "output/20261026_015109_WGYk5Q",
+          "hall_of_fame_sha256": "462539b79825613826bb3a3fcf68e63ec38ccf243fb7109ff17b2a0d843a7c67",
+          "checkpoint_sha256": "45d2cc6bbe9e96c6ec7f60044b3812c993045943092cc3c1570a89abf86a16b0"
+        },
+        {
+          "run_id": "20261026_015111_p7DAdM",
+          "kind": "validation",
+          "maxsize": 25,
+          "training_fraction": 1.0,
+          "source_path": "output/20261026_015111_p7DAdM",
+          "hall_of_fame_sha256": "9d3f4495256417d14b854c0e3c312b25a77bdfb413a273c08bff727d497d135a",
+          "checkpoint_sha256": "c0040fb2f20074b06204d458e7f89ab8df04063c99f33fe43b0f18bf9bd15a4e"
+        },
+        {
+          "run_id": "20261026_015114_ccwBe1",
+          "kind": "learning",
+          "maxsize": 280,
+          "training_fraction": 0.25,
+          "source_path": "output/20261026_015114_ccwBe1",
+          "hall_of_fame_sha256": "c67e189aef5bfece26527f0883257f6821076bda6d50fae4d0805f942e39cbd1",
+          "checkpoint_sha256": "2e89f647339d1fd4b70aab23cffab383e8aaf772988b5bf7853210a89d967016"
+        },
+        {
+          "run_id": "20261026_015150_vkRfVQ",
+          "kind": "learning",
+          "maxsize": 280,
+          "training_fraction": 0.5,
+          "source_path": "output/20261026_015150_vkRfVQ",
+          "hall_of_fame_sha256": "b7c8cf9fb234dcfbff6dd9966ecda63de70a2fc736f7bed7f025bf2eccef16ff",
+          "checkpoint_sha256": "a2251d06b844d96b6184475bfb2b3783b19ef31349c9f634fbb9b89faceac53d"
+        },
+        {
+          "run_id": "20261026_015227_iMxE0t",
+          "kind": "learning",
+          "maxsize": 280,
+          "training_fraction": 0.75,
+          "source_path": "output/20261026_015227_iMxE0t",
+          "hall_of_fame_sha256": "7755a1443d3ab094a8ff81a8e0d6b4d0fdd6bc610605d6647fd5b0b35e91f8b1",
+          "checkpoint_sha256": "d035dc75788ba51ee557994e8fdfd26258d6b77a9dcd21e1d7679d87ea7b6232"
+        },
+        {
+          "run_id": "20261026_015316_CZAqOk",
+          "kind": "learning",
+          "maxsize": 280,
+          "training_fraction": 1.0,
+          "source_path": "output/20261026_015316_CZAqOk",
+          "hall_of_fame_sha256": "f9feb51d9459b280755294fe4f8a5c4e89dbec481efa83c89443d5dc580b93b7",
+          "checkpoint_sha256": "8000671f0f08dde4a17bcb9065ac406afcd98880a403a3a8e0fb2f4ad4ce1142"
+        }
+      ]
+    }
+  },
+  "files": [
+    {
+      "source_path": "output/L2HL_1/L2HL_1_050/expression_sympy.txt",
+      "path": "expression_sympy.txt",
+      "sha256": "e48c30dbb5e093f8dc6e3a77bf05ffac373436d34443496ad6eb8581f9ade22e",
+      "bytes": 384
+    },
+    {
+      "source_path": "output/L2HL_1/L2HL_1_050/expression_lambda.py",
+      "path": "expression_lambda.py",
+      "sha256": "0dba4765237235fa9e0dc891dce20a1ea0b64b8e648eeff1d1514fdc5aea945c",
+      "bytes": 630
+    },
+    {
+      "source_path": "output/L2HL_1/L2HL_1_050/expression.tex",
+      "path": "expression.tex",
+      "sha256": "40401709aca25f74f96d3666ab0dc2e02719653a8c0fcb2b23d71bcb304623cb",
+      "bytes": 919
+    },
+    {
+      "source_path": "output/L2HL_1/L2HL_1_050/expression.pdf",
+      "path": "expression.pdf",
+      "sha256": "3e5fc3fa81c73c3270786c931a6bb74e270e88a5a4dbfa193530137ffdeb0d14",
+      "bytes": 85492
+    },
+    {
+      "source_path": "output/L2HL_1/hall_of_fame.csv",
+      "path": "hall_of_fame.csv",
+      "sha256": "e6287a31a84f746754faa0a5a6f37901432c63f2c5563184c2cf9555991cd2f4",
+      "bytes": 8481
+    },
+    {
+      "source_path": "output/L2HL_1/plots/roc_curve.pdf",
+      "path": "plots/roc_curve.pdf",
+      "sha256": "6176643d8814ffac964344f729f2e148122c33d60ed1fb6a4a7e6a2f1df65087",
+      "bytes": 34374
+    },
+    {
+      "source_path": "output/L2HL_1/plots/roc_curve.png",
+      "path": "plots/roc_curve.png",
+      "sha256": "d83b00a37493f3e257294cbeea9b160d5d6e0e42eb4424947257f77eb3ca6231",
+      "bytes": 569971
+    },
+    {
+      "source_path": "output/L2HL_1/plots/mass_plane.pdf",
+      "path": "plots/mass_plane.pdf",
+      "sha256": "2dbed6a1c85de078533881e29f841d397ec1f32b2d137e84e628a21823bdd512",
+      "bytes": 557664
+    },
+    {
+      "source_path": "output/L2HL_1/plots/mass_plane.png",
+      "path": "plots/mass_plane.png",
+      "sha256": "e95d4ec58b8400d3b7c4d58da3b6a8782cdbb9449c7877635b5c419351bcb3c5",
+      "bytes": 3684438
+    },
+    {
+      "source_path": "output/L2HL_1/plots/mass_scan_1d.pdf",
+      "path": "plots/mass_scan_1d.pdf",
+      "sha256": "2ad6fee84640d12171d6ad3bd2b1a958a65b36dd7ce2abfad15501832a45322a",
+      "bytes": 23675
+    },
+    {
+      "source_path": "output/L2HL_1/plots/mass_scan_1d.png",
+      "path": "plots/mass_scan_1d.png",
+      "sha256": "1a1cdd05e5da1e01be9e2e3b56f1f99e9ea90370f9968a575f2d7495007e21bc",
+      "bytes": 269916
+    },
+    {
+      "source_path": "output/L2HL_1/plots/subset_variability.pdf",
+      "path": "plots/subset_variability.pdf",
+      "sha256": "3ecb45aa5026815abb4e3b0791ede7def470f71c7fb6bb43a52bba0ef6bd191c",
+      "bytes": 31784
+    },
+    {
+      "source_path": "output/L2HL_1/plots/subset_variability.png",
+      "path": "plots/subset_variability.png",
+      "sha256": "4b2abf41b82fe0b87d90d1245403ced6b562af6519931564c5a47b3974676d33",
+      "bytes": 504593
+    },
+    {
+      "source_path": "output/L2HL_1/valid-learn-curve.png",
+      "path": "valid-learn-curve.png",
+      "sha256": "2bb29ab678761341d0669fdfe8ac66112d0b3f65c5e4143c27db5a97bfdec853",
+      "bytes": 40628
+    }
+  ]
+}

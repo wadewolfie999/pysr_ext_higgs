@@ -1,0 +1,801 @@
+{
+  "version": "0.1.0",
+  "status": "verified local review candidate; not committed or published",
+  "verified_at_utc": "2026-10-26T00:11:33.307384+00:00",
+  "client_date": "2026-10-26",
+  "versions": {
+    "code_release": {
+      "previous": {
+        "main.py": "5.5.0",
+        "sr.py": "5.3.1",
+        "plot_sr.py": "5.3.1"
+      },
+      "new": "5.6.0",
+      "reason": "Substantial compatible workflow, provenance and saved-inspection improvements"
+    },
+    "notebook": {
+      "previous": "4.5.1",
+      "new": "4.6.0"
+    },
+    "README": {
+      "previous": "0.4.2",
+      "new": "0.5.0"
+    },
+    "wiki/Home.md": {
+      "previous": "0.2.3",
+      "new": "0.3.0"
+    },
+    "wiki/Project-Registry.md": {
+      "previous": "0.2.2",
+      "new": "0.3.0"
+    },
+    "new_deliverables": "0.1.0",
+    "copied_export_labels": "Preserved unchanged"
+  },
+  "environment": {
+    "python": "3.13.7",
+    "pysr": "2.7.0",
+    "numpy": "2.5.4",
+    "pandas": "3.0.6",
+    "scikit-learn": "1.9.1",
+    "sympy": "1.14.0"
+  },
+  "backup": {
+    "path": ".temp/research-cleanup-v0.1.0/backup-v0.1.0",
+    "manifest": "backup-manifest-v0.1.0.json",
+    "manifest_sha256": "1cfd1fdb82c7fcef25a5d52ec495ab7e3e5c0d3c58f7d297c37422d270a6b36f",
+    "file_count": 147,
+    "bytes": 84536607,
+    "all_backup_hashes_reverified": true,
+    "raw_output_evidence_unchanged": true
+  },
+  "tests": {
+    "command": "PYTHONDONTWRITEBYTECODE=1 MPLBACKEND=Agg MPLCONFIGDIR=/private/tmp/pysr-blueprint-mpl .venv/bin/python -m unittest discover -s tests -v",
+    "exit_code": 0,
+    "count": 17,
+    "log": ".temp/research-cleanup-v0.1.0/tests-final.log",
+    "portable_isolation": "Script and all default notebook code cells executed with output/ absent and PySR/Julia imports blocked; curated bytes unchanged",
+    "curve_fitting": "Stub estimators only; no real search"
+  },
+  "evidence": {
+    "retained_expressions": [
+      "EXP_6_072",
+      "ELEM_7_0198",
+      "L2HL_1_050",
+      "L2HL_2_0235"
+    ],
+    "unchanged_copied_artifacts": 54,
+    "exact_recorded_test_auc_matches": 4,
+    "exact_exported_prediction_matches": 4,
+    "parent_runs_preserved": 4,
+    "diagnostic_child_runs_preserved": 16,
+    "withdrawn_published_expressions": 18,
+    "preexisting_result_file_deletions_preserved": 223,
+    "unchanged_functions": [
+      "do_split",
+      "top_three_sort",
+      "run_id_ledger"
+    ],
+    "pysr_search_parameters_unchanged": true
+  },
+  "independent_review": {
+    "completed": true,
+    "resolved_findings": [
+      "Reject reordered pandas training and validation labels before fitting or writing",
+      "Record explicit caller split seed and weight policy, or unknown; main passes actual values"
+    ],
+    "regressions": "Both targeted findings reproduced failing first, then passed with the complete suite",
+    "deferred_findings": []
+  },
+  "visual_review": {
+    "preview_url": "http://127.0.0.1:59569/page/README.md",
+    "pages": [
+      "README",
+      "Wiki Home",
+      "Project Registry",
+      "Method and Limitations"
+    ],
+    "browser_viewport_width_px": 703,
+    "document_width_px": 703,
+    "registry_loaded_images": 18,
+    "broken_registry_anchors": 0,
+    "limitation": "Local Markdown preview; not an acceptance check of a published GitHub Wiki"
+  },
+  "git": {
+    "head": "35ff005c7933dda010142d07345ab18798a6bdc0",
+    "head_unchanged": true,
+    "only_staged_change": "D\t.run_num1_logger.csv",
+    "runtime_logger_exists_locally": true,
+    "runtime_logger_ignored_and_untracked": true,
+    "working_status_counts": {
+      " M": 8,
+      "D ": 1,
+      " D": 223,
+      "??": 66
+    },
+    "working_and_staged_diff_check_pass": true,
+    "commits_created": 0,
+    "branches_created": 0,
+    "pushes_or_publications": 0
+  },
+  "limitations": [
+    "Original generating commits and original training membership remain unverified",
+    "Historical numeric fitted-curve arrays were not serialized",
+    "Real future PySR fitting and fresh-machine installation were not exercised",
+    "New Wiki links target main for local preparation; publish assets and pin approved commit before Wiki publication"
+  ],
+  "review_inventory": {
+    "basis": "Current modified/new candidate files excluding this self-referential verification record",
+    "files": [
+      {
+        "path": ".gitignore",
+        "git_status": " M",
+        "sha256": "2a329d0d0e8eec5936411f6477e2c56de9603845dba4357964b01e33a75d97e2",
+        "bytes": 346
+      },
+      {
+        "path": ".run_num1_logger.csv",
+        "git_status": "D ",
+        "sha256": "657b9205e838353e87585dcb40e43f008dff0d3eb5a7fdd47e08f39a3b4b5c90",
+        "bytes": 1059
+      },
+      {
+        "path": "README.md",
+        "git_status": " M",
+        "sha256": "9fb585c40f053731cce7e0c63ab2bf260e6b45f9b8167f17b423731f6f8ad6ed",
+        "bytes": 6546
+      },
+      {
+        "path": "main.py",
+        "git_status": " M",
+        "sha256": "da543a9ddd6e310a831a3459485ae480481394e75e4a4b0a128cad46efafbe34",
+        "bytes": 6739
+      },
+      {
+        "path": "plot.ipynb",
+        "git_status": " M",
+        "sha256": "9d3c41333e0ea5940698794a964d0df776a91f1867a928b91e9c10447cbd2901",
+        "bytes": 12877
+      },
+      {
+        "path": "plot_sr.py",
+        "git_status": " M",
+        "sha256": "028c1efcbef8eeec38b4cc0c6b63bc8ba0bfcc8629c4222f9e273edcc4e9f1ef",
+        "bytes": 3130
+      },
+      {
+        "path": "sr.py",
+        "git_status": " M",
+        "sha256": "5d72a7e2a87b8b4543f5e6a5d176acb2fa8b430b5c5c496e9b07f31548b98c17",
+        "bytes": 27610
+      },
+      {
+        "path": "wiki/Home.md",
+        "git_status": " M",
+        "sha256": "0f06407188fdf3488f8484718adfc676069450f6d6dda5f5cfe687f4144e2915",
+        "bytes": 3005
+      },
+      {
+        "path": "wiki/Project-Registry.md",
+        "git_status": " M",
+        "sha256": "578a2d4eb24086522cafacda757771e3af9355e23701a757d1cf1bbb5baf8517",
+        "bytes": 18326
+      },
+      {
+        "path": "docs/research-cleanup-blueprint-v0.1.0.md",
+        "git_status": "??",
+        "sha256": "25f164fbcaa65d3bf94a55a22048dae4ddf055fb311fb34b4db1ed0edece6f95",
+        "bytes": 3483
+      },
+      {
+        "path": "results/ELEM_7_0198/expression.pdf",
+        "git_status": "??",
+        "sha256": "ed0dd1b3263ad6bd2feb6355bf0d6712fb4b00e41d31ab78c7285069817bc8e4",
+        "bytes": 98416
+      },
+      {
+        "path": "results/ELEM_7_0198/expression.tex",
+        "git_status": "??",
+        "sha256": "a2975aedd72d070e18d873b8257ba78a1746d1ec0ed7bf3e9e67d6c33d8d04fc",
+        "bytes": 2528
+      },
+      {
+        "path": "results/ELEM_7_0198/expression_lambda.py",
+        "git_status": "??",
+        "sha256": "ad18358aa09edba5105a2f6a915bdffe40be00af27337eabc8649a9a8b72b7b1",
+        "bytes": 1491
+      },
+      {
+        "path": "results/ELEM_7_0198/expression_sympy.txt",
+        "git_status": "??",
+        "sha256": "d8f10e7c392dcfa42d0feaf2443c4d27575074f8ee7d4d41deddf3b46af94ec1",
+        "bytes": 1261
+      },
+      {
+        "path": "results/ELEM_7_0198/hall_of_fame.csv",
+        "git_status": "??",
+        "sha256": "c57f9db842128016bba5a3f46e7f0332ed2f65e4c017ddbd07311345d7c60b81",
+        "bytes": 55271
+      },
+      {
+        "path": "results/ELEM_7_0198/manifest.json",
+        "git_status": "??",
+        "sha256": "95ab4d584325feeab56984571ff6f890168e98839d92e149b40d10945bb7b31d",
+        "bytes": 5602
+      },
+      {
+        "path": "results/ELEM_7_0198/plots/mass_plane.pdf",
+        "git_status": "??",
+        "sha256": "81a8d96f7bd2e85c64adb7e2f5dd0c2771ae6ef23cb5ad03548f0fa6e3aee842",
+        "bytes": 481934
+      },
+      {
+        "path": "results/ELEM_7_0198/plots/mass_plane.png",
+        "git_status": "??",
+        "sha256": "b608e29769a1cd45e384527ce367d052aeb1926f01ad18432415ef1111f262bb",
+        "bytes": 3444431
+      },
+      {
+        "path": "results/ELEM_7_0198/plots/mass_scan_1d.pdf",
+        "git_status": "??",
+        "sha256": "9fc3c00ab5dc2a6e73fb24161d289a34f8b2285e9ab38a4eb50ab0c9f82fd168",
+        "bytes": 23963
+      },
+      {
+        "path": "results/ELEM_7_0198/plots/mass_scan_1d.png",
+        "git_status": "??",
+        "sha256": "5d4579c863143bc7f09ab0066bb753f4dd809dc256ae8974c7496dd6cc31c3fe",
+        "bytes": 221517
+      },
+      {
+        "path": "results/ELEM_7_0198/plots/roc_curve.pdf",
+        "git_status": "??",
+        "sha256": "49be1c4bb4135237743588f13676c0d699ddb5f48ae60ec02ae9f35fd24cd509",
+        "bytes": 34478
+      },
+      {
+        "path": "results/ELEM_7_0198/plots/roc_curve.png",
+        "git_status": "??",
+        "sha256": "8d69e0de303737b404d353089df61015c2c4459b7344c3ba6f8f09e1e80e2231",
+        "bytes": 572323
+      },
+      {
+        "path": "results/ELEM_7_0198/plots/subset_variability.pdf",
+        "git_status": "??",
+        "sha256": "69baa4053de42383ae73c65ebd426e15356d91eb9b1e760bbaa6e76505e36ae8",
+        "bytes": 31320
+      },
+      {
+        "path": "results/ELEM_7_0198/plots/subset_variability.png",
+        "git_status": "??",
+        "sha256": "ea0997a183b09250951e857c04ecfee516c2bf61e44ecd85baed35f824b3ed92",
+        "bytes": 506810
+      },
+      {
+        "path": "results/EXP_6_072/expression.pdf",
+        "git_status": "??",
+        "sha256": "85a2f4f13f4b4c43ec7f3ba35d747a2d86fb15c85a4f840e7d998246b3933ae6",
+        "bytes": 86866
+      },
+      {
+        "path": "results/EXP_6_072/expression.tex",
+        "git_status": "??",
+        "sha256": "9dbdb99eab9d08fcacb8c45ce32457371d6931c0e8686ac666b56907043b6307",
+        "bytes": 1292
+      },
+      {
+        "path": "results/EXP_6_072/expression_lambda.py",
+        "git_status": "??",
+        "sha256": "a11684f1ab79c00901293b4ceb48a0ac99007117c37aae0e426caf48d2928340",
+        "bytes": 827
+      },
+      {
+        "path": "results/EXP_6_072/expression_sympy.txt",
+        "git_status": "??",
+        "sha256": "89d9a2e00e63f43fc50f6ccfa049fe87daf06adcf7e83cb743a86c6598dee4ec",
+        "bytes": 589
+      },
+      {
+        "path": "results/EXP_6_072/hall_of_fame.csv",
+        "git_status": "??",
+        "sha256": "1d4cc607500bffb984d2380184144d2862cc421ac1f033c5244b7ae402771ac0",
+        "bytes": 20436
+      },
+      {
+        "path": "results/EXP_6_072/manifest.json",
+        "git_status": "??",
+        "sha256": "ed39327d04b729e784f7c15094ff3e3c6bcf2b490537325ad62ba4865919efad",
+        "bytes": 5562
+      },
+      {
+        "path": "results/EXP_6_072/plots/mass_plane.pdf",
+        "git_status": "??",
+        "sha256": "0a70c3682b180d159d27b236be7b347d4299f6c5e73a45ad0f1f705558216200",
+        "bytes": 536513
+      },
+      {
+        "path": "results/EXP_6_072/plots/mass_plane.png",
+        "git_status": "??",
+        "sha256": "92b8b38df29c2ba60bcfb42474d1520cccdde951ca2cad28ffac51263de35677",
+        "bytes": 3642808
+      },
+      {
+        "path": "results/EXP_6_072/plots/mass_scan_1d.pdf",
+        "git_status": "??",
+        "sha256": "4b247af54ef296e710134cdeaea16e1f86a90978e007acf4cf0897cc89198a5b",
+        "bytes": 24486
+      },
+      {
+        "path": "results/EXP_6_072/plots/mass_scan_1d.png",
+        "git_status": "??",
+        "sha256": "332209f508f7d9bf71f99c652185a60333144c002aa77c8e8731b6f97146ffae",
+        "bytes": 319119
+      },
+      {
+        "path": "results/EXP_6_072/plots/roc_curve.pdf",
+        "git_status": "??",
+        "sha256": "e7a979a123edaf86b96064191478ce586b98dd37c4f69250d232251f0c04d2a4",
+        "bytes": 34980
+      },
+      {
+        "path": "results/EXP_6_072/plots/roc_curve.png",
+        "git_status": "??",
+        "sha256": "abbc0d6c1ebf086f3aa3d2a512def5aabb9b76e5d75a081fa0b00d6bc6186a78",
+        "bytes": 577628
+      },
+      {
+        "path": "results/EXP_6_072/plots/subset_variability.pdf",
+        "git_status": "??",
+        "sha256": "4e47f259275a22bbd1eed41a5bbad05afdbc76d9c41d0d48dc76d5cc3917ac6b",
+        "bytes": 31641
+      },
+      {
+        "path": "results/EXP_6_072/plots/subset_variability.png",
+        "git_status": "??",
+        "sha256": "5b53547fb5f34bbaf48c3595f7a9a3d1a7260837df2a088f1f058f5f139087fc",
+        "bytes": 506272
+      },
+      {
+        "path": "results/L2HL_1_050/expression.pdf",
+        "git_status": "??",
+        "sha256": "3e5fc3fa81c73c3270786c931a6bb74e270e88a5a4dbfa193530137ffdeb0d14",
+        "bytes": 85492
+      },
+      {
+        "path": "results/L2HL_1_050/expression.tex",
+        "git_status": "??",
+        "sha256": "40401709aca25f74f96d3666ab0dc2e02719653a8c0fcb2b23d71bcb304623cb",
+        "bytes": 919
+      },
+      {
+        "path": "results/L2HL_1_050/expression_lambda.py",
+        "git_status": "??",
+        "sha256": "0dba4765237235fa9e0dc891dce20a1ea0b64b8e648eeff1d1514fdc5aea945c",
+        "bytes": 630
+      },
+      {
+        "path": "results/L2HL_1_050/expression_sympy.txt",
+        "git_status": "??",
+        "sha256": "e48c30dbb5e093f8dc6e3a77bf05ffac373436d34443496ad6eb8581f9ade22e",
+        "bytes": 384
+      },
+      {
+        "path": "results/L2HL_1_050/hall_of_fame.csv",
+        "git_status": "??",
+        "sha256": "e6287a31a84f746754faa0a5a6f37901432c63f2c5563184c2cf9555991cd2f4",
+        "bytes": 8481
+      },
+      {
+        "path": "results/L2HL_1_050/manifest.json",
+        "git_status": "??",
+        "sha256": "b8e8d85e2543fb8f6c8cded51a636da99204732c847ba335013ac0922269b469",
+        "bytes": 9190
+      },
+      {
+        "path": "results/L2HL_1_050/plots/mass_plane.pdf",
+        "git_status": "??",
+        "sha256": "2dbed6a1c85de078533881e29f841d397ec1f32b2d137e84e628a21823bdd512",
+        "bytes": 557664
+      },
+      {
+        "path": "results/L2HL_1_050/plots/mass_plane.png",
+        "git_status": "??",
+        "sha256": "e95d4ec58b8400d3b7c4d58da3b6a8782cdbb9449c7877635b5c419351bcb3c5",
+        "bytes": 3684438
+      },
+      {
+        "path": "results/L2HL_1_050/plots/mass_scan_1d.pdf",
+        "git_status": "??",
+        "sha256": "2ad6fee84640d12171d6ad3bd2b1a958a65b36dd7ce2abfad15501832a45322a",
+        "bytes": 23675
+      },
+      {
+        "path": "results/L2HL_1_050/plots/mass_scan_1d.png",
+        "git_status": "??",
+        "sha256": "1a1cdd05e5da1e01be9e2e3b56f1f99e9ea90370f9968a575f2d7495007e21bc",
+        "bytes": 269916
+      },
+      {
+        "path": "results/L2HL_1_050/plots/roc_curve.pdf",
+        "git_status": "??",
+        "sha256": "6176643d8814ffac964344f729f2e148122c33d60ed1fb6a4a7e6a2f1df65087",
+        "bytes": 34374
+      },
+      {
+        "path": "results/L2HL_1_050/plots/roc_curve.png",
+        "git_status": "??",
+        "sha256": "d83b00a37493f3e257294cbeea9b160d5d6e0e42eb4424947257f77eb3ca6231",
+        "bytes": 569971
+      },
+      {
+        "path": "results/L2HL_1_050/plots/subset_variability.pdf",
+        "git_status": "??",
+        "sha256": "3ecb45aa5026815abb4e3b0791ede7def470f71c7fb6bb43a52bba0ef6bd191c",
+        "bytes": 31784
+      },
+      {
+        "path": "results/L2HL_1_050/plots/subset_variability.png",
+        "git_status": "??",
+        "sha256": "4b2abf41b82fe0b87d90d1245403ced6b562af6519931564c5a47b3974676d33",
+        "bytes": 504593
+      },
+      {
+        "path": "results/L2HL_1_050/valid-learn-curve.png",
+        "git_status": "??",
+        "sha256": "2bb29ab678761341d0669fdfe8ac66112d0b3f65c5e4143c27db5a97bfdec853",
+        "bytes": 40628
+      },
+      {
+        "path": "results/L2HL_2_0235/expression.pdf",
+        "git_status": "??",
+        "sha256": "1c15c8d84588e2a20e73e24a3ab32d22a00fa72109925654358745eb5005acb6",
+        "bytes": 99461
+      },
+      {
+        "path": "results/L2HL_2_0235/expression.tex",
+        "git_status": "??",
+        "sha256": "59123e23e730283f7d7d805400327677649f25f9d83f8b0e15f9bb45a26cb376",
+        "bytes": 3227
+      },
+      {
+        "path": "results/L2HL_2_0235/expression_lambda.py",
+        "git_status": "??",
+        "sha256": "b3d4674888e5fc498c6aa14fb8a1fbf52ba817a619de6d039439fd9c3c591d1a",
+        "bytes": 1832
+      },
+      {
+        "path": "results/L2HL_2_0235/expression_sympy.txt",
+        "git_status": "??",
+        "sha256": "8bcca12960addf94d679cc5fd52b536c9deb397e3f20705f9315fd821568800e",
+        "bytes": 1594
+      },
+      {
+        "path": "results/L2HL_2_0235/hall_of_fame.csv",
+        "git_status": "??",
+        "sha256": "d3daf39eab7290dfe497720b3bc725df808afab815d062490a80f69dc49c358b",
+        "bytes": 20421
+      },
+      {
+        "path": "results/L2HL_2_0235/manifest.json",
+        "git_status": "??",
+        "sha256": "426d5324211943f61ed7cce6df36c9e4fcb7e937500571a13578d2460be221a1",
+        "bytes": 9205
+      },
+      {
+        "path": "results/L2HL_2_0235/plots/mass_plane.pdf",
+        "git_status": "??",
+        "sha256": "f76d4185aee2f9eeae324c150a86e596ce43629ae7c5a0314151d6aa06e9c093",
+        "bytes": 554018
+      },
+      {
+        "path": "results/L2HL_2_0235/plots/mass_plane.png",
+        "git_status": "??",
+        "sha256": "2825a05cf27b6bdecdf3a76a5ff24240205716b943a029e9b2a175a70ea61a88",
+        "bytes": 3741390
+      },
+      {
+        "path": "results/L2HL_2_0235/plots/mass_scan_1d.pdf",
+        "git_status": "??",
+        "sha256": "b0b00cc782f4a5c4f561b84cdc15196dde07e1d1bf95e8423c06e79b5c84fab4",
+        "bytes": 24035
+      },
+      {
+        "path": "results/L2HL_2_0235/plots/mass_scan_1d.png",
+        "git_status": "??",
+        "sha256": "b76949cded95a9da2fb491e11c65aea16044d2a4dbfef7073da164c3e428ac3c",
+        "bytes": 252994
+      },
+      {
+        "path": "results/L2HL_2_0235/plots/roc_curve.pdf",
+        "git_status": "??",
+        "sha256": "5f4b9176558cfd05d066716c991a8d6d22a5f71924a141cf2d590d7a6ce2ad29",
+        "bytes": 37541
+      },
+      {
+        "path": "results/L2HL_2_0235/plots/roc_curve.png",
+        "git_status": "??",
+        "sha256": "0021c389b989a46286bf4b353d28c5728d3ebf630723480dbd73a78bf480b517",
+        "bytes": 562483
+      },
+      {
+        "path": "results/L2HL_2_0235/plots/subset_variability.pdf",
+        "git_status": "??",
+        "sha256": "abe64d45026d1c324f4b4346b646b5ee3234fe080bccb055d563b85992d9ac88",
+        "bytes": 32013
+      },
+      {
+        "path": "results/L2HL_2_0235/plots/subset_variability.png",
+        "git_status": "??",
+        "sha256": "6e2270ab364acfb478b3c361a3110ef32b789c39c949421e58e52c59127dfbd0",
+        "bytes": 516568
+      },
+      {
+        "path": "results/L2HL_2_0235/valid-learn-curve.png",
+        "git_status": "??",
+        "sha256": "0351c890dbf5338d5c6c343e2bfa990581a3f06e6425a439812f895759f2b547",
+        "bytes": 37917
+      },
+      {
+        "path": "results/current-runs-v0.1.0/README.md",
+        "git_status": "??",
+        "sha256": "59904ae58b5a084316d4fc0a0bfe909e78fae881166f3ca2041b04205f403ab4",
+        "bytes": 1080
+      },
+      {
+        "path": "results/current-runs-v0.1.0/current-reproduction-splits.json",
+        "git_status": "??",
+        "sha256": "356a373230399636f788d41fb5790642d85c963db46373cb17068bc77bbdf8f7",
+        "bytes": 346671
+      },
+      {
+        "path": "results/current-runs-v0.1.0/logger.csv",
+        "git_status": "??",
+        "sha256": "657b9205e838353e87585dcb40e43f008dff0d3eb5a7fdd47e08f39a3b4b5c90",
+        "bytes": 1059
+      },
+      {
+        "path": "results/current-runs-v0.1.0/manifest.json",
+        "git_status": "??",
+        "sha256": "8628dbba0bd5234310bc680066fc84be6e5363851a8d1505f4a46cca0ff79c21",
+        "bytes": 2342
+      },
+      {
+        "path": "tests/test_research_workflow.py",
+        "git_status": "??",
+        "sha256": "544dfa3a933538758284b26a5742f1448940503532adb947fc395a4330be842b",
+        "bytes": 21459
+      },
+      {
+        "path": "wiki/Method-and-Limitations.md",
+        "git_status": "??",
+        "sha256": "740638bc2ae3cb1d603ca5d98bb85c1ab01c93e97b145b51a0d080b425c7a52e",
+        "bytes": 6346
+      }
+    ],
+    "preexisting_deleted_result_files": [
+      "results/TEMP_10_0479/expression.pdf",
+      "results/TEMP_10_0479/expression.tex",
+      "results/TEMP_10_0479/expression_lambda.py",
+      "results/TEMP_10_0479/expression_sympy.txt",
+      "results/TEMP_10_0479/manifest.json",
+      "results/TEMP_10_0479/plots/mass_plane.pdf",
+      "results/TEMP_10_0479/plots/mass_plane.png",
+      "results/TEMP_10_0479/plots/mass_scan_1d.pdf",
+      "results/TEMP_10_0479/plots/mass_scan_1d.png",
+      "results/TEMP_10_0479/plots/roc_curve.pdf",
+      "results/TEMP_10_0479/plots/roc_curve.png",
+      "results/TEMP_10_0479/plots/subset_variability.pdf",
+      "results/TEMP_10_0479/plots/subset_variability.png",
+      "results/TEMP_11_071/expression.pdf",
+      "results/TEMP_11_071/expression.tex",
+      "results/TEMP_11_071/expression_lambda.py",
+      "results/TEMP_11_071/expression_sympy.txt",
+      "results/TEMP_11_071/manifest.json",
+      "results/TEMP_11_071/plots/mass_plane.pdf",
+      "results/TEMP_11_071/plots/mass_plane.png",
+      "results/TEMP_11_071/plots/mass_scan_1d.pdf",
+      "results/TEMP_11_071/plots/mass_scan_1d.png",
+      "results/TEMP_11_071/plots/roc_curve.pdf",
+      "results/TEMP_11_071/plots/roc_curve.png",
+      "results/TEMP_11_071/plots/subset_variability.pdf",
+      "results/TEMP_11_071/plots/subset_variability.png",
+      "results/TEMP_12_064/expression.pdf",
+      "results/TEMP_12_064/expression.tex",
+      "results/TEMP_12_064/expression_lambda.py",
+      "results/TEMP_12_064/expression_sympy.txt",
+      "results/TEMP_12_064/manifest.json",
+      "results/TEMP_12_064/plots/mass_plane.pdf",
+      "results/TEMP_12_064/plots/mass_plane.png",
+      "results/TEMP_12_064/plots/mass_scan_1d.pdf",
+      "results/TEMP_12_064/plots/mass_scan_1d.png",
+      "results/TEMP_12_064/plots/roc_curve.pdf",
+      "results/TEMP_12_064/plots/roc_curve.png",
+      "results/TEMP_12_064/plots/subset_variability.pdf",
+      "results/TEMP_12_064/plots/subset_variability.png",
+      "results/TEMP_13_068/expression.pdf",
+      "results/TEMP_13_068/expression.tex",
+      "results/TEMP_13_068/expression_lambda.py",
+      "results/TEMP_13_068/expression_sympy.txt",
+      "results/TEMP_13_068/manifest.json",
+      "results/TEMP_13_068/plots/mass_plane.pdf",
+      "results/TEMP_13_068/plots/mass_plane.png",
+      "results/TEMP_13_068/plots/mass_scan_1d.pdf",
+      "results/TEMP_13_068/plots/mass_scan_1d.png",
+      "results/TEMP_13_068/plots/roc_curve.pdf",
+      "results/TEMP_13_068/plots/roc_curve.png",
+      "results/TEMP_13_068/plots/subset_variability.pdf",
+      "results/TEMP_13_068/plots/subset_variability.png",
+      "results/TEMP_14_044/expression.pdf",
+      "results/TEMP_14_044/expression.tex",
+      "results/TEMP_14_044/expression_lambda.py",
+      "results/TEMP_14_044/expression_sympy.txt",
+      "results/TEMP_14_044/manifest.json",
+      "results/TEMP_14_044/plots/mass_plane.pdf",
+      "results/TEMP_14_044/plots/mass_plane.png",
+      "results/TEMP_14_044/plots/mass_scan_1d.pdf",
+      "results/TEMP_14_044/plots/mass_scan_1d.png",
+      "results/TEMP_14_044/plots/roc_curve.pdf",
+      "results/TEMP_14_044/plots/roc_curve.png",
+      "results/TEMP_14_044/plots/subset_variability.pdf",
+      "results/TEMP_14_044/plots/subset_variability.png",
+      "results/TEMP_15_068/expression.pdf",
+      "results/TEMP_15_068/expression.tex",
+      "results/TEMP_15_068/expression_lambda.py",
+      "results/TEMP_15_068/expression_sympy.txt",
+      "results/TEMP_15_068/manifest.json",
+      "results/TEMP_15_068/plots/mass_plane.pdf",
+      "results/TEMP_15_068/plots/mass_plane.png",
+      "results/TEMP_15_068/plots/mass_scan_1d.pdf",
+      "results/TEMP_15_068/plots/mass_scan_1d.png",
+      "results/TEMP_15_068/plots/roc_curve.pdf",
+      "results/TEMP_15_068/plots/roc_curve.png",
+      "results/TEMP_15_068/plots/subset_variability.pdf",
+      "results/TEMP_15_068/plots/subset_variability.png",
+      "results/TEMP_16_079/expression.pdf",
+      "results/TEMP_16_079/expression.tex",
+      "results/TEMP_16_079/expression_lambda.py",
+      "results/TEMP_16_079/expression_sympy.txt",
+      "results/TEMP_16_079/manifest.json",
+      "results/TEMP_16_079/plots/mass_plane.pdf",
+      "results/TEMP_16_079/plots/mass_plane.png",
+      "results/TEMP_16_079/plots/mass_scan_1d.pdf",
+      "results/TEMP_16_079/plots/mass_scan_1d.png",
+      "results/TEMP_16_079/plots/roc_curve.pdf",
+      "results/TEMP_16_079/plots/roc_curve.png",
+      "results/TEMP_16_079/plots/subset_variability.pdf",
+      "results/TEMP_16_079/plots/subset_variability.png",
+      "results/TEMP_17_052/expression.pdf",
+      "results/TEMP_17_052/expression.tex",
+      "results/TEMP_17_052/expression_lambda.py",
+      "results/TEMP_17_052/expression_sympy.txt",
+      "results/TEMP_17_052/manifest.json",
+      "results/TEMP_17_052/plots/mass_plane.pdf",
+      "results/TEMP_17_052/plots/mass_plane.png",
+      "results/TEMP_17_052/plots/mass_scan_1d.pdf",
+      "results/TEMP_17_052/plots/mass_scan_1d.png",
+      "results/TEMP_17_052/plots/roc_curve.pdf",
+      "results/TEMP_17_052/plots/roc_curve.png",
+      "results/TEMP_17_052/plots/subset_variability.pdf",
+      "results/TEMP_17_052/plots/subset_variability.png",
+      "results/TEMP_18_064/expression.pdf",
+      "results/TEMP_18_064/expression.tex",
+      "results/TEMP_18_064/expression_lambda.py",
+      "results/TEMP_18_064/expression_sympy.txt",
+      "results/TEMP_18_064/manifest.json",
+      "results/TEMP_18_064/plots/mass_plane.pdf",
+      "results/TEMP_18_064/plots/mass_plane.png",
+      "results/TEMP_18_064/plots/mass_scan_1d.pdf",
+      "results/TEMP_18_064/plots/mass_scan_1d.png",
+      "results/TEMP_18_064/plots/roc_curve.pdf",
+      "results/TEMP_18_064/plots/roc_curve.png",
+      "results/TEMP_18_064/plots/subset_variability.pdf",
+      "results/TEMP_18_064/plots/subset_variability.png",
+      "results/TEMP_19_044/expression.pdf",
+      "results/TEMP_19_044/expression.tex",
+      "results/TEMP_19_044/expression_lambda.py",
+      "results/TEMP_19_044/expression_sympy.txt",
+      "results/TEMP_19_044/manifest.json",
+      "results/TEMP_19_044/plots/mass_plane.pdf",
+      "results/TEMP_19_044/plots/mass_plane.png",
+      "results/TEMP_19_044/plots/mass_scan_1d.pdf",
+      "results/TEMP_19_044/plots/mass_scan_1d.png",
+      "results/TEMP_19_044/plots/roc_curve.pdf",
+      "results/TEMP_19_044/plots/roc_curve.png",
+      "results/TEMP_19_044/plots/subset_variability.pdf",
+      "results/TEMP_19_044/plots/subset_variability.png",
+      "results/TEMP_1_0202/expression.pdf",
+      "results/TEMP_1_0202/expression.tex",
+      "results/TEMP_1_0202/expression_lambda.py",
+      "results/TEMP_1_0202/expression_sympy.txt",
+      "results/TEMP_1_0202/manifest.json",
+      "results/TEMP_2_070/expression.pdf",
+      "results/TEMP_2_070/expression.tex",
+      "results/TEMP_2_070/expression_lambda.py",
+      "results/TEMP_2_070/expression_sympy.txt",
+      "results/TEMP_2_070/manifest.json",
+      "results/TEMP_3_065/expression.pdf",
+      "results/TEMP_3_065/expression.tex",
+      "results/TEMP_3_065/expression_lambda.py",
+      "results/TEMP_3_065/expression_sympy.txt",
+      "results/TEMP_3_065/manifest.json",
+      "results/TEMP_3_065/plots/mass_plane.pdf",
+      "results/TEMP_3_065/plots/mass_plane.png",
+      "results/TEMP_3_065/plots/mass_scan_1d.pdf",
+      "results/TEMP_3_065/plots/mass_scan_1d.png",
+      "results/TEMP_3_065/plots/roc_curve.pdf",
+      "results/TEMP_3_065/plots/roc_curve.png",
+      "results/TEMP_3_065/plots/subset_variability.pdf",
+      "results/TEMP_3_065/plots/subset_variability.png",
+      "results/TEMP_4_0141/expression.pdf",
+      "results/TEMP_4_0141/expression.tex",
+      "results/TEMP_4_0141/expression_lambda.py",
+      "results/TEMP_4_0141/expression_sympy.txt",
+      "results/TEMP_4_0141/manifest.json",
+      "results/TEMP_4_0141/plots/mass_plane.pdf",
+      "results/TEMP_4_0141/plots/mass_plane.png",
+      "results/TEMP_4_0141/plots/mass_scan_1d.pdf",
+      "results/TEMP_4_0141/plots/mass_scan_1d.png",
+      "results/TEMP_4_0141/plots/roc_curve.pdf",
+      "results/TEMP_4_0141/plots/roc_curve.png",
+      "results/TEMP_4_0141/plots/subset_variability.pdf",
+      "results/TEMP_4_0141/plots/subset_variability.png",
+      "results/TEMP_5_059/expression.pdf",
+      "results/TEMP_5_059/expression.tex",
+      "results/TEMP_5_059/expression_lambda.py",
+      "results/TEMP_5_059/expression_sympy.txt",
+      "results/TEMP_5_059/manifest.json",
+      "results/TEMP_5_059/plots/mass_plane.pdf",
+      "results/TEMP_5_059/plots/mass_plane.png",
+      "results/TEMP_5_059/plots/mass_scan_1d.pdf",
+      "results/TEMP_5_059/plots/mass_scan_1d.png",
+      "results/TEMP_5_059/plots/roc_curve.pdf",
+      "results/TEMP_5_059/plots/roc_curve.png",
+      "results/TEMP_5_059/plots/subset_variability.pdf",
+      "results/TEMP_5_059/plots/subset_variability.png",
+      "results/TEMP_6_0138/expression.pdf",
+      "results/TEMP_6_0138/expression.tex",
+      "results/TEMP_6_0138/expression_lambda.py",
+      "results/TEMP_6_0138/expression_sympy.txt",
+      "results/TEMP_6_0138/manifest.json",
+      "results/TEMP_6_0138/plots/mass_plane.pdf",
+      "results/TEMP_6_0138/plots/mass_plane.png",
+      "results/TEMP_6_0138/plots/mass_scan_1d.pdf",
+      "results/TEMP_6_0138/plots/mass_scan_1d.png",
+      "results/TEMP_6_0138/plots/roc_curve.pdf",
+      "results/TEMP_6_0138/plots/roc_curve.png",
+      "results/TEMP_6_0138/plots/subset_variability.pdf",
+      "results/TEMP_6_0138/plots/subset_variability.png",
+      "results/TEMP_6_038/expression.pdf",
+      "results/TEMP_6_038/expression.tex",
+      "results/TEMP_6_038/expression_lambda.py",
+      "results/TEMP_6_038/expression_sympy.txt",
+      "results/TEMP_6_038/manifest.json",
+      "results/TEMP_6_038/plots/mass_plane.pdf",
+      "results/TEMP_6_038/plots/mass_plane.png",
+      "results/TEMP_6_038/plots/mass_scan_1d.pdf",
+      "results/TEMP_6_038/plots/mass_scan_1d.png",
+      "results/TEMP_6_038/plots/roc_curve.pdf",
+      "results/TEMP_6_038/plots/roc_curve.png",
+      "results/TEMP_6_038/plots/subset_variability.pdf",
+      "results/TEMP_6_038/plots/subset_variability.png",
+      "results/TEMP_7_082/expression.pdf",
+      "results/TEMP_7_082/expression.tex",
+      "results/TEMP_7_082/expression_lambda.py",
+      "results/TEMP_7_082/expression_sympy.txt",
+      "results/TEMP_7_082/manifest.json",
+      "results/TEMP_7_082/plots/mass_plane.pdf",
+      "results/TEMP_7_082/plots/mass_plane.png",
+      "results/TEMP_7_082/plots/mass_scan_1d.pdf",
+      "results/TEMP_7_082/plots/mass_scan_1d.png",
+      "results/TEMP_7_082/plots/roc_curve.pdf",
+      "results/TEMP_7_082/plots/roc_curve.png",
+      "results/TEMP_7_082/plots/subset_variability.pdf",
+      "results/TEMP_7_082/plots/subset_variability.png",
+      "results/hp-run-num1-v0.1.0/README.md",
+      "results/hp-run-num1-v0.1.0/logger.csv",
+      "results/hp-run-num1-v0.1.0/manifest.json",
+      "results/hp-run-num1-v0.1.0/publication-v0.1.0.json",
+      "results/hp-run-num1-v0.1.0/verification.json"
+    ]
+  }
+}

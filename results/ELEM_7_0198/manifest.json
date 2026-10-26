@@ -1,0 +1,160 @@
+{
+  "version": "0.1.0",
+  "expression_id": "ELEM_7_0198",
+  "run_id": "ELEM_7",
+  "snapshot_kind": "unchanged_saved_artifacts_with_separate_current_numerical_reproduction",
+  "features": [
+    "mchi1",
+    "mchipm1"
+  ],
+  "source_path_base": "repository root",
+  "asset_path_base": "directory containing this manifest",
+  "recorded_winner": {
+    "Expression_ID": "ELEM_7_0198",
+    "Complexity": "198",
+    "Loss": "0.2421791821480971",
+    "test_auc": "0.9644941298130999",
+    "SymPy": "output/ELEM_7/ELEM_7_0198/expression_sympy.txt",
+    "Lambda": "output/ELEM_7/ELEM_7_0198/expression_lambda.py",
+    "TeX": "output/ELEM_7/ELEM_7_0198/expression.tex",
+    "PDF": "output/ELEM_7/ELEM_7_0198/expression.pdf",
+    "validation_learning_curve": ""
+  },
+  "source_export_version_label": "5.3.1",
+  "saved_configuration": {
+    "model_selection": "best",
+    "niterations": 1000,
+    "population_size": 100,
+    "maxsize": 280,
+    "timeout_in_seconds": 3600,
+    "elementwise_loss": "LogitMarginLoss()",
+    "parsimony": 1e-05,
+    "parallelism": "multithreading",
+    "random_state": null,
+    "deterministic": false
+  },
+  "configuration_evidence": "simple literals inspected in saved pickle opcodes; checkpoint not executed",
+  "source_checkpoint_sha256": "e408d578ed82481e1d90d2a4ff3380022dc5b37a76f1c8ef9b3091c9e382b522",
+  "historical_provenance": {
+    "generating_commit": null,
+    "original_dataset_fingerprint": null,
+    "original_split_membership": null,
+    "complete_selection_invocation": null
+  },
+  "current_reproduction": {
+    "dataset_repository_path": "data/masses_exclusions.csv",
+    "dataset_sha256": "c8c8063c84a10143b6369f444a037ef5695ff13f5eef6f9bf00dc86880c3937a",
+    "split_seed": 42,
+    "split_sizes": {
+      "train": 7368,
+      "validation": 1228,
+      "test": 3684,
+      "total": 12280
+    },
+    "metrics": {
+      "train_auc": 0.9631089813491995,
+      "val_auc": 0.9763437726317277,
+      "test_auc": 0.9644941298130999,
+      "total_auc": 0.9648159331081483
+    },
+    "split_record": "../current-runs-v0.1.0/current-reproduction-splits.json",
+    "note": "Current reconstruction matches the recorded test AUC; original membership is unverified."
+  },
+  "selection_metric": "test_auc",
+  "test_auc_role": "selection score, not independent final-test performance",
+  "diagnostics": {
+    "fixed_expression_subsets": {
+      "refitting": false,
+      "subsets": 6,
+      "dataset": "validation"
+    },
+    "refitted_curves": {
+      "available": false,
+      "path": null,
+      "historical_numeric_tables_available": false,
+      "child_model_selection": "PySR model_selection='best'; separate from parent test-AUC winner",
+      "split_subset_seed": null,
+      "child_runs": []
+    }
+  },
+  "files": [
+    {
+      "source_path": "output/ELEM_7/ELEM_7_0198/expression_sympy.txt",
+      "path": "expression_sympy.txt",
+      "sha256": "d8f10e7c392dcfa42d0feaf2443c4d27575074f8ee7d4d41deddf3b46af94ec1",
+      "bytes": 1261
+    },
+    {
+      "source_path": "output/ELEM_7/ELEM_7_0198/expression_lambda.py",
+      "path": "expression_lambda.py",
+      "sha256": "ad18358aa09edba5105a2f6a915bdffe40be00af27337eabc8649a9a8b72b7b1",
+      "bytes": 1491
+    },
+    {
+      "source_path": "output/ELEM_7/ELEM_7_0198/expression.tex",
+      "path": "expression.tex",
+      "sha256": "a2975aedd72d070e18d873b8257ba78a1746d1ec0ed7bf3e9e67d6c33d8d04fc",
+      "bytes": 2528
+    },
+    {
+      "source_path": "output/ELEM_7/ELEM_7_0198/expression.pdf",
+      "path": "expression.pdf",
+      "sha256": "ed0dd1b3263ad6bd2feb6355bf0d6712fb4b00e41d31ab78c7285069817bc8e4",
+      "bytes": 98416
+    },
+    {
+      "source_path": "output/ELEM_7/hall_of_fame.csv",
+      "path": "hall_of_fame.csv",
+      "sha256": "c57f9db842128016bba5a3f46e7f0332ed2f65e4c017ddbd07311345d7c60b81",
+      "bytes": 55271
+    },
+    {
+      "source_path": "output/ELEM_7/plots/roc_curve.pdf",
+      "path": "plots/roc_curve.pdf",
+      "sha256": "49be1c4bb4135237743588f13676c0d699ddb5f48ae60ec02ae9f35fd24cd509",
+      "bytes": 34478
+    },
+    {
+      "source_path": "output/ELEM_7/plots/roc_curve.png",
+      "path": "plots/roc_curve.png",
+      "sha256": "8d69e0de303737b404d353089df61015c2c4459b7344c3ba6f8f09e1e80e2231",
+      "bytes": 572323
+    },
+    {
+      "source_path": "output/ELEM_7/plots/mass_plane.pdf",
+      "path": "plots/mass_plane.pdf",
+      "sha256": "81a8d96f7bd2e85c64adb7e2f5dd0c2771ae6ef23cb5ad03548f0fa6e3aee842",
+      "bytes": 481934
+    },
+    {
+      "source_path": "output/ELEM_7/plots/mass_plane.png",
+      "path": "plots/mass_plane.png",
+      "sha256": "b608e29769a1cd45e384527ce367d052aeb1926f01ad18432415ef1111f262bb",
+      "bytes": 3444431
+    },
+    {
+      "source_path": "output/ELEM_7/plots/mass_scan_1d.pdf",
+      "path": "plots/mass_scan_1d.pdf",
+      "sha256": "9fc3c00ab5dc2a6e73fb24161d289a34f8b2285e9ab38a4eb50ab0c9f82fd168",
+      "bytes": 23963
+    },
+    {
+      "source_path": "output/ELEM_7/plots/mass_scan_1d.png",
+      "path": "plots/mass_scan_1d.png",
+      "sha256": "5d4579c863143bc7f09ab0066bb753f4dd809dc256ae8974c7496dd6cc31c3fe",
+      "bytes": 221517
+    },
+    {
+      "source_path": "output/ELEM_7/plots/subset_variability.pdf",
+      "path": "plots/subset_variability.pdf",
+      "sha256": "69baa4053de42383ae73c65ebd426e15356d91eb9b1e760bbaa6e76505e36ae8",
+      "bytes": 31320
+    },
+    {
+      "source_path": "output/ELEM_7/plots/subset_variability.png",
+      "path": "plots/subset_variability.png",
+      "sha256": "ea0997a183b09250951e857c04ecfee516c2bf61e44ecd85baed35f824b3ed92",
+      "bytes": 506810
+    }
+  ]
+}

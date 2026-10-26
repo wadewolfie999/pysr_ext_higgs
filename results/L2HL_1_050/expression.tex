@@ -1,0 +1,11 @@
+\documentclass{article}
+\usepackage[a4paper,landscape,margin=15mm]{geometry}
+\usepackage{amsmath,graphicx}
+\newcommand{\exprline}[1]{\par\noindent\begingroup\setbox0=\hbox{$\displaystyle #1$}\ifdim\wd0>\linewidth\resizebox{\linewidth}{!}{\box0}\else\box0\fi\endgroup\par\medskip}
+\begin{document}
+\noindent\texttt{L2HL\_1\_050}\\
+Version 5.3.1\\
+\exprline{a_{0} = \left(mchi_{1} + mchipm_{1} + mchipm_{1} - -1.3238102377649212\right) 0.0005938908358292764 \frac{1}{- (mchi_{1} - mchipm_{1}) - 0.15810562309423207} \frac{1}{- (mchi_{1} - mchipm_{1}) - 0.15810562309423207}}
+\exprline{a_{1} = mchi_{1} mchi_{1} \left(-0.753678714667031\right) \frac{1}{mchipm_{1} \left(mchi_{1} + \frac{a_{0} + mchi_{1}}{-0.48181628950593397}\right)}}
+\exprline{s = mchipm_{1} \cdot 0.0033950534040495324 + \left(a_{1} - 1.289952325711101\right)^{3} - 1.3238102377649212 + \frac{mchi_{1} - 0.8979487806648314}{mchipm_{1}}}
+\end{document}

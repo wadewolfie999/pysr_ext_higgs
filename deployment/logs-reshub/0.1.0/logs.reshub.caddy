@@ -1,0 +1,9 @@
+# Public curated-artifact endpoint v0.1.0
+# Arvancloud manages visitor HTTPS and redirects; this is its HTTP origin.
+http://logs.reshub.lol {
+    root * /var/lib/reshub-logs
+    header X-Content-Type-Options nosniff
+    @unsupported not method GET HEAD
+    respond @unsupported 405
+    file_server browse
+}

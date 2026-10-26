@@ -1,0 +1,61 @@
+{
+  "version": "0.1.0",
+  "logger_schema_version": "0.1.0",
+  "status": "prepared locally; not published",
+  "source_logger_sha256": "3c07c4bda3438de61d1de4a1a7491cbc4edd9e13c74ed5e407e003dbc2366beb",
+  "logger_sha256": "657b9205e838353e87585dcb40e43f008dff0d3eb5a7fdd47e08f39a3b4b5c90",
+  "logger_source_path_base": "repository root; source paths are provenance, not portable downloads",
+  "asset_path_base": "directory containing each manifest",
+  "entries": [
+    {
+      "expression_id": "EXP_6_072",
+      "manifest": "../EXP_6_072/manifest.json",
+      "manifest_sha256": "ed39327d04b729e784f7c15094ff3e3c6bcf2b490537325ad62ba4865919efad"
+    },
+    {
+      "expression_id": "ELEM_7_0198",
+      "manifest": "../ELEM_7_0198/manifest.json",
+      "manifest_sha256": "95ab4d584325feeab56984571ff6f890168e98839d92e149b40d10945bb7b31d"
+    },
+    {
+      "expression_id": "L2HL_1_050",
+      "manifest": "../L2HL_1_050/manifest.json",
+      "manifest_sha256": "b8e8d85e2543fb8f6c8cded51a636da99204732c847ba335013ac0922269b469"
+    },
+    {
+      "expression_id": "L2HL_2_0235",
+      "manifest": "../L2HL_2_0235/manifest.json",
+      "manifest_sha256": "426d5324211943f61ed7cce6df36c9e4fcb7e937500571a13578d2460be221a1"
+    }
+  ],
+  "preferred_loss_by_owner": "L2HingeLoss()",
+  "selection_metric": "test_auc",
+  "current_reproduction_splits_sha256": "356a373230399636f788d41fb5790642d85c963db46373cb17068bc77bbdf8f7",
+  "withdrawal": {
+    "scope": "all earlier results outside the four retained expression IDs",
+    "published_expression_ids": [
+      "TEMP_10_0479",
+      "TEMP_11_071",
+      "TEMP_12_064",
+      "TEMP_13_068",
+      "TEMP_14_044",
+      "TEMP_15_068",
+      "TEMP_16_079",
+      "TEMP_17_052",
+      "TEMP_18_064",
+      "TEMP_19_044",
+      "TEMP_1_0202",
+      "TEMP_2_070",
+      "TEMP_3_065",
+      "TEMP_4_0141",
+      "TEMP_5_059",
+      "TEMP_6_0138",
+      "TEMP_6_038",
+      "TEMP_7_082"
+    ],
+    "already_deleted_tracked_files": 223,
+    "reason_attribution": "Owner withdrew earlier outputs after identifying an unintended default regression objective and choosing margin classification losses; per-run causes are not fully authenticated.",
+    "historical_catalogue_commit": "dc77738e4ac520701ca35ac218a2bb8dbbd63284",
+    "historical_snapshot_commit": "036ab03beca29d1d2cfe9e8466d49123b03dfa77"
+  }
+}

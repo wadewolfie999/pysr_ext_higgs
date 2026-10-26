@@ -1,0 +1,5 @@
+Expression_ID,Complexity,Loss,test_auc,SymPy,Lambda,TeX,PDF,validation_learning_curve
+EXP_6_072,72,0.2468033104265783,0.9637619186481049,output/EXP_6/EXP_6_072/expression_sympy.txt,output/EXP_6/EXP_6_072/expression_lambda.py,output/EXP_6/EXP_6_072/expression.tex,output/EXP_6/EXP_6_072/expression.pdf,
+ELEM_7_0198,198,0.2421791821480971,0.9644941298130999,output/ELEM_7/ELEM_7_0198/expression_sympy.txt,output/ELEM_7/ELEM_7_0198/expression_lambda.py,output/ELEM_7/ELEM_7_0198/expression.tex,output/ELEM_7/ELEM_7_0198/expression.pdf,
+L2HL_1_050,50,0.3425168330019069,0.9615986120334543,output/L2HL_1/L2HL_1_050/expression_sympy.txt,output/L2HL_1/L2HL_1_050/expression_lambda.py,output/L2HL_1/L2HL_1_050/expression.tex,output/L2HL_1/L2HL_1_050/expression.pdf,output/L2HL_1/valid-learn-curve.png
+L2HL_2_0235,235,0.3923035167578615,0.9442093320165948,output/L2HL_2/L2HL_2_0235/expression_sympy.txt,output/L2HL_2/L2HL_2_0235/expression_lambda.py,output/L2HL_2/L2HL_2_0235/expression.tex,output/L2HL_2/L2HL_2_0235/expression.pdf,output/L2HL_2/valid-learn-curve.png

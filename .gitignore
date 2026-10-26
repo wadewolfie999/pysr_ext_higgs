@@ -18,10 +18,16 @@ data/auc/*
 data/Ht.csv
 data/masses_exclusions2.csv
 notebooks/*
-docs/
+docs/*
+!docs/research-cleanup-blueprint-v0.1.0.md
+!docs/research-cleanup-verification-v0.1.0.json
 *.env
 *.run_id_counter
 *.log
-tests/
 test/
+.run_num1_logger.csv
 
+# Public artifact cache workflow v0.1.0; pinned checksums remain tracked.
+results/**/*.png
+results/**/*.pdf
+results/**/*.part

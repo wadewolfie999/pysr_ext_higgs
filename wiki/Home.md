@@ -1,46 +1,30 @@
-# Welcome to the `pysr_ext_higgs` Wiki
+# PySR classification research
 
-*Based on the [PySR paper](https://arxiv.org/abs/2305.01582).*
+**Wiki revision v0.4.1 · Code release v5.7.0 · Updated 2026-10-26.** This catalogue contains the four retained expressions and supersedes the earlier results catalogue.
 
-This Wiki documents symbolic-regression classification experiments using PySR in the extended-Higgs sector of BSM models, specifically the Inert Doublet Model (IDM).
+Symbolic regression learns an explicit raw score from the mass features `mchi1` and `mchipm1`, in GeV, for the dataset's binary reference labels in `exclusion`.
 
-**[Browse recorded results](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry)** to inspect a selected expression, its recorded figures, and downloadable files. The catalogue now includes 17 expressions from the HP batch and the preserved historical `TEMP_6_038` snapshot.
+**Earlier results withdrawn.** The owner has withdrawn every result outside the four retained expression IDs. Earlier published artifacts remain in Git history: [17-expression HP catalogue](https://github.com/wadewolfie999/pysr_ext_higgs/tree/dc77738e4ac520701ca35ac218a2bb8dbbd63284/results) and [historical TEMP_6_038 snapshot](https://github.com/wadewolfie999/pysr_ext_higgs/tree/036ab03beca29d1d2cfe9e8466d49123b03dfa77/results/TEMP_6_038).
 
-The catalogue distinguishes recorded measurements from missing historical provenance. Publishing a snapshot does not establish independent predictive performance.
-
-## Featured HP expressions
-
-- [TEMP_4_0141](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#user-content-temp_4_0141): highest recorded test AUC in this batch, **0.963580**, complexity **141**.
-- [TEMP_19_044](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#user-content-temp_19_044): simpler comparison, recorded test AUC **0.963532**, complexity **44**.
-- [Historical TEMP_6_038](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#user-content-temp_6_038): preserved separately from `output/TEMP_6/`.
-
-The inspected v5.3.0 pipeline ranks candidate expressions by `test_auc`; that score is part of selection and is not an untouched final-test estimate. Total AUC is descriptive. Saved validation-subset figures reuse one fixed expression across six subsets, with no refitting. The SD band is not a confidence interval. Figure labels remain as recorded; other full-precision split AUCs are not supplied by this logger.
+The owner reports that an omitted `elementwise_loss` left earlier work using PySR's default squared-error objective, rather than the intended margin-classification objective. This is the owner's reason for withdrawal; the cause has not been authenticated separately for every historical run. Negative raw scores alone do not falsify a classifier's ranking. `L2HingeLoss()` is the owner's preferred loss for current work, not a demonstrated statistically superior objective.
 
 ## Start here
 
-- **Results and downloads:** [Project Registry](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry).
-- **Run the project:** [repository README](https://github.com/wadewolfie999/pysr_ext_higgs#readme). Its platform notes distinguish the reported Linux Julia 1.11.9 setup from the PySR-initialized macOS environment.
-- **Report an issue:** [repository Issues](https://github.com/wadewolfie999/pysr_ext_higgs/issues).
+- [Retained results and downloads](Project-Registry).
+- [Method, withdrawal rationale, and limitations](Method-and-Limitations).
+- [Repository setup and saved-result inspection](https://github.com/wadewolfie999/pysr_ext_higgs/blob/main/README.md).
 
-## Research workflow
+Exactly four selected expressions remain in the active catalogue: `EXP_6_072`, `ELEM_7_0198`, `L2HL_1_050`, and `L2HL_2_0235`. The default saved-result view is `L2HL_1_050`; both L2HL entries include their preserved validation/learning curve image.
 
-The following describes code release **v5.3.0**, using [source reference `79966f0`](https://github.com/wadewolfie999/pysr_ext_higgs/tree/79966f022aa2e73574f24435792f2c53a0131b3a). This is an explanation of the current code, not the generating-commit provenance of an older run.
+Test AUC remains a selection score. The six fixed-expression validation subsets involve no refitting. The separate fitted curves use new diagnostic models and PySR's own expression-selection rule. The current results do not establish statistical superiority of one loss or independent predictive performance.
 
-1. Review the dataset, features, and `PySRRegressor(...)` configuration in [main.py](https://github.com/wadewolfie999/pysr_ext_higgs/blob/79966f022aa2e73574f24435792f2c53a0131b3a/main.py). Running that script starts training.
-2. Process the saved candidate expressions through `expr_indexer()`, `auc_recorder()`, and `top_three_sort()` in [sr.py](https://github.com/wadewolfie999/pysr_ext_higgs/blob/79966f022aa2e73574f24435792f2c53a0131b3a/sr.py).
-3. Export the selected expressions, compile the winner, and record the winning row. Local source collections use `output/<RUN_ID>/` or `HP_output/<RUN_ID>/`, with expression files under `<Expression_ID>/` and plots under `plots/`. Public curated copies live under `results/<Expression_ID>/`.
-4. Inspect an explicitly selected saved expression using [plot_sr.py](https://github.com/wadewolfie999/pysr_ext_higgs/blob/79966f022aa2e73574f24435792f2c53a0131b3a/plot_sr.py) or [plot.ipynb](https://github.com/wadewolfie999/pysr_ext_higgs/blob/79966f022aa2e73574f24435792f2c53a0131b3a/plot.ipynb).
-5. Curate selected existing files for the public catalogue. The HP batch includes all available expression exports and saved plots. Full run directories and checkpoints are not part of the curated snapshot.
+## Workflow
 
-The current default ranks candidates by test AUC. Each catalogue entry states what its saved record supports; a current default does not fill gaps in historical provenance.
+1. Inspect tracked saved evidence using `plot_sr.py` or the notebook; no local checkpoints are required for this default path.
+2. Use `main.py` only when deliberately starting a new search. Future-run metadata captures the actual configuration and split identities before fitting.
+3. Keep the notebook's `RUN_CURVE_FITS = False` for ordinary inspection. Enabling it deliberately launches new searches into fresh ignored directories.
+4. Curate selected artifacts into the versioned results package; keep raw runs and checkpoints local.
 
-## Feedback
+The editable publication sources live in the repository's `wiki/` directory. Curated files are published at [logs.reshub.lol](https://logs.reshub.lol/pysr-ext-higgs/0.1.0/), using immutable versioned paths. Binary files are ignored local cache; source revisions remain in Git. Ordinary offline inspection uses the retained candidate tables and dataset, without automatic downloads.
 
-If something is lacking, let me know through [Issues](https://github.com/wadewolfie999/pysr_ext_higgs/issues) or either email:
-
-```text
-va.gorgin@mail.sbu.ac.ir
-wadewolfie999@gmail.com
-```
-
-<sub>Page version 0.2.3 · Reviewed 2026-10-25 · Workflow source v5.3.0 · Current code release v5.3.1.</sub>
+<sub>Page v0.4.1 · Previous v0.4.0 · Code release v5.7.0 · Retained batch v0.1.0.</sub>

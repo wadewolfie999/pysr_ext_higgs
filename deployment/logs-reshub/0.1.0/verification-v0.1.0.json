@@ -1,0 +1,778 @@
+{
+  "version": "0.1.0",
+  "status": "public endpoint accepted; repository and Wiki sources local and uncommitted",
+  "hostname": "logs.reshub.lol",
+  "tls_owner": "Arvancloud managed HTTPS; owner-selected default for this hosting workflow",
+  "dns": {
+    "record": "logs",
+    "type": "A",
+    "origin_ipv4": "95.38.182.130",
+    "proxy": true,
+    "ttl": "provider automatic",
+    "per_record_origin_protocol": "HTTP",
+    "existing_root_and_mail_records": "values and proxy state unchanged in provider UI"
+  },
+  "public": {
+    "version": "0.1.0",
+    "verified_at_utc": "2026-10-26T10:59:24.917897+00:00",
+    "base_url": "https://logs.reshub.lol/pysr-ext-higgs/0.1.0",
+    "dns_ipv4": [
+      "185.143.233.133",
+      "185.143.234.133"
+    ],
+    "tls": {
+      "verification": "default system trust and hostname validation passed",
+      "protocol": "TLSv1.2",
+      "issuer": [
+        [
+          [
+            "countryName",
+            "US"
+          ]
+        ],
+        [
+          [
+            "organizationName",
+            "Let's Encrypt"
+          ]
+        ],
+        [
+          [
+            "commonName",
+            "YE2"
+          ]
+        ]
+      ],
+      "subject_alt_names": [
+        [
+          "DNS",
+          "*.account.reshub.lol"
+        ],
+        [
+          "DNS",
+          "*.reshub.lol"
+        ],
+        [
+          "DNS",
+          "reshub.lol"
+        ]
+      ],
+      "expires": "Jan 10 22:53:34 2027 GMT"
+    },
+    "file_count": 62,
+    "bytes": 23338354,
+    "package_manifest_sha256": "d07438b76ce3858dadfe2f7eb0628dc1ab3db274cd94243aa2c03cf25b32c494",
+    "all_files": [
+      {
+        "path": "ELEM_7_0198/expression.pdf",
+        "bytes": 98416,
+        "sha256": "ed0dd1b3263ad6bd2feb6355bf0d6712fb4b00e41d31ab78c7285069817bc8e4",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "ELEM_7_0198/expression.tex",
+        "bytes": 2528,
+        "sha256": "a2975aedd72d070e18d873b8257ba78a1746d1ec0ed7bf3e9e67d6c33d8d04fc",
+        "http_status": 200,
+        "content_type": "text/x-tex"
+      },
+      {
+        "path": "ELEM_7_0198/expression_lambda.py",
+        "bytes": 1491,
+        "sha256": "ad18358aa09edba5105a2f6a915bdffe40be00af27337eabc8649a9a8b72b7b1",
+        "http_status": 200,
+        "content_type": "text/x-python"
+      },
+      {
+        "path": "ELEM_7_0198/expression_sympy.txt",
+        "bytes": 1261,
+        "sha256": "d8f10e7c392dcfa42d0feaf2443c4d27575074f8ee7d4d41deddf3b46af94ec1",
+        "http_status": 200,
+        "content_type": "text/plain"
+      },
+      {
+        "path": "ELEM_7_0198/hall_of_fame.csv",
+        "bytes": 55271,
+        "sha256": "c57f9db842128016bba5a3f46e7f0332ed2f65e4c017ddbd07311345d7c60b81",
+        "http_status": 200,
+        "content_type": "text/csv"
+      },
+      {
+        "path": "ELEM_7_0198/manifest.json",
+        "bytes": 5602,
+        "sha256": "95ab4d584325feeab56984571ff6f890168e98839d92e149b40d10945bb7b31d",
+        "http_status": 200,
+        "content_type": "application/json"
+      },
+      {
+        "path": "ELEM_7_0198/plots/mass_plane.pdf",
+        "bytes": 481934,
+        "sha256": "81a8d96f7bd2e85c64adb7e2f5dd0c2771ae6ef23cb5ad03548f0fa6e3aee842",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "ELEM_7_0198/plots/mass_plane.png",
+        "bytes": 3444431,
+        "sha256": "b608e29769a1cd45e384527ce367d052aeb1926f01ad18432415ef1111f262bb",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "ELEM_7_0198/plots/mass_scan_1d.pdf",
+        "bytes": 23963,
+        "sha256": "9fc3c00ab5dc2a6e73fb24161d289a34f8b2285e9ab38a4eb50ab0c9f82fd168",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "ELEM_7_0198/plots/mass_scan_1d.png",
+        "bytes": 221517,
+        "sha256": "5d4579c863143bc7f09ab0066bb753f4dd809dc256ae8974c7496dd6cc31c3fe",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "ELEM_7_0198/plots/roc_curve.pdf",
+        "bytes": 34478,
+        "sha256": "49be1c4bb4135237743588f13676c0d699ddb5f48ae60ec02ae9f35fd24cd509",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "ELEM_7_0198/plots/roc_curve.png",
+        "bytes": 572323,
+        "sha256": "8d69e0de303737b404d353089df61015c2c4459b7344c3ba6f8f09e1e80e2231",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "ELEM_7_0198/plots/subset_variability.pdf",
+        "bytes": 31320,
+        "sha256": "69baa4053de42383ae73c65ebd426e15356d91eb9b1e760bbaa6e76505e36ae8",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "ELEM_7_0198/plots/subset_variability.png",
+        "bytes": 506810,
+        "sha256": "ea0997a183b09250951e857c04ecfee516c2bf61e44ecd85baed35f824b3ed92",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "EXP_6_072/expression.pdf",
+        "bytes": 86866,
+        "sha256": "85a2f4f13f4b4c43ec7f3ba35d747a2d86fb15c85a4f840e7d998246b3933ae6",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "EXP_6_072/expression.tex",
+        "bytes": 1292,
+        "sha256": "9dbdb99eab9d08fcacb8c45ce32457371d6931c0e8686ac666b56907043b6307",
+        "http_status": 200,
+        "content_type": "text/x-tex"
+      },
+      {
+        "path": "EXP_6_072/expression_lambda.py",
+        "bytes": 827,
+        "sha256": "a11684f1ab79c00901293b4ceb48a0ac99007117c37aae0e426caf48d2928340",
+        "http_status": 200,
+        "content_type": "text/x-python"
+      },
+      {
+        "path": "EXP_6_072/expression_sympy.txt",
+        "bytes": 589,
+        "sha256": "89d9a2e00e63f43fc50f6ccfa049fe87daf06adcf7e83cb743a86c6598dee4ec",
+        "http_status": 200,
+        "content_type": "text/plain"
+      },
+      {
+        "path": "EXP_6_072/hall_of_fame.csv",
+        "bytes": 20436,
+        "sha256": "1d4cc607500bffb984d2380184144d2862cc421ac1f033c5244b7ae402771ac0",
+        "http_status": 200,
+        "content_type": "text/csv"
+      },
+      {
+        "path": "EXP_6_072/manifest.json",
+        "bytes": 5562,
+        "sha256": "ed39327d04b729e784f7c15094ff3e3c6bcf2b490537325ad62ba4865919efad",
+        "http_status": 200,
+        "content_type": "application/json"
+      },
+      {
+        "path": "EXP_6_072/plots/mass_plane.pdf",
+        "bytes": 536513,
+        "sha256": "0a70c3682b180d159d27b236be7b347d4299f6c5e73a45ad0f1f705558216200",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "EXP_6_072/plots/mass_plane.png",
+        "bytes": 3642808,
+        "sha256": "92b8b38df29c2ba60bcfb42474d1520cccdde951ca2cad28ffac51263de35677",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "EXP_6_072/plots/mass_scan_1d.pdf",
+        "bytes": 24486,
+        "sha256": "4b247af54ef296e710134cdeaea16e1f86a90978e007acf4cf0897cc89198a5b",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "EXP_6_072/plots/mass_scan_1d.png",
+        "bytes": 319119,
+        "sha256": "332209f508f7d9bf71f99c652185a60333144c002aa77c8e8731b6f97146ffae",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "EXP_6_072/plots/roc_curve.pdf",
+        "bytes": 34980,
+        "sha256": "e7a979a123edaf86b96064191478ce586b98dd37c4f69250d232251f0c04d2a4",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "EXP_6_072/plots/roc_curve.png",
+        "bytes": 577628,
+        "sha256": "abbc0d6c1ebf086f3aa3d2a512def5aabb9b76e5d75a081fa0b00d6bc6186a78",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "EXP_6_072/plots/subset_variability.pdf",
+        "bytes": 31641,
+        "sha256": "4e47f259275a22bbd1eed41a5bbad05afdbc76d9c41d0d48dc76d5cc3917ac6b",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "EXP_6_072/plots/subset_variability.png",
+        "bytes": 506272,
+        "sha256": "5b53547fb5f34bbaf48c3595f7a9a3d1a7260837df2a088f1f058f5f139087fc",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "L2HL_1_050/expression.pdf",
+        "bytes": 85492,
+        "sha256": "3e5fc3fa81c73c3270786c931a6bb74e270e88a5a4dbfa193530137ffdeb0d14",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "L2HL_1_050/expression.tex",
+        "bytes": 919,
+        "sha256": "40401709aca25f74f96d3666ab0dc2e02719653a8c0fcb2b23d71bcb304623cb",
+        "http_status": 200,
+        "content_type": "text/x-tex"
+      },
+      {
+        "path": "L2HL_1_050/expression_lambda.py",
+        "bytes": 630,
+        "sha256": "0dba4765237235fa9e0dc891dce20a1ea0b64b8e648eeff1d1514fdc5aea945c",
+        "http_status": 200,
+        "content_type": "text/x-python"
+      },
+      {
+        "path": "L2HL_1_050/expression_sympy.txt",
+        "bytes": 384,
+        "sha256": "e48c30dbb5e093f8dc6e3a77bf05ffac373436d34443496ad6eb8581f9ade22e",
+        "http_status": 200,
+        "content_type": "text/plain"
+      },
+      {
+        "path": "L2HL_1_050/hall_of_fame.csv",
+        "bytes": 8481,
+        "sha256": "e6287a31a84f746754faa0a5a6f37901432c63f2c5563184c2cf9555991cd2f4",
+        "http_status": 200,
+        "content_type": "text/csv"
+      },
+      {
+        "path": "L2HL_1_050/manifest.json",
+        "bytes": 9190,
+        "sha256": "b8e8d85e2543fb8f6c8cded51a636da99204732c847ba335013ac0922269b469",
+        "http_status": 200,
+        "content_type": "application/json"
+      },
+      {
+        "path": "L2HL_1_050/plots/mass_plane.pdf",
+        "bytes": 557664,
+        "sha256": "2dbed6a1c85de078533881e29f841d397ec1f32b2d137e84e628a21823bdd512",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "L2HL_1_050/plots/mass_plane.png",
+        "bytes": 3684438,
+        "sha256": "e95d4ec58b8400d3b7c4d58da3b6a8782cdbb9449c7877635b5c419351bcb3c5",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "L2HL_1_050/plots/mass_scan_1d.pdf",
+        "bytes": 23675,
+        "sha256": "2ad6fee84640d12171d6ad3bd2b1a958a65b36dd7ce2abfad15501832a45322a",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "L2HL_1_050/plots/mass_scan_1d.png",
+        "bytes": 269916,
+        "sha256": "1a1cdd05e5da1e01be9e2e3b56f1f99e9ea90370f9968a575f2d7495007e21bc",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "L2HL_1_050/plots/roc_curve.pdf",
+        "bytes": 34374,
+        "sha256": "6176643d8814ffac964344f729f2e148122c33d60ed1fb6a4a7e6a2f1df65087",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "L2HL_1_050/plots/roc_curve.png",
+        "bytes": 569971,
+        "sha256": "d83b00a37493f3e257294cbeea9b160d5d6e0e42eb4424947257f77eb3ca6231",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "L2HL_1_050/plots/subset_variability.pdf",
+        "bytes": 31784,
+        "sha256": "3ecb45aa5026815abb4e3b0791ede7def470f71c7fb6bb43a52bba0ef6bd191c",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "L2HL_1_050/plots/subset_variability.png",
+        "bytes": 504593,
+        "sha256": "4b2abf41b82fe0b87d90d1245403ced6b562af6519931564c5a47b3974676d33",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "L2HL_1_050/valid-learn-curve.png",
+        "bytes": 40628,
+        "sha256": "2bb29ab678761341d0669fdfe8ac66112d0b3f65c5e4143c27db5a97bfdec853",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "L2HL_2_0235/expression.pdf",
+        "bytes": 99461,
+        "sha256": "1c15c8d84588e2a20e73e24a3ab32d22a00fa72109925654358745eb5005acb6",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "L2HL_2_0235/expression.tex",
+        "bytes": 3227,
+        "sha256": "59123e23e730283f7d7d805400327677649f25f9d83f8b0e15f9bb45a26cb376",
+        "http_status": 200,
+        "content_type": "text/x-tex"
+      },
+      {
+        "path": "L2HL_2_0235/expression_lambda.py",
+        "bytes": 1832,
+        "sha256": "b3d4674888e5fc498c6aa14fb8a1fbf52ba817a619de6d039439fd9c3c591d1a",
+        "http_status": 200,
+        "content_type": "text/x-python"
+      },
+      {
+        "path": "L2HL_2_0235/expression_sympy.txt",
+        "bytes": 1594,
+        "sha256": "8bcca12960addf94d679cc5fd52b536c9deb397e3f20705f9315fd821568800e",
+        "http_status": 200,
+        "content_type": "text/plain"
+      },
+      {
+        "path": "L2HL_2_0235/hall_of_fame.csv",
+        "bytes": 20421,
+        "sha256": "d3daf39eab7290dfe497720b3bc725df808afab815d062490a80f69dc49c358b",
+        "http_status": 200,
+        "content_type": "text/csv"
+      },
+      {
+        "path": "L2HL_2_0235/manifest.json",
+        "bytes": 9205,
+        "sha256": "426d5324211943f61ed7cce6df36c9e4fcb7e937500571a13578d2460be221a1",
+        "http_status": 200,
+        "content_type": "application/json"
+      },
+      {
+        "path": "L2HL_2_0235/plots/mass_plane.pdf",
+        "bytes": 554018,
+        "sha256": "f76d4185aee2f9eeae324c150a86e596ce43629ae7c5a0314151d6aa06e9c093",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "L2HL_2_0235/plots/mass_plane.png",
+        "bytes": 3741390,
+        "sha256": "2825a05cf27b6bdecdf3a76a5ff24240205716b943a029e9b2a175a70ea61a88",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "L2HL_2_0235/plots/mass_scan_1d.pdf",
+        "bytes": 24035,
+        "sha256": "b0b00cc782f4a5c4f561b84cdc15196dde07e1d1bf95e8423c06e79b5c84fab4",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "L2HL_2_0235/plots/mass_scan_1d.png",
+        "bytes": 252994,
+        "sha256": "b76949cded95a9da2fb491e11c65aea16044d2a4dbfef7073da164c3e428ac3c",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "L2HL_2_0235/plots/roc_curve.pdf",
+        "bytes": 37541,
+        "sha256": "5f4b9176558cfd05d066716c991a8d6d22a5f71924a141cf2d590d7a6ce2ad29",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "L2HL_2_0235/plots/roc_curve.png",
+        "bytes": 562483,
+        "sha256": "0021c389b989a46286bf4b353d28c5728d3ebf630723480dbd73a78bf480b517",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "L2HL_2_0235/plots/subset_variability.pdf",
+        "bytes": 32013,
+        "sha256": "abe64d45026d1c324f4b4346b646b5ee3234fe080bccb055d563b85992d9ac88",
+        "http_status": 200,
+        "content_type": "application/pdf"
+      },
+      {
+        "path": "L2HL_2_0235/plots/subset_variability.png",
+        "bytes": 516568,
+        "sha256": "6e2270ab364acfb478b3c361a3110ef32b789c39c949421e58e52c59127dfbd0",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "L2HL_2_0235/valid-learn-curve.png",
+        "bytes": 37917,
+        "sha256": "0351c890dbf5338d5c6c343e2bfa990581a3f06e6425a439812f895759f2b547",
+        "http_status": 200,
+        "content_type": "image/png"
+      },
+      {
+        "path": "current-runs-v0.1.0/README.md",
+        "bytes": 1080,
+        "sha256": "59904ae58b5a084316d4fc0a0bfe909e78fae881166f3ca2041b04205f403ab4",
+        "http_status": 200,
+        "content_type": "text/markdown"
+      },
+      {
+        "path": "current-runs-v0.1.0/current-reproduction-splits.json",
+        "bytes": 346671,
+        "sha256": "356a373230399636f788d41fb5790642d85c963db46373cb17068bc77bbdf8f7",
+        "http_status": 200,
+        "content_type": "application/json"
+      },
+      {
+        "path": "current-runs-v0.1.0/logger.csv",
+        "bytes": 1059,
+        "sha256": "657b9205e838353e87585dcb40e43f008dff0d3eb5a7fdd47e08f39a3b4b5c90",
+        "http_status": 200,
+        "content_type": "text/csv"
+      },
+      {
+        "path": "current-runs-v0.1.0/manifest.json",
+        "bytes": 2342,
+        "sha256": "8628dbba0bd5234310bc680066fc84be6e5363851a8d1505f4a46cca0ff79c21",
+        "http_status": 200,
+        "content_type": "application/json"
+      }
+    ],
+    "directories": {
+      "/": {
+        "status": 200,
+        "location": null,
+        "content_range": null,
+        "content_type": "text/html",
+        "server": "ArvanCloud"
+      },
+      "/pysr-ext-higgs/0.1.0/": {
+        "status": 200,
+        "location": null,
+        "content_range": null,
+        "content_type": "text/html",
+        "server": "ArvanCloud"
+      },
+      "/pysr-ext-higgs/0.1.0/L2HL_1_050/": {
+        "status": 200,
+        "location": null,
+        "content_range": null,
+        "content_type": "text/html",
+        "server": "ArvanCloud"
+      },
+      "/pysr-ext-higgs/0.1.0/L2HL_1_050/plots/": {
+        "status": 200,
+        "location": null,
+        "content_range": null,
+        "content_type": "text/html",
+        "server": "ArvanCloud"
+      }
+    },
+    "http_redirect": {
+      "status": 301,
+      "location": "https://logs.reshub.lol/pysr-ext-higgs/0.1.0/L2HL_1_050/plots/roc_curve.png?probe=1",
+      "content_range": null,
+      "content_type": "text/html",
+      "server": "ArvanCloud"
+    },
+    "range": {
+      "valid": {
+        "status": 206,
+        "location": null,
+        "content_range": "bytes 0-31/569971",
+        "content_type": "image/png",
+        "server": "ArvanCloud"
+      },
+      "invalid": {
+        "status": 416,
+        "location": null,
+        "content_range": "bytes */569971",
+        "content_type": "image/png",
+        "server": "ArvanCloud"
+      }
+    },
+    "private_paths": {
+      "/.env": {
+        "status": 404,
+        "location": null,
+        "content_range": null,
+        "content_type": "text/plain",
+        "server": "ArvanCloud"
+      },
+      "/checkpoint.pkl": {
+        "status": 404,
+        "location": null,
+        "content_range": null,
+        "content_type": "text/plain",
+        "server": "ArvanCloud"
+      },
+      "/output/": {
+        "status": 404,
+        "location": null,
+        "content_range": null,
+        "content_type": "text/plain",
+        "server": "ArvanCloud"
+      },
+      "/backups/": {
+        "status": 404,
+        "location": null,
+        "content_range": null,
+        "content_type": "text/plain",
+        "server": "ArvanCloud"
+      },
+      "/pysr-ext-higgs/0.1.0/no-such-file": {
+        "status": 404,
+        "location": null,
+        "content_range": null,
+        "content_type": "text/plain",
+        "server": "ArvanCloud"
+      }
+    },
+    "post": {
+      "status": 405,
+      "location": null,
+      "content_range": null,
+      "content_type": "text/plain",
+      "server": "ArvanCloud"
+    },
+    "existing_routes": {
+      "/": {
+        "status": 200,
+        "location": null,
+        "content_range": null,
+        "content_type": "text/html",
+        "server": "Caddy"
+      },
+      "/api/health": {
+        "status": 404,
+        "location": null,
+        "content_range": null,
+        "content_type": "text/html",
+        "server": "Caddy"
+      },
+      "/downloads/julia-offline-1.11.9-linux-amd64.tar.gz": {
+        "status": 200,
+        "location": null,
+        "content_range": null,
+        "content_type": "application/gzip",
+        "server": "Caddy"
+      }
+    }
+  },
+  "origin": {
+    "version": "0.1.0",
+    "curated_files": 62,
+    "total_public_files": 63,
+    "symlinks": 0,
+    "all_checksums_match": true,
+    "configuration_sha256": {
+      "/etc/caddy/Caddyfile": "54f3db3ecf1b3a2d29c7092bd5d238474244622a3ff56046e84a354aaf16c0d7",
+      "/etc/caddy/logs.reshub.caddy": "137d35e9d376ba8e8f0c4b3b28e8afa36b597bd214f712810b2158d0dc7aa4a0",
+      "/etc/caddy/reshub.caddy": "3cb97b6cebb851fa49bf7c7f927d363099872ab3d447a130e6975310117bd439"
+    }
+  },
+  "deployment": {
+    "initial": {
+      "version": "0.1.0",
+      "status": "Caddy configured; public acceptance pending",
+      "configured_at_utc": "2026-10-26T01:03:04.463205+00:00",
+      "hostname": "logs.reshub.lol",
+      "public_base_url": "https://logs.reshub.lol/pysr-ext-higgs/0.1.0",
+      "release_path": "/var/lib/reshub-logs/pysr-ext-higgs/0.1.0",
+      "file_count": 62,
+      "package_manifest_sha256": "d07438b76ce3858dadfe2f7eb0628dc1ab3db274cd94243aa2c03cf25b32c494",
+      "backup_path": "/var/backups/reshub-logs/20261026T010304Z",
+      "configuration_before": {
+        "Caddyfile": "b428d9846f3fa312572427795102393f3c8b1f4f29c3fc43202d45ce0ef4a0d3",
+        "reshub.caddy": "3cb97b6cebb851fa49bf7c7f927d363099872ab3d447a130e6975310117bd439"
+      },
+      "configuration_after": {
+        "Caddyfile": "54f3db3ecf1b3a2d29c7092bd5d238474244622a3ff56046e84a354aaf16c0d7",
+        "logs.reshub.caddy": "939848cf15ef3f863d9f48dc82122286fdede46e9ef17b330de00853fab02797",
+        "reshub.caddy": "3cb97b6cebb851fa49bf7c7f927d363099872ab3d447a130e6975310117bd439"
+      },
+      "existing_routes_before": {
+        "/": 200,
+        "/api/health": 404
+      },
+      "existing_routes_after": {
+        "/": 200,
+        "/api/health": 404
+      },
+      "caddy_validation_passed": true,
+      "caddy_reload_passed": true
+    },
+    "arvan_origin": {
+      "version": "0.1.0",
+      "at_utc": "2026-10-26T10:57:27.105024+00:00",
+      "backup_path": "/var/backups/reshub-logs/20261026T105726Z-arvan",
+      "origin_site_sha256": "137d35e9d376ba8e8f0c4b3b28e8afa36b597bd214f712810b2158d0dc7aa4a0",
+      "caddy_validation_passed": true,
+      "caddy_reload_passed": true,
+      "existing_configuration_unchanged": true,
+      "tls_owner": "Arvancloud managed HTTPS",
+      "origin_protocol": "HTTP",
+      "public_acceptance": "pending"
+    },
+    "initial_site_backup": "/var/backups/reshub-logs/20261026T105453Z-arvan",
+    "final_site_backup": "/var/backups/reshub-logs/20261026T105726Z-arvan"
+  },
+  "repository": {
+    "head": "35ff005c7933dda010142d07345ab18798a6bdc0",
+    "preserved_staged_change": "D .run_num1_logger.csv; local ignored file retained",
+    "binary_cache_files": 38,
+    "binary_cache_bytes": 22836460,
+    "historical_committed_artifacts": "history unchanged",
+    "local_binary_bytes": "all preserved and equal published manifest",
+    "scientific_values_and_export_versions": "unchanged"
+  },
+  "checks": {
+    "unit_and_offline_regressions": {
+      "command": "PYTHONDONTWRITEBYTECODE=1 MPLBACKEND=Agg .venv/bin/python -m unittest discover -s tests -v",
+      "passed": 24,
+      "no_real_model_fits": true,
+      "offline_candidate": "no PNG/PDF cache, no raw-run folders, PySR/Julia imports blocked, urllib network blocked",
+      "final_documentation_gate": "24 passed after endpoint documentation and ignore-rule changes"
+    },
+    "live_downloader": {
+      "expression_id": "L2HL_1_050",
+      "files_downloaded_to_empty_temporary_cache": 10,
+      "all_committed_checksums_passed": true
+    },
+    "browser": {
+      "directory_navigation": "passed",
+      "L2HL_1_050_curve_image": "displayed successfully",
+      "documentation_preview": {
+        "renderer": "installed markdown-it-py; local preview only",
+        "readme_table_and_roc": "visually reviewed; hosted image loaded",
+        "wiki_registry_images": 18,
+        "wiki_registry_images_loaded": 18,
+        "both_parent_curve_figures_loaded": true,
+        "note": "GitHub and separate Wiki publication remain unperformed; local relative source links checked by regression tests."
+      }
+    },
+    "diff_check": "git diff --check passed after endpoint documentation changes",
+    "binary_tracking": {
+      "local_files": 38,
+      "ignored_files": 38,
+      "current_curated_binaries_tracked": 0,
+      "note": "Prior withdrawn-result deletions remain intact; ignored binaries were untracked candidate files before this endpoint change."
+    }
+  },
+  "versions": {
+    "code": {
+      "previous": "5.6.0",
+      "current": "5.7.0"
+    },
+    "notebook": {
+      "previous": "4.6.0",
+      "current": "4.7.0"
+    },
+    "readme": {
+      "previous": "0.5.0",
+      "current": "0.6.0"
+    },
+    "wiki_home_registry": {
+      "previous": "0.3.0",
+      "current": "0.4.0"
+    },
+    "method": {
+      "previous": "0.1.0",
+      "current": "0.2.0"
+    },
+    "reason": "minor increments for explicit public artifact download/cache workflow; new deployment records start at 0.1.0"
+  },
+  "limitations": [
+    "Certificate renewal is provider-managed; a future renewal cycle has not been observed.",
+    "Edge-to-origin uses HTTP for these public files; only visitor-to-edge HTTPS is asserted.",
+    "Historical scientific provenance gaps documented in retained manifests remain unresolved.",
+    "No Git commit, push, PR, or separate Wiki publication performed."
+  ],
+  "independent_review": {
+    "read_only": true,
+    "critical": 0,
+    "important": 0,
+    "minor_deferred": [
+      {
+        "file": "fetch_artifacts.py:92",
+        "issue": "The initial URL must use HTTPS, but urllib follows an HTTPS-to-HTTP redirect if a server supplies one.",
+        "current_impact": "Current pinned endpoint downloads passed trusted HTTPS checks; committed byte count and SHA-256 protect public artifact integrity.",
+        "future_hardening": "Reject insecure redirect destinations before following them."
+      }
+    ],
+    "verified_independently": [
+      "7 focused downloader tests",
+      "All 62 local package hashes and byte counts",
+      "Curated manifest entries agree with package and public verification",
+      "README/Wiki hosted paths resolve into pinned package",
+      "No automatic notebook downloads or fitting",
+      "Version labels and transport/rollback documentation consistent"
+    ],
+    "boundaries": {
+      "live_tls_and_provider": "verified by parent at real endpoint",
+      "full_regression_gate": "24 passed by parent",
+      "future_renewal_or_outage_recovery": "not claimed",
+      "independent_scientific_performance_and_historical_training_membership": "not claimed"
+    }
+  }
+}

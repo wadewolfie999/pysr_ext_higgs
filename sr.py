@@ -1,4 +1,8 @@
-# Version v5.3.1
+# Version v5.7.0
+from datetime import datetime, timezone
+import hashlib
+import importlib.metadata
+import json
 from pathlib import Path
 from tempfile import NamedTemporaryFile
 import keyword
@@ -16,7 +20,7 @@ from sklearn.model_selection import train_test_split, StratifiedKFold
 from sklearn.metrics import roc_curve, auc
 
 SEED = 42
-VERSION = "5.3.1"
+VERSION = "5.7.0"
 SPLITS = {"train": "train_auc", "validation": "val_auc", "test": "test_auc", "total": "total_auc"}
 MASS_LABELS = {"mchi1": r"$m_{\chi_1}$ [GeV]", "mchipm1": r"$m_{\chi^\pm_1}$ [GeV]"}
 
@@ -95,6 +99,100 @@ def expr_indexer(HOF, RUN_ID, features):
         functions.append(fn)
     HOF_01["SymPy_Equation"], HOF_01["Lambda_Equation"] = expressions, functions
     return HOF_01
+
+
+def load_saved_expression(source, expression_id, features=None):
+    """Read one raw-run or curated expression without loading PySR/checkpoints.
+
+    A manifest owns its run ID, feature order and relative hall-of-fame path.
+    Its dataset hash describes the current reproduction, not historical membership.
+    """
+    source = Path(source).resolve()
+    manifest = None
+    if source.is_file():
+        manifest = json.loads(source.read_text())
+        if manifest["expression_id"] != expression_id:
+            raise ValueError("Expression_ID does not match this curated manifest.")
+        run_id = manifest["run_id"]
+        names = tuple(manifest["features"])
+        if features is not None and tuple(features) != names:
+            raise ValueError("Feature order does not match this curated manifest.")
+        assets = [item for item in manifest["files"] if item["path"] == "hall_of_fame.csv"]
+        if len(assets) != 1:
+            raise ValueError("Manifest must identify one hall_of_fame.csv.")
+        hof_path = source.parent / assets[0]["path"]
+        if hashlib.sha256(hof_path.read_bytes()).hexdigest() != assets[0]["sha256"]:
+            raise ValueError("Curated hall-of-fame checksum does not match its manifest.")
+    else:
+        run_id, names = source.name, tuple(features or ("mchi1", "mchipm1"))
+        hof_path = source / "hall_of_fame.csv"
+    if not re.fullmatch(re.escape(run_id) + r"_0[1-9][0-9]*", expression_id):
+        raise ValueError("Expression_ID does not belong to the supplied run.")
+    hof = pd.read_csv(hof_path, float_precision="round_trip")
+    indexed = expr_indexer(hof, run_id, names)
+    selected = indexed.loc[indexed["Expression_ID"] == expression_id].copy()
+    if len(selected) != 1:
+        raise ValueError(f"Expression_ID is absent from this run: {expression_id}")
+    selected.attrs.update(features=names, run_id=run_id,
+                          dataset_sha256=manifest["current_reproduction"]["dataset_sha256"] if manifest else None)
+    return selected
+
+
+def _write_json_atomic(path, document):
+    """Keep the last complete metadata record if serialization or writing fails."""
+    path = Path(path)
+    temporary = None
+    try:
+        with NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent, suffix=".tmp", delete=False) as stream:
+            temporary = Path(stream.name)
+            json.dump(document, stream, indent=2, allow_nan=False,
+                      default=lambda value: value.item() if isinstance(value, np.generic)
+                      else {"python_repr": repr(value)})
+            stream.write("\n")
+        temporary.replace(path)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+
+
+def write_run_metadata(run_dir, *, project_dir, data_csv, datasets, model_parameters,
+                       training_labels, sample_weights, selection_metric="test_auc",
+                       split_seed=None, weight_policy=None):
+    """Capture actual inputs; recipe fields omitted by the caller remain unknown."""
+    if set(datasets) != set(SPLITS) or selection_metric not in SPLITS.values():
+        raise ValueError("Provide all four datasets and a known selection metric.")
+    project_dir, data_csv = Path(project_dir).resolve(), Path(data_csv).resolve()
+    labels, weights = np.asarray(training_labels), np.asarray(sample_weights, dtype=float)
+    X_train, y_train = datasets["train"]
+    if (labels.shape != (len(X_train),) or weights.shape != labels.shape
+            or not np.array_equal(labels, 2 * np.asarray(y_train) - 1)
+            or not np.isfinite(weights).all() or (weights <= 0).any()):
+        raise ValueError("Provide signed training labels and finite positive per-row weights.")
+    memberships = [list(datasets[name][0].index) for name in ("train", "validation", "test")]
+    flat = [row_id for group in memberships for row_id in group]
+    if len(set(flat)) != len(flat) or set(flat) != set(datasets["total"][0].index):
+        raise ValueError("Split row IDs must partition the total dataset exactly once.")
+    versions = {}
+    for package in ("pysr", "numpy", "pandas", "scikit-learn", "sympy"):
+        versions[package] = importlib.metadata.version(package)
+    document = {
+        "version": "0.1.0", "code_release": VERSION, "run_id": Path(run_dir).name,
+        "created_at_utc": datetime.now(timezone.utc).isoformat(), "recorded_before_fit": True,
+        "dataset": {"path": str(data_csv), "sha256": hashlib.sha256(data_csv.read_bytes()).hexdigest()},
+        "features": list(X_train.columns), "target": "exclusion", "split_seed": split_seed,
+        "splits": {name: {"row_ids": list(X.index), "rows": len(X)} for name, (X, _) in datasets.items()},
+        "training_label_mapping": {"0": -1, "1": 1}, "evaluation_labels": [0, 1],
+        "training_labels": labels.tolist(), "sample_weights": weights.tolist(),
+        "weight_policy": weight_policy,
+        "model_parameters": model_parameters, "selection_metric": selection_metric,
+        "test_auc_role": "selection score; not an independent final-test estimate",
+        "source_hashes": {name: hashlib.sha256((project_dir / name).read_bytes()).hexdigest()
+                          for name in ("main.py", "sr.py")},
+        "software_versions": versions,
+    }
+    destination = Path(run_dir) / "run_metadata.json"
+    _write_json_atomic(destination, document)
+    return destination
 
 
 def _scores(expr_lambda, X):
@@ -214,23 +312,42 @@ def expr_pdf_compiler(HOF_03, _rank_one_id, RUN_DIR):
     return pd.DataFrame([{"Expression_ID": _rank_one_id, "TeX": tex, "PDF": pdf}])
 
 
-def run_finalizer(HOF_4_pt1, HOF_4_pt2, RUN_ID, logger_path):
-    """Merge the winner and atomically update its run's repository-root CSV record."""
+def run_finalizer(HOF_4_pt1, HOF_4_pt2, RUN_ID, logger_path, *, validation_learning_curve=None):
+    """Atomically update one winner; None retains its existing optional curve path."""
     logger_path = Path(logger_path).resolve()
     HOF_FINAL = HOF_4_pt1.merge(HOF_4_pt2, on="Expression_ID", validate="one_to_one")
-    columns = ["Expression_ID", "Complexity", "Loss", "test_auc", "SymPy", "Lambda", "TeX", "PDF"]
+    legacy_columns = ["Expression_ID", "Complexity", "Loss", "test_auc", "SymPy", "Lambda", "TeX", "PDF"]
+    columns = [*legacy_columns, "validation_learning_curve"]
     if len(HOF_FINAL) != 1 or not HOF_FINAL.iloc[0]["Expression_ID"].startswith(f"{RUN_ID}_0"):
         raise ValueError("Finalization requires exactly one winner belonging to this run.")
     for name in ["SymPy", "Lambda", "TeX", "PDF"]:
-        path = Path(HOF_FINAL.iloc[0][name]).resolve()
+        path = Path(str(HOF_FINAL.iloc[0][name]).strip())
+        path = (path if path.is_absolute() else logger_path.parent / path).resolve()
         if not path.is_file():
             raise FileNotFoundError(path)
         HOF_FINAL[name] = path.relative_to(logger_path.parent).as_posix()
+    curve_path = ""
+    if validation_learning_curve is not None and str(validation_learning_curve).strip() not in ("", "-"):
+        path = Path(str(validation_learning_curve).strip())
+        path = (path if path.is_absolute() else logger_path.parent / path).resolve()
+        if not path.is_file():
+            raise FileNotFoundError(path)
+        curve_path = path.relative_to(logger_path.parent).as_posix()
+    HOF_FINAL["validation_learning_curve"] = curve_path
     history = pd.DataFrame(columns=columns)
     if logger_path.exists() and logger_path.stat().st_size:
-        history = pd.read_csv(logger_path, float_precision="round_trip")
-        if list(history.columns) != columns:
+        # Preserve existing decimal tokens rather than round-tripping them through floats.
+        history = pd.read_csv(logger_path, dtype=str, keep_default_na=False)
+        if list(history.columns) not in (legacy_columns, columns):
             raise ValueError("Existing logger columns do not match the winner-record format.")
+        if "validation_learning_curve" not in history:
+            history["validation_learning_curve"] = ""
+        for name in ["SymPy", "Lambda", "TeX", "PDF", "validation_learning_curve"]:
+            history[name] = history[name].str.strip()
+        history["validation_learning_curve"] = history["validation_learning_curve"].replace("-", "")
+        matching = history.loc[history["Expression_ID"] == HOF_FINAL.iloc[0]["Expression_ID"]]
+        if validation_learning_curve is None and len(matching):
+            HOF_FINAL["validation_learning_curve"] = matching.iloc[-1]["validation_learning_curve"]
         history = history.loc[~history["Expression_ID"].str.startswith(f"{RUN_ID}_0", na=False)]
     records = pd.concat([history, HOF_FINAL[columns]], ignore_index=True) if len(history) else HOF_FINAL[columns]
     temporary = None

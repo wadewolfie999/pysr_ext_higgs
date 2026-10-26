@@ -1,0 +1,9 @@
+# Version v5.3.1
+import numpy
+
+FEATURES = ('mchi1', 'mchipm1')
+
+def predict(X):
+    mchi1 = numpy.asarray(X['mchi1'], dtype=float)
+    mchipm1 = numpy.asarray(X['mchipm1'], dtype=float)
+    return numpy.broadcast_to(numpy.asarray(0.8293846149763463*(-1.4360175329545966 + (-(mchi1/(mchipm1*(((-mchi1 + mchipm1*mchipm1)*(-mchi1/((-228741.5039211217)*(-mchipm1 + mchipm1*(mchipm1 + 18659320.149562974)/(mchi1*(mchipm1 + mchipm1)))) - 103.88372907417093/((-471872.3014512357)*mchi1/(mchipm1 + 0.20566145903969044) - 1.4360175329545966 + (-0.33437265106601716 + (-(-(-(mchipm1 + 0.47669089100900397 - 228741.5039211217/mchipm1) + (mchi1 - mchipm1 + mchipm1*(mchipm1 + 18659320.149562974)/((mchipm1/(mchipm1 + mchipm1/(mchi1 + mchipm1)))))/(2.941411778360264*((mchi1/((((-mchi1 - 1.0693912035373577e-7)*(mchipm1 - 212895.46513659504)/(((-103.88372907417093)*mchipm1*(mchipm1 + mchipm1)/(mchipm1 + mchipm1/mchi1)))))*(-mchi1 + mchipm1)))))) + mchipm1/(mchi1*(((-103.88372907417093 - (-mchipm1 + mchipm1)*(mchipm1 - 212895.46513659504)/((-228741.5039211217)*(mchipm1/((437582.32094343915*mchipm1*(mchipm1 + mchipm1)/(mchi1*(mchipm1 + mchipm1)))))))/(((-471872.3014512357)*(-mchipm1 + mchipm1*mchipm1)*(mchi1/mchipm1 + mchipm1 + 0.20566145903969044))))))) - 40.64579373720631)/(mchi1*(mchi1 + 437582.32094343915/mchipm1**3)*(mchipm1 - 0.3173156761280718) - mchipm1*mchipm1))/((-52.91691590590071/mchi1))))))) - (mchi1/(2.941411778360264*((mchi1*(-mchi1 - 1.0693912035373577e-7)/(mchipm1*(-mchi1 + mchipm1))))*(-mchipm1 + mchipm1*(mchipm1 + 18659320.149562974)/(mchipm1*(mchipm1 + mchipm1)))) - (mchipm1 + mchipm1)/(-100749.11453079025))) - 0.33437265106601716 - 40.64579373720631/(mchi1*mchipm1 - mchipm1*mchipm1 + (-0.3173156761280718)*(mchi1 + 437582.32094343915/mchi1**3)))/((-52.91691590590071/mchi1))), dtype=float), (len(X),)).copy()
