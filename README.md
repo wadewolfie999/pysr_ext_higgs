@@ -1,73 +1,173 @@
 # PySR in Extended Higgs Sector Models
 
-Symbolic-regression classification using the mass features mchi1 and mchipm1 (GeV) and the binary reference target exclusion. The expression returns a continuous, uncalibrated score.
+<!-- Keep this README as the introduction and setup guide. Preserve the numbered workflow; detailed results belong in Project Registry and evaluation details in Methods and limitations. -->
 
-## Current expression
+Use **PySR** to search for symbolic classifiers in the **inert two-Higgs-doublet model (i2HDM)**, also known as the **Inert Doublet Model (IDM)**. This model extends the Standard Model's Higgs sector and is studied in **beyond-the-Standard-Model (BSM)** physics. The inputs are the neutral and charged mass columns, `mchi1` and `mchipm1` (GeV); the reference target is `exclusion`.
 
-The current user-facing result is L2HL_1_050.
+**Want to run the project yourself? Start with the eight steps below.** For the selected expression, plots, and downloads, visit the [Project Registry](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry).
 
-| Record | Value |
+[Setup and first run](#how-to-run-this-on-your-machine) · [Where outputs go](#where-outputs-go) · [Inspect the saved result](#inspect-the-saved-result) · [Wiki](https://github.com/wadewolfie999/pysr_ext_higgs/wiki)
+
+## How to run this on your machine
+
+*Run these commands in a terminal on macOS or Linux. After cloning, keep the repository root as your working directory.*
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/wadewolfie999/pysr_ext_higgs.git
+cd pysr_ext_higgs
+```
+
+### 2. Select Python 3.13.7
+
+This is the Python version used for the project:
+
+```bash
+python --version
+```
+
+If you already have Python **3.13.7**, continue to step 3. Otherwise, install and configure [pyenv](https://github.com/pyenv/pyenv#installation), then run:
+
+```bash
+pyenv install -s 3.13.7
+pyenv local 3.13.7
+python --version
+```
+
+### 3. Create and activate a virtual environment
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python --version
+```
+
+Keep this environment active for the remaining steps. In a new terminal, return to the repository and run `source .venv/bin/activate` again.
+
+### 4. Install the Python dependencies
+
+```bash
+python -m pip install -r requirements.txt
+python -m pip show pysr
+```
+
+The committed requirements pin **PySR 2.7.0** along with the other Python packages used by the project.
+
+### 5. Prepare Julia and the PDF compiler
+
+**Julia:** PySR uses Julia for the equation search. On macOS, this project has used PySR's automatic Julia installation and initialization. The first import can take longer while the runtime and packages are prepared:
+
+```bash
+python -c "from pysr import PySRRegressor; print('PySR is ready')"
+```
+
+See the [PySR installation guide](https://github.com/astroautomata/PySR#installation) if initialization fails.
+
+<details>
+<summary><strong>Ubuntu: the earlier Julia 1.11.9 setup</strong></summary>
+
+The earlier Linux environment required **Julia 1.11.9**. This is an environment note, rather than a Julia version pinned for every platform. If using that Ubuntu Snap route, first inspect the channel:
+
+```bash
+snap info julia
+```
+
+Only if `lts/stable` provides the version you intend to use, install it and check the result:
+
+```bash
+sudo snap install julia --classic --channel=lts/stable
+julia --version
+```
+
+</details>
+
+**Expression PDFs:** The training pipeline also needs a TeX installation providing `pdflatex`. Check it **before starting a search**:
+
+```bash
+pdflatex --version
+```
+
+If this command is missing, install a TeX distribution for your operating system. Without it, the pipeline stops at PDF export after fitting and retains the TeX source.
+
+### 6. Review the data and search settings
+
+- **Dataset:** [data/masses_exclusions.csv](data/masses_exclusions.csv), with the columns `mchi1`, `mchipm1`, and `exclusion`.
+- **Search configuration:** `PySRRegressor(...)` in [main.py](main.py). Adjust the loss, operators, complexity limit, iterations, and time budget here.
+- **Shared functions:** [sr.py](sr.py) handles splitting, scoring, expression exports, and plotting.
+
+The current search uses `L2HingeLoss()` and a time budget of up to **one hour**. Review these settings before running it.
+
+### 7. Start the search
+
+From the repository root, with `.venv` active:
+
+```bash
+python main.py
+```
+
+**This starts a new training run.** The terminal shows search progress and, on completion, the finalized expression table. Julia's first initialization may add startup time.
+
+*`main.py` is the training entry point; `sr.py` is the shared module.*
+
+### 8. Find your results
+
+Each search gets a run ID, such as `L2HL_1`. Its outputs are organized as follows:
+
+```text
+output/<RUN_ID>/
+├── hall_of_fame.csv             # Candidate equations
+├── run_metadata.json           # Data, split, and search metadata
+├── <Expression_ID>/            # Selected expression exports
+│   ├── expression_sympy.txt
+│   ├── expression_lambda.py
+│   ├── expression.tex          # Winner only
+│   └── expression.pdf          # Winner only
+└── plots/                      # Winner's diagnostic plots
+```
+
+The root `.run_num1_logger.csv` records the winning expression for each finalized run.
+
+## Where outputs go
+
+| Location | What you will find |
 |---|---|
-| Objective | L2HingeLoss() |
-| Complexity | 50 |
-| Current validation ROC-AUC | 0.9726962005193153 |
-| Recorded test ROC-AUC | 0.9615986120334543; used as the original expression-selection score |
+| `output/<RUN_ID>/` | New local runs, checkpoints, exports, and plots; ignored by Git |
+| `results/L2HL_1_050/` | The selected expression's committed text exports, candidate table, and manifest |
+| [Project Registry](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry) | The selected result, score table, figures, and downloads |
 
-The validation value is a current reproduction on the reconstructed split, not a recovered historical validation result. Original split membership is unknown. The recorded test AUC is a selection score, not an independent final-test estimate.
+## Inspect the saved result
 
-![Preserved ROC curve for L2HL_1_050.](https://logs.reshub.lol/pysr-ext-higgs/0.1.0/L2HL_1_050/plots/roc_curve.png)
+**To inspect the existing expression without a new search**, complete the Python setup through step 4, then run:
 
-[Project Registry](wiki/Project-Registry.md) · [Method and limitations](wiki/Method-and-Limitations.md) · [Expression files and manifest](results/L2HL_1_050/manifest.json)
+```bash
+python plot_sr.py
+```
 
-## Inspect the saved expression
+The script is configured for **`L2HL_1_050`**. It prints the split ROC-AUCs and displays the ROC, mass-plane, mass-scan, and validation-subset plots. It uses the committed expression and dataset; Julia, checkpoints, and `pdflatex` are unnecessary for this path. Plot saving is off by default.
 
-From the repository root, in the existing environment:
+For your own saved run, edit `RUN_SOURCE` and `EXPRESSION_ID` in [plot_sr.py](plot_sr.py) to point to `output/<RUN_ID>/` and one of its expression IDs. For a curated manifest, the script checks the dataset fingerprint before evaluating it.
 
-~~~bash
-.venv/bin/python plot_sr.py
-~~~
+**Notebook alternative:** [plot.ipynb](plot.ipynb) provides interactive inspection. Set **`RUN_CURVE_FITS = False` before running all cells** if you only want to inspect saved results. Enabling it starts fresh diagnostic searches and requires the corresponding local checkpoint, which is absent from a fresh clone.
 
-This evaluates the fixed expression and displays its diagnostics. It does not load a checkpoint, start PySR or Julia, fit a model, or save plots by default. Curated inspection stops if the current dataset fingerprint differs from the one in the expression manifest.
+<details>
+<summary><strong>Optional: download the published plots and expression PDF</strong></summary>
 
-The notebook also supports saved-result inspection. Keep its curve-fit switch disabled for that path. If enabled, its curve workflow fits fresh diagnostic models; these runs are separate from evaluating the fixed expression and write to ignored directories under output/curve_diagnostics/.
+The published binary artifacts are hosted separately. To cache them locally:
 
-## Expression artifacts
+```bash
+python fetch_artifacts.py --expression L2HL_1_050
+```
 
-The expression’s binary plots are served from the immutable L2HL_1_050 directory at [logs.reshub.lol](https://logs.reshub.lol/pysr-ext-higgs/0.1.0/L2HL_1_050/). To download and verify those files into the local cache:
+The downloader verifies each file's byte count and SHA-256 against the committed manifest. Ordinary saved-result inspection does not need this download.
 
-~~~bash
-.venv/bin/python fetch_artifacts.py --expression L2HL_1_050
-~~~
+</details>
 
-Each download is checked against the committed byte count and SHA-256 before it replaces a cached file. Downloads are explicit; ordinary inspection never fetches files automatically. Raw logs, checkpoints, environment files, and backups are not served.
+## Read more
 
-## Data and evaluation
+- **[Wiki Home](https://github.com/wadewolfie999/pysr_ext_higgs/wiki):** a short guide to the documentation.
+- **[Project Registry](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry):** the current selected expression and its results.
+- **[Methods and limitations](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Method-and-Limitations):** the loss, evaluation procedure, and interpretation of the reported scores.
+- **[Issues](https://github.com/wadewolfie999/pysr_ext_higgs/issues):** questions, problems, and feedback.
 
-The current dataset has 12,280 rows and SHA-256 c8c8063c84a10143b6369f444a037ef5695ff13f5eef6f9bf00dc86880c3937a. The reconstructed split uses seed 42 and contains 7,368 training, 1,228 validation, and 3,684 test rows. Current reproduction of L2HL_1_050 matches its recorded test AUC and exported NumPy predictions. This does not authenticate the original split membership or establish independent performance.
-
-## Environment and new runs
-
-The inspected environment uses Python 3.13.7 and PySR 2.7.0. A new-machine installation has not been verified in this revision.
-
-~~~bash
-python3.13 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-~~~
-
-Review main.py before running a new training search:
-
-~~~bash
-.venv/bin/python main.py
-~~~
-
-Future runs record their actual split row IDs, labels, weights, model parameters, dataset hash, and source hashes before fitting. Training is separate from inspecting the saved expression.
-
-## Repository sources
-
-- results/L2HL_1_050/: the current expression exports, candidate table, and manifest; binary plots are optional local cache.
-- output/ and HP_output/: ignored local runs and checkpoints.
-- wiki/: canonical editable sources for the GitHub Wiki.
-
-Previous catalogue revisions remain historical records in Git history. The current README and Wiki present L2HL_1_050 as the current expression.
-
-<sub>README v0.7.0 · Expression record v0.1.0.</sub>
+<sub>README v0.8.1 · Code release v5.7.0.</sub>

@@ -1,45 +1,76 @@
-# Method and limitations
+# Methods and limitations
 
-**Page v0.3.0 · Code release v5.7.0 · Updated 2026-10-26.**
+How the project trains symbolic classifiers and interprets their results. For commands, use the **[README](https://github.com/wadewolfie999/pysr_ext_higgs#how-to-run-this-on-your-machine)**; for scores and figures, use **[Project Registry](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry)**.
 
-## Current scope
+[Inputs and objective](#inputs-and-objective) · [Evaluation and selection](#evaluation-and-selection) · [Diagnostic plots](#diagnostic-plots) · [Reproducibility](#reproducibility)
 
-The [Project Registry](Project-Registry) presents L2HL_1_050 as the current expression. Previous catalogue revisions remain historical records; they are not the active result on these pages.
+## Inputs and objective
 
-The model uses mchi1 and mchipm1 in GeV and predicts a continuous raw score for the binary reference labels in exclusion. The score is not a calibrated probability, and this cleanup assigns no new physical meaning to the labels.
+| Component | Current workflow |
+|---|---|
+| Input features | `mchi1` and `mchipm1`, in GeV |
+| Reference target | Binary `exclusion` labels, 0 and 1 |
+| Training objective | `L2HingeLoss()` |
+| Training targets | Signed labels, `2*y - 1`, giving -1 and +1 |
+| Sample weights | Balanced by class, using training rows only |
+| Evaluation | ROC-AUC from continuous scores, with label 1 positive |
 
-## Objective, labels, and scores
+Squared hinge loss is `max(0, 1 - y*s)**2`, for signed target `y` and score `s`.
 
-The saved expression uses L2HingeLoss(). The current training entry point maps labels 0 and 1 to signed targets -1 and +1 with 2*y-1 and balances sample weights using training rows. ROC-AUC uses the continuous scores with label 1 as positive.
+**The expression returns a raw score.** Negative values are valid, and the score is not a calibrated probability. No additional physical meaning is assigned here to the reference labels.
 
-Negative raw scores are valid classifier scores. A margin score is not automatically a probability. The current expression’s loss identifies its training objective; it does not show that this loss is statistically superior to alternatives. See the [PySR loss documentation](https://github.com/astroautomata/PySR/blob/master/docs/src/options.md#loss) and [LossFunctions.jl margin definitions](https://juliaml.github.io/LossFunctions.jl/stable/losses/margin/).
+*`L2HingeLoss()` is the chosen objective; the selected result alone does not establish that it is statistically superior to other losses.* See the [PySR loss documentation](https://github.com/astroautomata/PySR/blob/master/docs/src/options.md#loss) and [LossFunctions.jl margin definitions](https://juliaml.github.io/LossFunctions.jl/stable/losses/margin/).
 
-## Validation and selection
+## Evaluation and selection
 
-The fixed-expression validation AUC reported in the registry, 0.9726962005193153, comes from evaluating the saved expression on the validation portion of the current reconstructed split. The dataset has 12,280 rows; the stratified split is 60%/10%/30% with seed 42. Original split membership is unknown, so this reproduction does not authenticate the historical validation rows or establish independent performance.
+The current reproduction uses **12,280 rows**, split by `do_split()` with stratification and **seed 42**:
 
-The saved record’s test AUC is 0.9615986120334543. The original workflow used test AUC for expression selection, so that value is a selection score, not an untouched final-test estimate. The current reproduction matching it does not restore untouched-test status.
+| Partition | Share | Rows |
+|---|---:|---:|
+| Training | 60% | 7,368 |
+| Validation | 10% | 1,228 |
+| Test | 30% | 3,684 |
 
-## Diagnostics
+### What the reported validation means
 
-| Diagnostic | What changes | What it supports |
-|---|---|---|
-| Fixed-expression subset variability | Validation rows are divided into six subsets; L2HL_1_050 stays fixed | Descriptive variation across those subsets; no refitting or confidence interval |
-| Fitted validation curve | Fresh child models use configured complexity limits on the training split | Effect of those limits for the individual diagnostic fits |
-| Fitted learning curve | Fresh child models use configured fractions of the training rows | Effect of training-set size for the individual diagnostic fits |
+The validation score in Project Registry evaluates the **fixed saved expression** on the reconstructed validation partition. Original split membership is unknown, so this is a current reproduction rather than an authenticated historical validation result.
 
-The fitted curves are diagnostic searches, not evaluations of the frozen L2HL_1_050 expression. They use fresh child models and PySR’s model selection rule. A single fit per point provides no repeated-fit uncertainty estimate. The notebook writes new diagnostics under ignored output/curve_diagnostics/ directories when curve fitting is enabled.
+### How the expression was selected
 
-## Provenance
+`top_three_sort()` ranks candidate expressions by **test AUC**. That score participates in expression selection and **is not an untouched final-test estimate**. Reproducing the recorded value does not make the test partition independent of selection. The all-row AUC is descriptive.
 
-The current dataset fingerprint is SHA-256 c8c8063c84a10143b6369f444a037ef5695ff13f5eef6f9bf00dc86880c3937a. Current split sizes are 7,368 training, 1,228 validation, and 3,684 test rows. The saved expression manifest records the reproduction and explicitly leaves original split membership unknown.
+An independent final assessment would require data held out from expression selection.
 
-Future training runs write actual row identities, label mapping, weights, available model parameters, dataset hash, package versions, and source hashes before fitting. This does not backfill historical training provenance.
+## Diagnostic plots
 
-## Publication
+These plots answer different questions:
 
-The repository’s wiki/ files are the canonical editable sources for these Wiki pages. The L2HL_1_050 expression assets are served from immutable versioned paths at [logs.reshub.lol](https://logs.reshub.lol/pysr-ext-higgs/0.1.0/L2HL_1_050/). Raw logs, checkpoints, environment files, and backups remain local. Downloads are explicit; saved-result inspection does not fetch files automatically.
+| Plot | What it shows |
+|---|---|
+| **ROC curve** | Ranking of the binary reference labels by continuous expression scores |
+| **Mass plane** | Scores beside reference labels at observed mass pairs |
+| **One-dimensional mass scan** | Raw expression behaviour as `mchi1` varies with `mchipm1` fixed at 2000 GeV |
+| **Validation subset variability** | One fixed expression evaluated across six validation subsets; no refitting |
+| **Fitted validation curve** | Fresh child models at different configured complexity limits |
+| **Fitted learning curve** | Fresh child models using different training-set sizes |
 
-[Home](Home) · [Project Registry](Project-Registry)
+**Subset variability is descriptive.** Its standard-deviation band is not a confidence interval, and the procedure is not refitted cross-validation.
 
-<sub>Page v0.3.0 · Previous v0.2.1 · Code release v5.7.0.</sub>
+**Fitted curves run new searches.** They use PySR's `model_selection='best'` for child-model predictions, separately from the parent expression selected by test AUC. One fit per point gives no repeated-fit uncertainty estimate; multithreaded searches are not guaranteed to repeat identically.
+
+In `plot.ipynb`, set **`RUN_CURVE_FITS = False`** for saved-result inspection. Enabling it requires the original local checkpoint and saves fresh diagnostics under `output/curve_diagnostics/`. The preserved curve image's historical numerical result tables are unavailable.
+
+## Reproducibility
+
+- **Saved expression:** The committed manifest records the current reproduction and artifact checksums. It does not recover missing historical split membership or generating-commit provenance.
+- **New runs:** Before fitting, `main.py` records row IDs, labels, weights, model parameters, dataset hash, package versions, and source hashes in `run_metadata.json`. These records apply to that new run.
+- **Published files:** Binary artifacts are served from versioned paths at `logs.reshub.lol`. Explicit downloads are checked against the committed manifest; raw logs, checkpoints, environment files, and backups remain local.
+- **Environment:** The inspected Mac environment uses Python **3.13.7** and PySR **2.7.0**. The restored installation instructions have not been tested on a fresh machine in this revision.
+
+The dataset fingerprint, exact scores, export label, and saved files are collected in [Project Registry](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry#expression-downloads).
+
+---
+
+[Wiki Home](https://github.com/wadewolfie999/pysr_ext_higgs/wiki) · [Project Registry](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry) · [README](https://github.com/wadewolfie999/pysr_ext_higgs#readme)
+
+<sub>Page v0.4.0 · Code release v5.7.0 · Updated 2026-10-26.</sub>
