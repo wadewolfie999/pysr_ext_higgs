@@ -58,7 +58,7 @@ def main() -> None:
 
     sample_weights = compute_sample_weight(class_weight="balanced", y=y_train)
 
-    y_train_signed = 2 * y_train.astype(float) - 1
+    y_train_signed = 2 * y_train.astype(int) - 1
 
     # NEW Regressor -> based on https://pysr.ai/v2.7.2/#detailed-example
     model = PySRRegressor(

@@ -36,7 +36,7 @@ def main(source=RUN_SOURCE, expression_id=EXPRESSION_ID, data_csv=DATA_CSV, *,
                 "test": (X_test, y_test), "total": (X_total, y_total)}
     HOF_02, evaluations = auc_recorder(selected, datasets)
     equation = HOF_02.iloc[0]["Lambda_Equation"]
-    X_slice = pd.DataFrame({"mchi1": np.linspace(1, 2001, 2000), "mchipm1": 2000.0})
+    X_slice = pd.DataFrame({"mchi1": np.linspace(1, 2001, 2000), "mchipm1": 1000.0})
     fold_fig, fold_ax, fold_table, summary, _ = plot_expr_folds_variability(expression_id, datasets, evaluations)
     figures = {"roc_curve.pdf": plot_roc_curve(expression_id, evaluations, magnified=True),
                "mass_scan_1d.pdf": plot_1d_mass(equation, X_slice, Expression_ID=expression_id),
