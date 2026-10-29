@@ -82,33 +82,14 @@ julia --version
 
 </details>
 
-**Expression PDFs:** The training pipeline also needs a TeX installation providing `pdflatex`. Check it **before starting a search**:
-
-```bash
-pdflatex --version
-```
-
-If this command is missing, install a TeX distribution for your operating system. Without it, the pipeline stops at PDF export after fitting and retains the TeX source.
 
 ### 6. Review the data and search settings
 
 - **Dataset:** [data/masses_exclusions.csv](data/masses_exclusions.csv), with the columns `mchi1`, `mchipm1`, and `exclusion`.
-- **Search configuration:** `PySRRegressor(...)` in [main.py](main.py). Adjust the loss, operators, complexity limit, iterations, and time budget here.
-- **Shared functions:** [sr.py](sr.py) handles splitting, scoring, expression exports, and plotting.
 
-The current search uses `L2HingeLoss()` and a time budget of up to **one hour**. Review these settings before running it.
 
 ### 7. Start the search
 
-From the repository root, with `.venv` active:
-
-```bash
-python main.py
-```
-
-**This starts a new training run.** The terminal shows search progress and, on completion, the finalized expression table. Julia's first initialization may add startup time.
-
-*`main.py` is the training entry point; `sr.py` is the shared module.*
 
 ### 8. Find your results
 
@@ -118,12 +99,6 @@ Each search gets a run ID, such as `L2HL_1`. Its outputs are organized as follow
 output/<RUN_ID>/
 ├── hall_of_fame.csv             # Candidate equations
 ├── run_metadata.json           # Data, split, and search metadata
-├── <Expression_ID>/            # Selected expression exports
-│   ├── expression_sympy.txt
-│   ├── expression_lambda.py
-│   ├── expression.tex          # Winner only
-│   └── expression.pdf          # Winner only
-└── plots/                      # Winner's diagnostic plots
 ```
 
 The root `.run_num1_logger.csv` records the winning expression for each finalized run.
@@ -135,33 +110,6 @@ The root `.run_num1_logger.csv` records the winning expression for each finalize
 | `output/<RUN_ID>/` | New local runs, checkpoints, exports, and plots; ignored by Git |
 | `results/L2HL_1_050/` | The selected expression's committed text exports, candidate table, and manifest |
 | [Project Registry](https://github.com/wadewolfie999/pysr_ext_higgs/wiki/Project-Registry) | The selected result, score table, figures, and downloads |
-
-## Inspect the saved result
-
-**To inspect the existing expression without a new search**, complete the Python setup through step 4, then run:
-
-```bash
-python plot_sr.py
-```
-
-The script is configured for **`L2HL_1_050`**. It prints the split ROC-AUCs and displays the ROC, mass-plane, mass-scan, and validation-subset plots. It uses the committed expression and dataset; Julia, checkpoints, and `pdflatex` are unnecessary for this path. Plot saving is off by default.
-
-For your own saved run, edit `RUN_SOURCE` and `EXPRESSION_ID` in [plot_sr.py](plot_sr.py) to point to `output/<RUN_ID>/` and one of its expression IDs. For a curated manifest, the script checks the dataset fingerprint before evaluating it.
-
-**Notebook alternative:** [plot.ipynb](plot.ipynb) provides interactive inspection. Set **`RUN_CURVE_FITS = False` before running all cells** if you only want to inspect saved results. Enabling it starts fresh diagnostic searches and requires the corresponding local checkpoint, which is absent from a fresh clone.
-
-<details>
-<summary><strong>Optional: download the published plots and expression PDF</strong></summary>
-
-The published binary artifacts are hosted separately. To cache them locally:
-
-```bash
-python fetch_artifacts.py --expression L2HL_1_050
-```
-
-The downloader verifies each file's byte count and SHA-256 against the committed manifest. Ordinary saved-result inspection does not need this download.
-
-</details>
 
 ## Read more
 
